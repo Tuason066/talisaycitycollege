@@ -39,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <nav className='text-white bg-[#0052d4] py-2 md:py-4 lg:py-5 lg:bg-gradient-to-r lg:to-[#0052d4] lg:from-[#1b80f3]'>
+    <nav className='text-white bg-[#0052d4] py-4 md:py-6 lg:bg-gradient-to-r lg:to-[#0052d4] lg:from-[#1b80f3]'>
       <div className='mx-auto w-11/12 lg:flex lg:items-center lg:justify-between'>
         {/* logo */}
         <div className='flex items-center justify-between'>
@@ -98,21 +98,23 @@ function Navbar() {
             </button>
           </li>
           <li>
-            <button
+            <Link
+              to={'/contacts'}
               className='uppercase block text-base py-base px-lg ml-4 tracking-wide'
               title='Contacts'
               type='button'
             >
               Contacts
-            </button>
+            </Link>
           </li>
         </ul>
 
         {/* login */}
         <Link
           to='login'
-          className='hidden lg:flex items-center hover:gap-x-1 bg-yellow-400 hover:bg-yellow-500 text-[#0052d4] rounded px-lg py-sm transition-all outline-none'
+          className='hidden lg:flex items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-[#0052d4] rounded px-lg py-sm transition-all outline-none'
         >
+          <Icon icon='carbon:user-avatar-filled' />
           Log In
         </Link>
       </div>
