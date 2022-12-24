@@ -1,0 +1,18 @@
+/* google fonts - lexend deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* tailwindcss default styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global styles */
+
+body {
+  /* @apply; */
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* * {
+  border: 1px solid red;
+} */
