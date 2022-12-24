@@ -11,15 +11,23 @@ import { useGlobalContext } from '../context';
 function AsideNavLinks() {
   const { isAsideNavLinks, setIsAsideNavLinks } = useGlobalContext();
   /* aside dropdown */
-  const [isDropdown, setIsDropdown] = useState(null);
+  const [isDropdown, setIsDropdown] = useState([]);
   /* repaint the component that manipulates the button icon and dropdown */
-  const dropdownState = isDropdown === null ? null : isDropdown.toLowerCase();
+  // const dropdownState = isDropdown === null ? null : isDropdown.toLowerCase();
 
   const handleOnclick = (e) => {
     /* selecting the button to click */
     const element = e.currentTarget;
     /* set to manipulate the icon of the button clicked and repaint the component */
-    setIsDropdown((prev) => (prev === null ? element.textContent : null));
+    setIsDropdown((prev) => {
+      const text = element.textContent.toLowerCase();
+
+      if (!prev.includes(text)) {
+        return [...prev, text];
+      }
+
+      return prev.filter((item) => item !== text);
+    });
 
     /* button container and wrapper */
     const dropdownContainer = element.nextElementSibling;
@@ -34,33 +42,6 @@ function AsideNavLinks() {
       ? (dropdownContainer.style.height = dropdownWrapperHeight + 'px')
       : (dropdownContainer.style.height = 0);
   };
-  /*   const handleMouseEnter = (e) => {
-    const container = e.currentTarget;
-    const btn = container.querySelector('[data-id="dropdown-btn"]');
-    setIsDropdown(btn.textContent);
-
-    const dropdownContainer = container.querySelector(
-      '[data-id="dropdown-container"]'
-    );
-    const dropdownWrapper = container.querySelector(
-      `[data-id='dropdown-wrapper']`
-    );
-
-    const dropdownWrapperHeight =
-      dropdownWrapper.getBoundingClientRect().height;
-    dropdownContainer.style.height = `${dropdownWrapperHeight}px`;
-  };
-  const handleMouseLeave = (e) => {
-    const container = e.currentTarget;
-    const btn = container.querySelector('[data-id="dropdown-btn"]');
-    setIsDropdown((prev) => (prev === null ? btn.textContent : null));
-
-    const dropdownContainer = container.querySelector(
-      '[data-id="dropdown-container"]'
-    );
-
-    dropdownContainer.style.height = 0;
-  }; */
 
   return (
     <aside
@@ -97,7 +78,6 @@ function AsideNavLinks() {
         </Link>
         {/* about */}
         <div>
-          {/* onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} */}
           <button
             type='button'
             onClick={handleOnclick}
@@ -106,7 +86,7 @@ function AsideNavLinks() {
           >
             <Icon icon='mdi:about' />
             About
-            {dropdownState === 'about' ? (
+            {isDropdown.includes('about') ? (
               <Icon icon='tabler:chevron-up' />
             ) : (
               <Icon icon='tabler:chevron-down' />
@@ -172,7 +152,6 @@ function AsideNavLinks() {
         </div>
         {/* courses */}
         <div>
-          {/* onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} */}
           <button
             type='button'
             data-id='dropdown-btn'
@@ -181,7 +160,7 @@ function AsideNavLinks() {
           >
             <Icon icon='material-symbols:featured-play-list' />
             Courses
-            {dropdownState === 'courses' ? (
+            {isDropdown.includes('courses') ? (
               <Icon icon='tabler:chevron-up' />
             ) : (
               <Icon icon='tabler:chevron-down' />
@@ -256,7 +235,7 @@ function AsideNavLinks() {
           Contacts
         </Link>
       </div>
-      <div className='flex items-end justify-between pt-4'>
+      <div className='flex items-center justify-between pt-4'>
         <Link
           to='login'
           className='inline-flex items-center justify-center gap-x-2 bg-[#635bff] hover:bg-[#5249fe] text-[#f6f9fc] rounded px-lg py-sm transition-all outline-none'
