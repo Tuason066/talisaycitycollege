@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /* components */
-import AsideNavLinks from './GlobalComponents/AsideNavLinks';
 import Footer from './GlobalComponents/Footer';
 import Navbar from './components/Navbar';
 import PageNotFound from './GlobalComponents/PageNotFound';
@@ -12,7 +11,6 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 /* context */
 import { useGlobalContext } from './context';
-import AsideNavLinksFloat from './GlobalComponents/AsideNavLinksFloat';
 import Vision from './pages/Vision';
 import Mission from './pages/Mission';
 import Goals from './pages/Goals';
@@ -53,12 +51,6 @@ export function App() {
           <Route path='*' element={<PageNotFound />} />
         </Routes>
         <Footer />
-        {/* Aside Menu */}
-        {/* <AsideMenu /> */}
-        {/* Aside Nav Links */}
-        {/* <AsideNavLinks /> */}
-        {/* float */}
-        {/* <AsideNavLinksFloat /> */}
       </BrowserRouter>
     </>
   );
