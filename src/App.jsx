@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /* components */
 import AsideNavLinks from './GlobalComponents/AsideNavLinks';
 import Footer from './GlobalComponents/Footer';
-import Navbar from './GlobalComponents/Navbar';
+import Navbar from './components/Navbar';
 import PageNotFound from './GlobalComponents/PageNotFound';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
@@ -23,6 +23,7 @@ import Bsed from './pages/Bsed';
 import Bshm from './pages/Bshm';
 import Bsit from './pages/Bsit';
 import SpecialProgram from './pages/SpecialProgram';
+import AsideMenu from './components/AsideMenu';
 
 export function App() {
   return (
@@ -43,7 +44,7 @@ export function App() {
             <Route path='bsed' element={<Bsed />} />
             <Route path='bshm' element={<Bshm />} />
             <Route path='bsit' element={<Bsit />} />
-            <Route path='special-program' element={<SpecialProgram />} />
+            <Route path='dpe' element={<SpecialProgram />} />
           </Route>
           <Route path='contacts' element={<Contacts />} />
           <Route path='login' element={<Login />} />
@@ -52,10 +53,12 @@ export function App() {
           <Route path='*' element={<PageNotFound />} />
         </Routes>
         <Footer />
+        {/* Aside Menu */}
+        {/* <AsideMenu /> */}
         {/* Aside Nav Links */}
-        <AsideNavLinks />
+        {/* <AsideNavLinks /> */}
         {/* float */}
-        <AsideNavLinksFloat />
+        {/* <AsideNavLinksFloat /> */}
       </BrowserRouter>
     </>
   );

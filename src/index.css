@@ -8,11 +8,26 @@
 
 /* global styles */
 
-body {
-  /* @apply; */
-  font-family: 'Lexend Deca', sans-serif;
+#root {
+  @apply max-w-7xl mx-auto;
 }
 
-/* * {
-  border: 1px solid red;
-} */
+/* p {
+  font-family: 'Lexend Deca', sans-serif;
+}
+ */
+
+/* HomeFAQ - accordion */
+
+details > summary {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+details:is([open], :hover) > summary {
+  @apply text-black;
+}
+
+details[open] > summary > .icon {
+  transform: rotateX(180deg);
+}
