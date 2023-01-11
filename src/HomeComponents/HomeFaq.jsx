@@ -39,7 +39,7 @@ function HomeFaq() {
                   <Icon icon='ion:chevron-down-outline' />
                 </span>
               </summary>
-              <div className='p-4 pl-8 bg-slate-200 border-t transition-all'>
+              <div className='p-4 pl-8 bg-slate-100 border-t transition-all'>
                 <p>
                   <strong>Talisay City College (TCC)</strong> is a public higher
                   educational institution in the province of Cebu it is totally
@@ -57,7 +57,7 @@ function HomeFaq() {
                   <Icon icon='ion:chevron-down-outline' />
                 </span>
               </summary>
-              <div className='p-4 pl-8 bg-slate-200 border-t transition-all'>
+              <div className='p-4 pl-8 bg-slate-100 border-t transition-all'>
                 <ul className='list-disc pl-4'>
                   <li>
                     High School Report Cart (Form 138) or Transcript of Records
@@ -78,7 +78,7 @@ function HomeFaq() {
                   <Icon icon='ion:chevron-down-outline' />
                 </span>
               </summary>
-              <div className='p-4 pl-8 bg-slate-200 border-t transition-all'>
+              <div className='p-4 pl-8 bg-slate-100 border-t transition-all'>
                 <ul className='list-disc pl-4'>
                   <li>
                     <a

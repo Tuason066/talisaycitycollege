@@ -86,3 +86,10 @@ export const pageLinks = [
   },
   { id: 4, path: '/contacts', text: 'contacts', title: 'Contacts' },
 ];
+
+export const achievers = [
+  { id: 1, count: 1004, category: 'Government Scholars' },
+  { id: 2, count: 234, category: 'LPT Passers' },
+  { id: 3, count: 523, category: 'Topnotchers' },
+  { id: 4, count: 515, category: 'Awards' },
+];

@@ -9,8 +9,6 @@ import Courses from './pages/Courses';
 import Developers from './pages/Developers';
 import Home from './pages/Home';
 import Login from './pages/Login';
-/* context */
-import { useGlobalContext } from './context';
 import Vision from './pages/Vision';
 import Mission from './pages/Mission';
 import Goals from './pages/Goals';

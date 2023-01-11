@@ -5,43 +5,11 @@ import { pageLinks } from '../data';
 import { Link } from 'react-router-dom';
 /* icons */
 import { Icon } from '@iconify/react';
-/* context */
-import { useGlobalContext } from '../context';
 /* components */
 import PageLinks from './PageLinks';
 import AsideMenu from './AsideMenu';
 
 function Navbar() {
-  /* aside nav links */
-  // const { setIsAsideNavLinks, setIsAsideNavLinksFloat } = useGlobalContext();
-
-  /* aside nav float */
-  /*   const handleMouseEnter = (e) => {
-    const el = e.target;
-    const location = el.getBoundingClientRect();
-
-    setIsAsideNavLinksFloat((prev) => {
-      return {
-        ...prev,
-        state: true,
-        title: el.textContent,
-        location: {
-          bottom: location.bottom,
-          center: (location.left + location.right) / 2,
-        },
-      };
-    });
-  };
-
-  const handleMouseLeave = () => {
-    setIsAsideNavLinksFloat((prev) => {
-      return {
-        ...prev,
-        state: false,
-      };
-    });
-  }; */
-
   const [isAsideMenu, setIsAsideMenu] = useState(false);
 
   return (
@@ -73,16 +41,16 @@ function Navbar() {
         <PageLinks
           links={pageLinks}
           containerClass={'hidden lg:flex'}
-          itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider'
+          itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider hover:scale-105 transition-all'
         />
 
         {/* login */}
         <Link
           to='login'
-          className='hidden lg:flex items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-primaryBlue-100 font-semibold rounded px-lg py-sm transition-all outline-none'
+          className='hidden lg:flex items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-primaryBlue-100 font-semibold rounded px-lg py-sm transition-all outline-none uppercase'
         >
           <Icon icon='carbon:user-avatar-filled' />
-          Log In
+          log in
         </Link>
       </div>
       <AsideMenu isAsideMenu={isAsideMenu} setIsAsideMenu={setIsAsideMenu} />

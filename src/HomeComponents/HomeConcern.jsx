@@ -139,7 +139,7 @@ function HomeConcern() {
           </aside>
 
           {/* CONCERN FORM */}
-          <h2 className='text-[#222] text-center lg:text-left text-xl md:text-2xl lg:text-4xl font-black uppercase mb-6 md:mb-8 lg:mb-10 tracking-wide md:tracking-wider lg:tracking-widest'>
+          <h2 className='text-center lg:text-left text-xl md:text-2xl lg:text-4xl font-black uppercase mb-6 md:mb-8 lg:mb-10 tracking-wide md:tracking-wider lg:tracking-widest'>
             Send us your concern
           </h2>
           <div className='grid gap-y-4 max-w-md lg:max-w-full mx-auto'>
