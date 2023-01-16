@@ -3,24 +3,10 @@ import React, { createContext, useContext, useState } from 'react';
 const AppContext = createContext();
 
 function AppProvider({ children }) {
-  /* navbar */
-  const [isAsideNavLinks, setIsAsideNavLinks] = useState(false);
-  /* aside nav links float */
-  const [isAsideNavLinksFloat, setIsAsideNavLinksFloat] = useState({
-    state: false,
-    title: '',
-    location: { top: 0, center: 0 },
-  });
+  const [isPreview, setIsPreview] = useState({ state: false, news: [] });
 
   return (
-    <AppContext.Provider
-      value={{
-        isAsideNavLinks,
-        setIsAsideNavLinks,
-        isAsideNavLinksFloat,
-        setIsAsideNavLinksFloat,
-      }}
-    >
+    <AppContext.Provider value={{ isPreview, setIsPreview }}>
       {children}
     </AppContext.Provider>
   );

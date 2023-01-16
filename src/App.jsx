@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+/* context */
+import { useGlobalContext } from './context';
 /* components */
 import Footer from './GlobalComponents/Footer';
 import Navbar from './components/Navbar';
 import PageNotFound from './GlobalComponents/PageNotFound';
-import About from './pages/About';
 import Contacts from './pages/Contacts';
-import Courses from './pages/Courses';
 import Developers from './pages/Developers';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -19,9 +19,11 @@ import Bsed from './pages/Bsed';
 import Bshm from './pages/Bshm';
 import Bsit from './pages/Bsit';
 import SpecialProgram from './pages/SpecialProgram';
-import AsideMenu from './components/AsideMenu';
+import PreviewNews from './components/PreviewNews';
 
 export function App() {
+  const { isPreview } = useGlobalContext();
+
   return (
     <>
       <BrowserRouter>
@@ -49,6 +51,7 @@ export function App() {
           <Route path='*' element={<PageNotFound />} />
         </Routes>
         <Footer />
+        {isPreview.state && <PreviewNews {...isPreview} />}
       </BrowserRouter>
     </>
   );

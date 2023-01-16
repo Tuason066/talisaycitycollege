@@ -1,9 +1,12 @@
+/* react */
 import React from 'react';
+
+/* components */
 import Achievers from '../components/Achievers';
 import LandingPage from '../components/LandingPage';
+import NewsAndUpdates from '../components/NewsAndUpdates';
 import HomeConcern from '../HomeComponents/HomeConcern';
 import HomeFaq from '../HomeComponents/HomeFaq';
-import HomeNewsAndUpdates from '../HomeComponents/HomeNewsAndUpdates';
 
 function Home() {
   return (
@@ -27,7 +30,7 @@ function Home() {
       </picture>
       <LandingPage />
       <Achievers />
-      <HomeNewsAndUpdates />
+      <NewsAndUpdates />
       <HomeFaq />
       <HomeConcern />
     </>

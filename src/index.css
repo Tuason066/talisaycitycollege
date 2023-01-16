@@ -31,3 +31,24 @@ details:is([open], :hover) > summary {
 details[open] > summary > .icon {
   transform: rotateX(180deg);
 }
+
+/* ################ REACT MASONRY ################ */
+.my-masonry-grid {
+  display: flex;
+  gap: 1rem; /* column gap */
+  width: auto;
+}
+
+/* Style your items */
+.my-masonry-grid_column > article {
+  margin-bottom: 1rem; /* row gap */
+}
+
+@media (min-width: 768px) {
+  .my-masonry-grid {
+    gap: 1.25rem; /* column gap */
+  }
+  .my-masonry-grid_column > article {
+    margin-bottom: 1.25rem; /* row gap */
+  }
+}

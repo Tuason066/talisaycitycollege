@@ -10,24 +10,24 @@ const Achievers = () => {
         <h2 className='uppercase font-bold mb-6 md:mb-7 lg:mb-8 text-4xl md:text-6xl'>
           the land of
         </h2>
-        <div className='grid gap-y-4 md:gap-y-8 md:grid-cols-2 lg:grid-cols-4 max-w-xl lg:max-w-6xl mx-auto'>
+        <dl className='grid gap-y-4 md:gap-y-8 md:grid-cols-2 lg:grid-cols-4 max-w-xl lg:max-w-full mx-auto'>
           {achievers.map(({ id, count, category }) => {
             return (
               <div key={id}>
-                <span className='text-3xl lg:text-5xl font-bold mb-1 inline-block'>
+                <dt className='text-3xl lg:text-5xl font-bold mb-1 inline-block'>
                   {new Intl.NumberFormat('en-US', {
                     notation: 'compact',
                     compactDisplay: 'short',
                   }).format(count)}
                   +
-                </span>
-                <h5 className='font-semibold uppercase tracking-wider text-sm md:text-base lg:text-lg'>
+                </dt>
+                <dd className='font-semibold uppercase tracking-wider text-sm md:text-base lg:text-lg'>
                   {category}
-                </h5>
+                </dd>
               </div>
             );
           })}
-        </div>
+        </dl>
       </div>
     </section>
   );
