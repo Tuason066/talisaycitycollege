@@ -1,3 +1,6 @@
+/* link - http/https:// */
+/* strong/bold - *** text *** */
+
 const ConvertText = ({ value, textClassName }) => {
   let text = value;
   /* link regex */

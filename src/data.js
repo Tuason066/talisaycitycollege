@@ -94,12 +94,76 @@ export const achievers = [
   { id: 4, count: 515, category: 'Awards' },
 ];
 
+/* image - img/title/info */
+/* id, subject, createdAt, title, details(array of strings), images(array of objects{image,video,title,info(array of strings)})*/
+/* 
+
+{
+  id:
+  subject: '',
+  createdAt: '',
+  title: '',
+  details: [''],
+  images: [{image:'',info: ['']}],
+}
+
+*/
 export const newsAndUpdates = [
-  /* enrolment */
+  /* grade slip distribution 6 */
   {
-    id: 1,
+    id: 6,
+    subject: 'grade slip',
+    createdAt: 'Jan 19, 2023',
+    title: `MIDTERM GRADE SLIP DISTRIBUTION SCHEDULE || January 19-21, 2023`,
+    details: [
+      `Please be reminded of your respective schedules. ***Midterm Grade Slip*** will be one of the requirements (***1st year students to 3rd year students***) for your enrollment for the 2nd Semester of A.Y. 2022-2023.`,
+      `Thank you!`,
+    ],
+    images: [
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1674267574/talisay-city-college/1st-semester-grade-slip-distribution-2022-2023/page-1_ml66r8.webp',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1674267574/talisay-city-college/1st-semester-grade-slip-distribution-2022-2023/page-2_wriezw.webp',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1674267573/talisay-city-college/1st-semester-grade-slip-distribution-2022-2023/page-3_vw7n1y.webp',
+      },
+    ],
+  },
+  /* final exam 7*/
+  {
+    id: 7,
+    subject: 'examination',
+    createdAt: 'Jan 17, 2023',
+    title: `FINAL EXAMS SCHEDULE || January 16 - 21, 2023`,
+    details: [
+      `Please check your respective schedules (Teacher Education) for the `,
+      `upcoming ***Final Exams of the 1st Semester, A.Y. 2022-2023***.`,
+    ],
+    images: [
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1674266767/talisay-city-college/1st-semester-final-examination-2022-2023/page-1_pud8h0.webp',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1674266767/talisay-city-college/1st-semester-final-examination-2022-2023/page-2_f3v330.webp',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1674266767/talisay-city-college/1st-semester-final-examination-2022-2023/page-3_azu3tc.webp',
+      },
+    ],
+  },
+  /* enrolment 8*/
+  {
+    id: 8,
     subject: 'enrollment',
-    createdAt: 'Jan 13',
+    createdAt: 'Jan 13, 2023',
     title: 'Schedule of 𝐄𝐧𝐫𝐨𝐥𝐦𝐞𝐧𝐭 for Second 𝐒𝐞𝐦𝐞𝐬𝐭𝐞𝐫, A.Y. 2022-2023',
     details: [
       `(for Continuing Students and Returnees only)`,
@@ -115,17 +179,18 @@ export const newsAndUpdates = [
       `5.) Medical X-ray result (for 4th Year Students only)`,
       `📍Enrolment Cut-Off Time: 4:00 PM`,
     ],
-    image: [
+    images: [
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673752124/talisay-city-college/enrolment/enrollment_xlvfsi.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673752124/talisay-city-college/enrolment/enrollment_xlvfsi.webp',
       },
     ],
   },
-  /* evaluation */
+  /* evaluation 9*/
   {
-    id: 2,
+    id: 9,
     subject: 'evaluation',
-    createdAt: 'Jan 11',
+    createdAt: 'Jan 11, 2023',
     title: `𝐈𝐍𝐒𝐓𝐑𝐔𝐂𝐓𝐎𝐑'𝐒 𝐎𝐍𝐋𝐈𝐍𝐄 𝐄𝐕𝐀𝐋𝐔𝐀𝐓𝐈𝐎𝐍 || 𝟏𝐬𝐭 𝐒𝐞𝐦𝐞𝐬𝐭𝐞𝐫, 𝐀.𝐘. 𝟐𝟎𝟐𝟐-𝟐𝟎𝟐𝟑`,
     details: [
       `Dear Talisalites,`,
@@ -142,9 +207,10 @@ export const newsAndUpdates = [
 By accomplishing the forms below, you hereby authorize Talisay City College to collect your personal information and use the data for academic purposes as per the Data Privacy Act of 2012. Please follow the link for more details on the Data Privacy Act of 2012: https://tinyurl.com/fcuehhb4`,
       `*See each photos for the links provided in the caption.`,
     ],
-    image: [
+    images: [
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-1_wmta9s.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-1_wmta9s.webp',
 
         info: [
           `Dear Talisalites,`,
@@ -164,7 +230,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-2_ctuffu.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-2_ctuffu.webp',
 
         info: [
           '*Check post for the complete instructions.',
@@ -193,7 +260,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-1_wmta9s.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-1_wmta9s.webp',
         info: [
           '*Check post for the complete instructions.',
           `***𝐇𝐎𝐒𝐏𝐈𝐓𝐀𝐋𝐈𝐓𝐘 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓 𝐏𝐑𝐎𝐆𝐑𝐀𝐌***`,
@@ -221,7 +289,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-4_tzxjtx.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514735/talisay-city-college/evaluation/online-evaluation-4_tzxjtx.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐈𝐍𝐃𝐔𝐒𝐓𝐑𝐈𝐀𝐋 𝐓𝐄𝐂𝐇𝐍𝐎𝐋𝐎𝐆𝐘 𝐏𝐑𝐎𝐆𝐑𝐀𝐌***`,
@@ -256,7 +325,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-5_afj104.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-5_afj104.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄𝐒 𝐃𝐄𝐏𝐀𝐑𝐓𝐌𝐄𝐍𝐓***`,
@@ -289,7 +359,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-6_pgrcub.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-6_pgrcub.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐌𝐀𝐓𝐇 𝐀𝐍𝐃 𝐒𝐂𝐈𝐄𝐍𝐂𝐄𝐒 𝐃𝐄𝐏𝐀𝐑𝐓𝐌𝐄𝐍𝐓***`,
@@ -320,7 +391,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-7_yfhu2r.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-7_yfhu2r.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐒𝐎𝐂𝐈𝐀𝐋 𝐀𝐍𝐃 𝐁𝐄𝐇𝐀𝐕𝐈𝐎𝐑𝐀𝐋 𝐒𝐂𝐈𝐄𝐍𝐂𝐄𝐒 𝐃𝐄𝐏𝐀𝐑𝐓𝐌𝐄𝐍𝐓***`,
@@ -349,7 +421,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-8_lu8ppo.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-8_lu8ppo.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐏𝐇𝐘𝐒𝐈𝐂𝐀𝐋 𝐄𝐃𝐔𝐂𝐀𝐓𝐈𝐎𝐍 𝐃𝐄𝐏𝐀𝐑𝐓𝐌𝐄𝐍𝐓***`,
@@ -366,7 +439,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-9_zcmez7.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-9_zcmez7.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐑𝐄𝐄𝐃/𝐕𝐀𝐋𝐄𝐃 𝐃𝐄𝐏𝐀𝐑𝐓𝐌𝐄𝐍𝐓***`,
@@ -383,7 +457,8 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
         ],
       },
       {
-        img: 'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-10_gflnjp.webp',
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673514736/talisay-city-college/evaluation/online-evaluation-10_gflnjp.webp',
         info: [
           `*Check post for the complete instructions.`,
           `***𝐍𝐒𝐓𝐏 𝐃𝐄𝐏𝐀𝐑𝐓𝐌𝐄𝐍𝐓***`,
@@ -395,4 +470,84 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
       },
     ],
   },
+  /* intramurals 10*/
+  {
+    id: 10,
+    subject: 'intramurals',
+    createdAt: 'Dec 19, 2022',
+    title: `TCC Intramural Days 2022`,
+    details: [
+      `CONGRATULATIONS RED KNIGHTS!!! ❤️❤️❤️`,
+      `Pop-Jazz Dance Competition CHAMPION!!!`,
+      `- 1st Runner-up: YELLOW VIKINGS 💛`,
+      `- 2nd Runner-up: PURPLE SAMURAIS 💜`,
+    ],
+    images: [
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868455/talisay-city-college/intramurals%402022/pop-jazz-red-knights_2022_vpkqfh.webp',
+        title: `CONGRATULATIONS RED KNIGHTS!!! ❤️❤️❤️`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition CHAMPION!!!`,
+        ],
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868459/talisay-city-college/intramurals%402022/pop-jazz-yellow-vikings_2022_tup0vm.webp',
+        title: `CONGRATULATIONS YELLOW VIKINGS!!! 💛💛`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition 1st Runner-up!`,
+        ],
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868455/talisay-city-college/intramurals%402022/pop-jazz-purple-samurai_2022_zkbkke.webp',
+        title: `CONGRATULATIONS PURPLE SAMURAIS!!! 💜💜`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition 2nd Runner-up!`,
+        ],
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868452/talisay-city-college/intramurals%402022/pop-jazz-grey-spartans_2022_cphnc5.webp',
+        title: `CONGRATULATIONS GREY SPARTANS!!!`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition 3rd Runner-up!`,
+        ],
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868454/talisay-city-college/intramurals%402022/pop-jazz-blue-trojans_2022_kpfl5u.webp',
+        title: `CONGRATULATIONS BLUE TROJANS!!!`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition 4th Runner-up!`,
+        ],
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868460/talisay-city-college/intramurals%402022/pop-jazz-green-immortals_2022_mdlg5n.webp',
+        title: `CONGRATULATIONS GREEN IMMORTALS!!!`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition 5th Runner-up!`,
+        ],
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dwiivmg3b/image/upload/v1673868460/talisay-city-college/intramurals%402022/pop-jazz-pink-ninjas_2022_y5epzc.webp',
+        title: `CONGRATULATIONS PINK NINJAS!!!`,
+        info: [
+          `TCC Intramural Days 2022`,
+          `Pop-Jazz Dance Competition 6th Runner-up!`,
+        ],
+      },
+    ],
+  },
 ];
+
+/* FIXED NEWS AND UPDATES WITH IMG AND VIDEO */
