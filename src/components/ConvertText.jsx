@@ -1,6 +1,8 @@
 /* link - http/https:// */
 /* strong/bold - *** text *** */
 
+/* TODO: uppercase, capitalize, hashtag(#) */
+
 const ConvertText = ({ value, textClassName }) => {
   let text = value;
   /* link regex */

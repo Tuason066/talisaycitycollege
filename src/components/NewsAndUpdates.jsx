@@ -9,7 +9,7 @@ import { newsAndUpdates } from '../data';
 /* component */
 import News from './News';
 
-const NewsAndUpdates = () => {
+const NewsAndUpdates = ({ children }) => {
   const breakpointColumnsObj = {
     default: 3,
     1000: 2,
@@ -36,6 +36,7 @@ const NewsAndUpdates = () => {
             return <News data={item} key={index} />;
           })}
         </Masonry>
+        {children}
       </div>
     </section>
   );

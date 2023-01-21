@@ -7,7 +7,7 @@ import ConvertText from './ConvertText';
 import NewsMedia from './NewsMedia';
 
 const News = ({ data }) => {
-  const { images, id, subject, createdAt, title, details } = data;
+  const { media, id, subject, createdAt, title, details } = data;
 
   /* details */
   const [limitDetails, setLimitDetails] = useState(150);
@@ -22,28 +22,30 @@ const News = ({ data }) => {
     setIsPreview((prev) => {
       return { ...prev, state: true, news, defaultNews: data };
     });
+    /* hide the scrollbaar */
+    document.body.style.overflow = 'hidden';
   };
 
   return (
     <article
       key={id}
-      className='max-w-sm bg-white border border-gray-200 rounded-lg shadow-md mx-auto'
+      className='max-w-sm bg-white border-2 border-gray-200 rounded-lg shadow mx-auto'
     >
-      {/* images */}
+      {/* images/videos */}
       <div
         className='rounded-t-lg cursor-pointer border-b overflow-hidden'
-        onClick={() => handleSeeMore(images)}
+        onClick={() => handleSeeMore(media)}
       >
         <NewsMedia
-          image={images[0].image}
-          video={images[0].video}
+          image={media[0].image}
+          video={media[0].video}
           title={title}
         />
       </div>
       {/* TODO: Make a NewsArticle Compotent */}
-      <div className='p-5'>
+      <div className='p-5 bg-slate-100'>
         <div className='mb-3 inline-flex items-center gap-x-2'>
-          <span className='p-sm px-lg rounded tracking-wider bg-primaryBlue-100 text-white text-sm uppercase font-semibold'>
+          <span className='p-sm px-lg rounded tracking-wider text-primaryBlue-100 bg-yellow-400 text-sm uppercase font-bold'>
             {subject}
           </span>
           <span className='text-sm'>{createdAt}</span>
@@ -85,7 +87,7 @@ const News = ({ data }) => {
         <button
           type='button'
           className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:outline-none'
-          onClick={() => handleSeeMore(images)}
+          onClick={() => handleSeeMore(media)}
         >
           Read more
           <svg

@@ -5,7 +5,7 @@ const NewsMedia = ({ image, video, title, defaultTitle, mediaStyle }) => {
         src={image}
         alt={title ?? defaultTitle}
         loading='lazy'
-        className={mediaStyle}
+        className={`${mediaStyle}`}
       />
     );
   }

@@ -17,6 +17,8 @@ const PreviewNews = () => {
     setIsPreview((prev) => {
       return { ...prev, state: false, news: [], defaultNews: {} };
     });
+    /* show the scrollbar */
+    document.body.style.overflow = 'visible';
   };
 
   return (

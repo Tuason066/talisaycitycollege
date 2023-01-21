@@ -1,6 +1,7 @@
 /* react */
 import React from 'react';
-
+/* react router */
+import { Link } from 'react-router-dom';
 /* components */
 import Achievers from '../components/Achievers';
 import LandingPage from '../components/LandingPage';
@@ -30,7 +31,9 @@ function Home() {
       </picture>
       <LandingPage />
       <Achievers />
-      <NewsAndUpdates />
+      <NewsAndUpdates>
+        <Link to={'/'}></Link>
+      </NewsAndUpdates>
       <HomeFaq />
       <HomeConcern />
     </>
