@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 
-function HomeFaq() {
+function FrequentlyAskedQuestions() {
   return (
     <section className='bg-lightBlue-100'>
       <div className='mx-auto w-11/12 py-8 md:py-12 lg:py-14 lg:flex lg:gap-x-20'>
@@ -116,4 +115,4 @@ function HomeFaq() {
   );
 }
 
-export default HomeFaq;
+export default FrequentlyAskedQuestions;

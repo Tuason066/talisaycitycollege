@@ -87,6 +87,33 @@ export const pageLinks = [
   { id: 4, path: '/contacts', text: 'contacts', title: 'Contacts' },
 ];
 
+export const socialLinks = [
+  {
+    id: 0,
+    path: 'https://www.facebook.com/TCCofficialfbpage',
+    title: 'Facebook',
+    icon: 'ri:facebook-box-fill',
+  },
+  {
+    id: 1,
+    path: 'https://www.youtube.com/@talisaycitycollege6427',
+    title: 'YouTube',
+    icon: 'ph:youtube-logo-fill',
+  },
+  {
+    id: 2,
+    path: 'https://www.youtube.com/@talisaycitycollege6427',
+    title: 'Instagram',
+    icon: 'ph:instagram-logo-fill',
+  },
+  {
+    id: 3,
+    path: 'mailto:tuasonjeffrey06@gmail.com?subject = Inqueries&body = Message',
+    title: 'Email',
+    icon: 'ic:round-email',
+  },
+];
+
 export const achievers = [
   { id: 1, count: 1004, category: 'Government Scholars' },
   { id: 2, count: 234, category: 'LPT Passers' },
@@ -106,6 +133,7 @@ export const achievers = [
 }
 
 */
+
 export const newsAndUpdates = [
   /* enrollment update - 1 */
   {
@@ -509,7 +537,7 @@ By accomplishing the forms below, you hereby authorize Talisay City College to c
   },
   /* class resumption 2023 - 6 */
   {
-    id: 5,
+    id: 6,
     subject: 'class resumption',
     createdAt: 'Dec 28, 2022',
     title: 'Announcemnet',

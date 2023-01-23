@@ -1,8 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { Icon } from '@iconify/react';
-import { Scale } from '@mui/icons-material';
 
-function HomeConcern() {
+function Concern() {
   /* submit */
   const [isConcernSubmitted, setIsConcernSubmitted] = useState(false);
   /* data inputs */
@@ -211,4 +210,4 @@ function HomeConcern() {
   );
 }
 
-export default HomeConcern;
+export default Concern;

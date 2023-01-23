@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-/* data */
-import { pageLinks } from '../data';
+
 /* router */
 import { Link } from 'react-router-dom';
 /* icons */
@@ -8,6 +7,7 @@ import { Icon } from '@iconify/react';
 /* components */
 import PageLinks from './PageLinks';
 import AsideMenu from './AsideMenu';
+import Logo from './Logo';
 
 function Navbar() {
   const [isAsideMenu, setIsAsideMenu] = useState(false);
@@ -17,17 +17,7 @@ function Navbar() {
       <div className='mx-auto w-11/12 lg:flex lg:items-center lg:justify-between'>
         {/* logo */}
         <div className='flex items-center justify-between'>
-          <Link to={'/'} title='Home' className='flex items-center gap-x-2'>
-            <img src='./logo.png' alt='logo' className='w-8 lg:w-12' />
-            <div>
-              <h1 className='uppercase border-b border-white text-base tracking-wider font-bold'>
-                Talisay City College
-              </h1>
-              <address className='text-xs tracking-wide'>
-                Poblacion, Talisay City, Cebu
-              </address>
-            </div>
-          </Link>
+          <Logo />
           <button
             type='button'
             title='Menu'
@@ -39,7 +29,6 @@ function Navbar() {
         </div>
         {/* links */}
         <PageLinks
-          links={pageLinks}
           containerClass={'hidden lg:flex'}
           itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider hover:scale-105 transition-all'
         />

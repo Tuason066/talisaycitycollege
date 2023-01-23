@@ -1,15 +1,22 @@
 /* react */
-import React from 'react';
 /* react router */
 import { Link } from 'react-router-dom';
+/* data */
+import { newsAndUpdates } from '../data';
 /* components */
 import Achievers from '../components/Achievers';
 import LandingPage from '../components/LandingPage';
 import NewsAndUpdates from '../components/NewsAndUpdates';
-import HomeConcern from '../HomeComponents/HomeConcern';
-import HomeFaq from '../HomeComponents/HomeFaq';
+import Concern from '../components/Concern';
+import FrequentlyAskedQuestions from '../components/FrequentlyAskedQuestions';
 
 function Home() {
+  const newsData = newsAndUpdates.slice(0, 6);
+
+  /* useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); */
+
   return (
     <>
       <picture>
@@ -31,11 +38,22 @@ function Home() {
       </picture>
       <LandingPage />
       <Achievers />
-      <NewsAndUpdates>
-        <Link to={'/'}></Link>
+      <NewsAndUpdates
+        data={newsData}
+        titleClass='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'
+        subTitleClass='text-xs lg:text-base mb-6 md:mb-8 lg:mb-10'
+      >
+        <div className='text-center mt-2 md:mt-3 lg:mt-4'>
+          <Link
+            to={'/news'}
+            className='hover:underline transition-all font-semibold'
+          >
+            See more updates
+          </Link>
+        </div>
       </NewsAndUpdates>
-      <HomeFaq />
-      <HomeConcern />
+      <FrequentlyAskedQuestions />
+      <Concern />
     </>
   );
 }
