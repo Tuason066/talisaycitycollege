@@ -4,7 +4,6 @@ const NewsMedia = ({ image, video, title, defaultTitle, mediaStyle }) => {
       <img
         src={image}
         alt={title ?? defaultTitle}
-        loading='lazy'
         className={`${mediaStyle}`}
       />
     );
@@ -18,7 +17,6 @@ const NewsMedia = ({ image, video, title, defaultTitle, mediaStyle }) => {
             className='absolute w-full h-full'
             src={video}
             title={title ?? defaultTitle}
-            frameBorder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
           ></iframe>

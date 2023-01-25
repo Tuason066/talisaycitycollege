@@ -1,7 +1,10 @@
 import { Icon } from '@iconify/react';
 import { useEffect, useState } from 'react';
+import { useGlobalContext } from '../context';
 
 const ScrollToTop = () => {
+  const { isPreview } = useGlobalContext();
+
   const [isScrollButton, setIsScrollButton] = useState(false);
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -13,14 +16,20 @@ const ScrollToTop = () => {
     });
   }, []);
 
+  /* handdle display button */
+  const handleDisplay = () => {
+    if (isPreview.state) {
+      return 'hidden';
+    }
+    return isScrollButton ? 'inline-block' : 'hidden';
+  };
+
   return (
     <button
       type='button'
       onClick={() => window.scrollTo(0, 0)}
       title='Scroll back to top'
-      className={`${
-        isScrollButton ? 'inline-block' : 'hidden'
-      } fixed bottom-8 right-8`}
+      className={`${handleDisplay()} fixed bottom-8 right-8`}
     >
       <Icon
         icon='jam:chevron-circle-up-f'

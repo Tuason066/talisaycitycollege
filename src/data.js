@@ -1,3 +1,5 @@
+/* ########## PAGE LINKS ########## */
+
 /* pageLinks - submenu is dropdown component */
 export const pageLinks = [
   { id: 1, path: '/', text: 'home', title: 'Home' },
@@ -89,6 +91,8 @@ export const pageLinks = [
   { id: 4, path: '/contacts', text: 'contacts', title: 'Contacts' },
 ];
 
+/* ########## SOCIAL LINKS ########## */
+
 export const socialLinks = [
   {
     id: 0,
@@ -116,12 +120,16 @@ export const socialLinks = [
   },
 ];
 
+/* ########## ACHIEVEMENTS ########## */
+
 export const achievers = [
   { id: 1, count: 1004, category: 'Government Scholars' },
   { id: 2, count: 234, category: 'LPT Passers' },
   { id: 3, count: 523, category: 'Topnotchers' },
   { id: 4, count: 515, category: 'Awards' },
 ];
+
+/* ########## NEWS AND UPDATES ########## */
 
 /* 
 
@@ -789,5 +797,66 @@ See you at the Talisay City College Library for the awarding of contest winners!
         title: `BLUE TROJANS`,
       },
     ],
+  },
+];
+
+/* ########## CONTACTS ########## */
+
+export const contacts = [
+  {
+    id: 0,
+    office: `Registrar's`,
+    phone: '+639953687065',
+    email: 'talisaycitycollege2004@gmail.com',
+    facebookPath: 'https://www.facebook.com/profile.php?id=100064037861894',
+    icon: 'quill:paper',
+  },
+  {
+    id: 1,
+    office: `Scholarship Center`,
+    phone: '+639953687065',
+    email: 'talisaycitycollege2004@gmail.com',
+    facebookPath: 'https://www.facebook.com/profile.php?id=100069043275667',
+    icon: 'circum:money-check-1',
+  },
+  {
+    id: 2,
+    office: `Clinic`,
+    phone: '+639953687065',
+    email: 'talisaycitycollege2004@gmail.com',
+    facebookPath: 'https://www.facebook.com/profile.php?id=100063967033360',
+    icon: 'fluent:doctor-16-regular',
+  },
+  {
+    id: 3,
+    office: `Supreme Student Council`,
+    phone: '+639953687065',
+    email: 'tcc_studentcouncil@yahoo.com',
+    facebookPath: 'https://www.facebook.com/TCCStudentCouncil',
+    icon: 'cil:balance-scale',
+  },
+  {
+    id: 4,
+    office: `Guidance Center`,
+    phone: '+639953687065',
+    email: 'tcc_studentcouncil@yahoo.com',
+    facebookPath: 'https://www.facebook.com/TCCGuidanceCenter',
+    icon: 'ep:guide',
+  },
+  {
+    id: 5,
+    office: `Balud Dance Company`,
+    phone: '+639953687065',
+    email: 'tccpa.baluddc@gmail.com',
+    facebookPath: 'https://www.facebook.com/BaludDC/',
+    icon: 'mdi:dance-ballroom',
+  },
+  {
+    id: 6,
+    office: `Junior Computer Organization`,
+    phone: '+639953687065',
+    email: 'talisaycitycollege2004@gmail.com',
+    facebookPath: 'https://www.facebook.com/profile.php?id=100087451633441',
+    icon: 'mdi:code',
   },
 ];

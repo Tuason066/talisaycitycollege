@@ -33,6 +33,7 @@ const LandingPage = () => {
         src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1673407880/talisay-city-college/hero_k8qcd3.svg'
         alt='Talisay City College Front View of School Building'
         className='hidden xl:block'
+        data-aos='fade-left'
       />
     </section>
   );

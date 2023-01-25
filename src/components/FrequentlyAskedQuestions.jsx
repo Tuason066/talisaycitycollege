@@ -15,7 +15,7 @@ function FrequentlyAskedQuestions() {
           }}
           className='hidden lg:block rounded'
           allowFullScreen
-          loading='lazy'
+          // loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
           data-aos='zoom-out-up'
         ></iframe>

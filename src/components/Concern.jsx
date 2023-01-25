@@ -101,7 +101,7 @@ function Concern() {
           data-aos='fade-right'
           data-aos-delay='300'
           allowFullScreen
-          loading='lazy'
+          // loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
         ></iframe>
         {/* FORM */}

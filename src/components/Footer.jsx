@@ -43,7 +43,7 @@ const Footer = () => {
           <p className='font-semibold text-xs lg:text-sm'>
             Email:{' '}
             <a
-              href='mailto:tuasonjeffrey06@gmail.com?subject = Inqueries&body = Message'
+              href='mailto:talisaycitycollege2004@gmail.com?subject = Inqueries&body = Message'
               className='hover:underline transition-all font-normal'
             >
               info@tcc.edu

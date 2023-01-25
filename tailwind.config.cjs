@@ -14,7 +14,7 @@ module.exports = {
         primaryYellow: {
           100: 'FFCC00',
         },
-        black: '#222',
+        black: '#121212',
       },
       spacing: {
         sm: '.25em',
