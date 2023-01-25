@@ -30,6 +30,9 @@ const News = ({ data }) => {
     <article
       key={id}
       className='max-w-sm bg-white border-2 border-gray-200 rounded-lg shadow mx-auto'
+      data-aos='fade-up'
+      data-aos-anchor-placement='top-bottom'
+      data-aos-delay='300'
     >
       {/* images/videos */}
       <div

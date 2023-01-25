@@ -13,7 +13,7 @@ function Navbar() {
   const [isAsideMenu, setIsAsideMenu] = useState(false);
 
   return (
-    <nav className='relative text-white bg-primaryBlue-100 py-4 md:py-6 lg:bg-gradient-to-r lg:from-primaryBlue-100 lg:to-primaryBlue-200'>
+    <nav className='relative text-white bg-primaryBlue-100 py-4 md:py-6 lg:bg-gradient-to-r lg:from-primaryBlue-100 lg:to-primaryBlue-200 z-50'>
       <div className='mx-auto w-11/12 lg:flex lg:items-center lg:justify-between'>
         {/* logo */}
         <div className='flex items-center justify-between'>

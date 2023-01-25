@@ -8,8 +8,16 @@
 
 /* global styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f6f9fc;
+}
+
 #root {
-  @apply max-w-7xl mx-auto text-black text-base;
+  @apply max-w-7xl mx-auto text-black text-base overflow-x-hidden;
 }
 
 /* p {

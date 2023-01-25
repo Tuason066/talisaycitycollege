@@ -17,6 +17,7 @@ function FrequentlyAskedQuestions() {
           allowFullScreen
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
+          data-aos='zoom-out-up'
         ></iframe>
         {/* FREQUENTLY ASKED QUESTIONS */}
         <div className='lg:max-w-lg'>
@@ -31,6 +32,9 @@ function FrequentlyAskedQuestions() {
               open
               style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
               className='transition-all rounded bg-white max-w-md mx-auto lg:max-w-full w-full'
+              data-aos='fade-up'
+              data-aos-anchor-placement='top-bottom'
+              data-aos-delay='300'
             >
               <summary className='p-4 flex items-center justify-between gap-x-4'>
                 How much is the tuition fee?
@@ -49,6 +53,9 @@ function FrequentlyAskedQuestions() {
             <details
               style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
               className='transition-all rounded bg-white max-w-md mx-auto lg:max-w-full w-full'
+              data-aos='fade-up'
+              data-aos-anchor-placement='top-bottom'
+              data-aos-delay='300'
             >
               <summary className='p-4 flex items-center justify-between gap-x-4'>
                 What are the enrollment requirements?
@@ -70,6 +77,9 @@ function FrequentlyAskedQuestions() {
             <details
               style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
               className='transition-all rounded bg-white max-w-md mx-auto lg:max-w-full w-full'
+              data-aos='fade-up'
+              data-aos-anchor-placement='top-bottom'
+              data-aos-delay='300'
             >
               <summary className='p-4 flex items-center justify-between gap-x-4'>
                 What are the scholarship can be availed of?

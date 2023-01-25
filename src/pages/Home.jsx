@@ -12,10 +12,7 @@ import FrequentlyAskedQuestions from '../components/FrequentlyAskedQuestions';
 
 function Home() {
   const newsData = newsAndUpdates.slice(0, 6);
-
-  /* useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []); */
+  /* TODO: fix the animations - aos */
 
   return (
     <>

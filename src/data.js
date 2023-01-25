@@ -1,46 +1,48 @@
+/* pageLinks - submenu is dropdown component */
 export const pageLinks = [
   { id: 1, path: '/', text: 'home', title: 'Home' },
   {
     id: 2,
+    path: '/about',
     text: 'about',
     title: 'About',
-    submenu: [
+    /* submenu: [
       {
         id: 1,
-        path: '/aboutvision',
+        path: '/about',
         text: 'Vision',
         title: 'Vision',
         icon: 'material-symbols:lightbulb-rounded',
       },
       {
         id: 2,
-        path: '/about/mission',
+        path: '/about',
         text: 'Mission',
         title: 'mission',
         icon: 'material-symbols:featured-play-list',
       },
       {
         id: 3,
-        path: '/about/goals',
+        path: '/about',
         text: 'Goals',
         title: 'Goals',
         icon: 'carbon:trophy-filled',
       },
       {
         id: 4,
-        path: '/core-values',
+        path: '/about',
         text: 'Core values',
         title: 'Core Values',
         icon: 'bxs:donate-heart',
       },
       {
         id: 5,
-        path: '/history',
+        path: '/about',
         text: 'History',
         title: 'History',
         icon: 'ri:file-paper-2-fill',
       },
-    ],
+    ], */
   },
   {
     id: 3,

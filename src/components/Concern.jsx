@@ -98,12 +98,18 @@ function Concern() {
               'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px',
           }}
           className='hidden lg:block rounded'
+          data-aos='fade-right'
+          data-aos-delay='300'
           allowFullScreen
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
         ></iframe>
         {/* FORM */}
-        <form className='lg:max-w-lg relative' onSubmit={handleSubmit}>
+        <form
+          className='lg:max-w-lg relative'
+          onSubmit={handleSubmit}
+          data-aos='fade-left'
+        >
           {/* ALERT BOX FOR SUCCESSFULLY SUBMITTED CONCERN */}
           <aside
             className={`${

@@ -1,6 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /* context */
 import { useGlobalContext } from './context';
+/* animations */
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// ..
+AOS.init();
 /* components */
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -9,11 +14,6 @@ import Contacts from './pages/Contacts';
 import Developers from './pages/Developers';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Vision from './pages/Vision';
-import Mission from './pages/Mission';
-import Goals from './pages/Goals';
-import CoreValues from './pages/CoreValues';
-import History from './pages/History';
 import Beed from './pages/Beed';
 import Bsed from './pages/Bsed';
 import Bshm from './pages/Bshm';
@@ -21,6 +21,8 @@ import Bsit from './pages/Bsit';
 import SpecialProgram from './pages/SpecialProgram';
 import PreviewNews from './components/PreviewNews';
 import LatestNewsAndUpdates from './pages/LatestNewsAndUpdates';
+import ScrollToTop from './components/ScrollToTop';
+import About from './pages/About';
 
 export function App() {
   const { isPreview } = useGlobalContext();
@@ -33,13 +35,7 @@ export function App() {
           {/* home */}
           <Route path='/' element={<Home />} />
           {/* about */}
-          <Route path='about'>
-            <Route path='vision' element={<Vision />} />
-            <Route path='mission' element={<Mission />} />
-            <Route path='goals' element={<Goals />} />
-            <Route path='core-values' element={<CoreValues />} />
-            <Route path='history' element={<History />} />
-          </Route>
+          <Route path='/about' element={<About />} />
           {/* courses */}
           <Route path='courses'>
             <Route path='beed' element={<Beed />} />
@@ -63,6 +59,7 @@ export function App() {
         <Footer />
         {/* floating components */}
         {isPreview.state && <PreviewNews {...isPreview} />}
+        <ScrollToTop />
       </BrowserRouter>
     </>
   );
