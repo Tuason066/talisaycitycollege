@@ -34,7 +34,7 @@ const Contacts = () => {
           return (
             <article
               key={id}
-              className='px-6 py-8 md:px-8 md:py-10 rounded max-w-xs md:max-w-md mx-auto border-2 border-primaryBlue-100 bg-white'
+              className='px-6 py-8 md:px-8 md:py-10 rounded max-w-xs md:max-w-md mx-auto border-2 border-primaryBlue-100 bg-white hover:bg-gray-100 transition-all'
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
               data-aos-delay='300'

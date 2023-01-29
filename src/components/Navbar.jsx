@@ -24,13 +24,13 @@ function Navbar() {
             onClick={() => setIsAsideMenu(true)}
             className='lg:hidden'
           >
-            <Icon icon='charm:menu-hamburger' />
+            <Icon icon='line-md:close-to-menu-transition' />
           </button>
         </div>
         {/* links */}
         <PageLinks
           containerClass={'hidden lg:flex'}
-          itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider hover:scale-105 transition-all'
+          itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider hover:scale-110 transition-all'
         />
 
         {/* login */}

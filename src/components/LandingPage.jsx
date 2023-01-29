@@ -21,7 +21,7 @@ const LandingPage = () => {
         </p>
         <div className='text-center xl:text-left'>
           <Link
-            to={'/about/history'}
+            to={'/about'}
             className='inline-block bg-yellow-400 hover:bg-yellow-500 rounded px-lg py-sm transition-all outline-none tracking-wide lg:text-lg'
           >
             Learn more

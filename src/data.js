@@ -88,7 +88,7 @@ export const pageLinks = [
       },
     ],
   },
-  { id: 4, path: '/contacts', text: 'contacts', title: 'Contacts' },
+  { id: 4, path: '/contacts', text: 'contact us', title: 'Contact Us' },
 ];
 
 /* ########## SOCIAL LINKS ########## */
@@ -858,5 +858,39 @@ export const contacts = [
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100087451633441',
     icon: 'mdi:code',
+  },
+];
+
+/* ########## DEVELOPERS ########## */
+export const developers = [
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675001788/talisay-city-college/developers/ritchie_ftqrpm.webp',
+    name: 'Ritchie John Gumera',
+    title: 'Frontend Web Developer',
+    facebook: 'https://www.facebook.com/richie.gumera.7',
+    twitter: 'https://twitter.com/Bewareofdoggs',
+    github: 'https://github.com/Mrching08',
+    linkedin: 'https://twitter.com/Bewareofdoggs',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_900,w_700/v1675006116/talisay-city-college/developers/andales_p1jrua.webp',
+    name: 'Ricky Andales Jr.',
+    title: 'Frontend Web Developer',
+    facebook: 'https://www.facebook.com/profile.php?id=100006666975804',
+    twitter: 'https://www.facebook.com/profile.php?id=100006666975804',
+    github: 'https://www.facebook.com/profile.php?id=100006666975804',
+    linkedin: 'https://www.facebook.com/profile.php?id=100006666975804',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675006359/talisay-city-college/developers/tuason_biitqc.webp',
+    name: 'Jeffrey Tuason',
+    title: 'Reactjs Developer',
+    facebook: 'https://www.facebook.com/Tuason06/',
+    twitter: 'https://twitter.com/jepoyduque06',
+    github: 'https://github.com/Tuason066',
+    linkedin: 'https://www.linkedin.com/in/jeffreytuason/',
   },
 ];

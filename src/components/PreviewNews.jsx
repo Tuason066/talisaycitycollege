@@ -29,7 +29,7 @@ const PreviewNews = () => {
         className='absolute top-2 left-2 md:top-3 md:left-3 lg:top-4 lg:left-4 bg-[rgba(0,0,0,.1)] p-2 rounded-full transition-all z-20'
       >
         <Icon
-          icon='humbleicons:times'
+          icon='line-md:remove'
           className='text-xl md:text-2xl'
           color='white'
         />

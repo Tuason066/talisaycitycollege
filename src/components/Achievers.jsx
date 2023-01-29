@@ -32,7 +32,7 @@ const Achievers = () => {
                       compactDisplay: 'short',
                     }).format(count);
                   }}
-                  duration={2.75}
+                  duration={1}
                   separator=','
                   delay={4000}
                 />

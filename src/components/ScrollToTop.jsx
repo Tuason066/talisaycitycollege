@@ -29,11 +29,11 @@ const ScrollToTop = () => {
       type='button'
       onClick={() => window.scrollTo(0, 0)}
       title='Scroll back to top'
-      className={`${handleDisplay()} fixed bottom-8 right-8`}
+      className={`${handleDisplay()} fixed bottom-8 right-8 bg-white p-2 rounded`}
     >
       <Icon
-        icon='jam:chevron-circle-up-f'
-        className='bg-white text-primaryBlue-100 rounded-full text-4xl md:text-5xl'
+        icon='line-md:arrow-align-top'
+        className='text-primaryBlue-100 text-4xl'
       />
     </button>
   );

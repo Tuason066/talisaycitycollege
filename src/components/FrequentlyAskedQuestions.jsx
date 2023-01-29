@@ -55,7 +55,7 @@ function FrequentlyAskedQuestions() {
               className='transition-all rounded bg-white max-w-md mx-auto lg:max-w-full w-full'
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
-              data-aos-delay='300'
+              data-aos-delay='500'
             >
               <summary className='p-4 flex items-center justify-between gap-x-4'>
                 What are the enrollment requirements?
@@ -79,7 +79,7 @@ function FrequentlyAskedQuestions() {
               className='transition-all rounded bg-white max-w-md mx-auto lg:max-w-full w-full'
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
-              data-aos-delay='300'
+              data-aos-delay='700'
             >
               <summary className='p-4 flex items-center justify-between gap-x-4'>
                 What are the scholarship can be availed of?
