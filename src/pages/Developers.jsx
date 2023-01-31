@@ -1,3 +1,5 @@
+/* react */
+import { useEffect } from 'react';
 /* data */
 import { developers } from '../data';
 /* react masonry : https://www.npmjs.com/package/react-masonry-css */
@@ -8,6 +10,10 @@ import { Icon } from '@iconify/react';
 import Section from '../components/Section';
 
 const Developers = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const breakpointColumnsObj = {
     default: 3,
     1000: 2,
@@ -40,15 +46,18 @@ const Developers = () => {
                     'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
                 }}
                 className='dev-cards'
+                data-aos='fade-up'
+                data-aos-anchor-placement='top-bottom'
+                data-aos-delay='4000'
               >
                 {/* image */}
                 <img
                   src={image}
                   alt={`${name} profile`}
-                  className='w-full max-w-xs h-full max-h-[350px] object-cover object-center'
+                  className='w-full mx-auto h-full object-cover object-center'
                 />
                 {/* info */}
-                <div className='p-4 text-center'>
+                <div className='p-4 md:p-6 text-center'>
                   <h3 className='font-semibold text-lg'>{name}</h3>
                   <p>{title}</p>
                 </div>

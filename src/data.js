@@ -867,7 +867,7 @@ export const developers = [
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675001788/talisay-city-college/developers/ritchie_ftqrpm.webp',
     name: 'Ritchie John Gumera',
-    title: 'Frontend Web Developer',
+    title: 'Front-end Web Developer',
     facebook: 'https://www.facebook.com/richie.gumera.7',
     twitter: 'https://twitter.com/Bewareofdoggs',
     github: 'https://github.com/Mrching08',
@@ -877,7 +877,7 @@ export const developers = [
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_900,w_700/v1675006116/talisay-city-college/developers/andales_p1jrua.webp',
     name: 'Ricky Andales Jr.',
-    title: 'Frontend Web Developer',
+    title: 'Researcher',
     facebook: 'https://www.facebook.com/profile.php?id=100006666975804',
     twitter: 'https://www.facebook.com/profile.php?id=100006666975804',
     github: 'https://www.facebook.com/profile.php?id=100006666975804',
@@ -892,5 +892,55 @@ export const developers = [
     twitter: 'https://twitter.com/jepoyduque06',
     github: 'https://github.com/Tuason066',
     linkedin: 'https://www.linkedin.com/in/jeffreytuason/',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133761/talisay-city-college/developers/bernardo_h56tbh.webp',
+    name: 'Justin Bernardo',
+    title: 'Java Developer',
+    facebook: 'https://www.facebook.com/bjunich',
+    twitter: 'https://www.facebook.com/bjunich',
+    github: 'https://www.facebook.com/bjunich',
+    linkedin: 'https://www.facebook.com/bjunich',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/parsacala_zgyr7f.webp',
+    name: 'Jane Marielle Parsacala',
+    title: 'Researcher',
+    facebook: 'https://www.facebook.com/parsacalajane',
+    twitter: 'https://www.facebook.com/parsacalajane',
+    github: 'https://www.facebook.com/parsacalajane',
+    linkedin: 'https://www.facebook.com/parsacalajane',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/drona_bfhql7.webp',
+    name: 'Jennifer Droña',
+    title: 'Researcher',
+    facebook: 'https://www.facebook.com/rojhane.montejar.9',
+    twitter: 'https://www.facebook.com/rojhane.montejar.9',
+    github: 'https://www.facebook.com/rojhane.montejar.9',
+    linkedin: 'https://www.facebook.com/rojhane.montejar.9',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133763/talisay-city-college/developers/remollo_v8lagl.webp',
+    name: 'Girrah Remollo',
+    title: 'Researcher',
+    facebook: 'https://www.facebook.com/girrah.remollo.3',
+    twitter: 'https://www.facebook.com/girrah.remollo.3',
+    github: 'https://www.facebook.com/girrah.remollo.3',
+    linkedin: 'https://www.facebook.com/girrah.remollo.3',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/parba_n9w97a.webp',
+    name: 'Resalyn Mae Parba',
+    title: 'Researcher',
+    facebook: 'https://www.facebook.com/resamae.parba',
+    twitter: 'https://www.facebook.com/resamae.parba',
+    github: 'https://www.facebook.com/resamae.parba',
+    linkedin: 'https://www.facebook.com/resamae.parba',
   },
 ];

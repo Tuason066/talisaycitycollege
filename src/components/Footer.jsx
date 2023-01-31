@@ -65,13 +65,13 @@ const Footer = () => {
           <p className='capitalize'>
             &copy; all rights reserved {new Date().getFullYear()} |{' '}
             <Link to={'/developers'} className='font-semibold hover:underline'>
-              Researchers
+              Team Bangan
             </Link>
           </p>
           <p>
             Website Designed and Developed by{' '}
             <Link to={'/developers'} className='font-semibold hover:underline'>
-              Researchers
+              Team Bangan
             </Link>
           </p>
         </div>

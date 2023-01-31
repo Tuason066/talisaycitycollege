@@ -1,4 +1,5 @@
 /* react */
+import { useEffect } from 'react';
 /* react router */
 import { Link } from 'react-router-dom';
 /* data */
@@ -11,8 +12,11 @@ import Concern from '../components/Concern';
 import FrequentlyAskedQuestions from '../components/FrequentlyAskedQuestions';
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const newsData = newsAndUpdates.slice(0, 6);
-  /* TODO: fix the animations - aos */
 
   return (
     <>

@@ -41,7 +41,8 @@ const MediaCarousel = ({
             key={index}
             {...item}
             defaultTitle={defaultValue.title}
-            mediaStyle={`${position} ${mediaWidth()} w-full max-h-screen col-start-1 col-end-2 row-start-1 row-end-2 transition-all z-10`}
+            /*  mediaStyle={`${position} ${mediaWidth()} w-full max-h-screen col-start-1 col-end-2 row-start-1 row-end-2 transition-all z-10`} */
+            mediaStyle={`${position} ${mediaWidth()} block w-full max-h-screen col-start-1 col-end-2 row-start-1 row-end-2 transition-all z-10`}
           />
         );
       })}

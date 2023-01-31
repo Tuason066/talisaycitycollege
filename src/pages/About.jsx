@@ -1,4 +1,6 @@
-import React from 'react';
+/* react */
+import React, { useEffect } from 'react';
+/* components */
 import CoreValues from '../components/CoreValues';
 import Goals from '../components/Goals';
 import Mission from '../components/Mission';
@@ -6,6 +8,10 @@ import Vision from '../components/Vision';
 import History from '../components/History';
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Vision />
