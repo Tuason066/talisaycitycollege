@@ -63,9 +63,30 @@ details[open] > summary > .icon {
 
 /* ################ PROFILE CARD DEVELOPERS ################ */
 
+/* react masonry */
+.my-masonry-grid {
+  display: flex;
+  gap: 1rem; /* column gap */
+  width: auto;
+}
+
+/* Style your items */
+.my-masonry-grid_column > article {
+  margin-bottom: 1rem; /* row gap */
+}
+
+@media (min-width: 768px) {
+  .my-masonry-grid {
+    gap: 2.25rem; /* column gap */
+  }
+  .my-masonry-grid_column > article {
+    margin-bottom: 2.25rem; /* row gap */
+  }
+}
+
 /* card */
 .dev-cards {
-  @apply bg-white w-fit mx-auto overflow-hidden rounded shadow-lg relative;
+  @apply bg-white w-fit max-w-sm mx-auto overflow-hidden rounded shadow-lg relative;
 }
 
 /* image */

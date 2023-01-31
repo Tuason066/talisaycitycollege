@@ -30,14 +30,19 @@ const Developers = () => {
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className='my-masonry-grid max-w-3xl mx-auto lg:max-w-full'
-        columnClassName='my-masonry-grid_column'
+        className='my-masonry-grid developers-masonry-grid max-w-3xl mx-auto lg:max-w-full'
+        columnClassName='my-masonry-grid_column developers-masonry-grid_column'
       >
         {developers.map(
           (
             { image, name, title, facebook, twitter, github, linkedin },
             index
           ) => {
+            const placeholderText = `https://via.placeholder.com/700x900.png?text=${name.replace(
+              /\s/g,
+              '+'
+            )}`;
+
             return (
               <article
                 key={index}
@@ -51,11 +56,20 @@ const Developers = () => {
                 data-aos-delay='4000'
               >
                 {/* image */}
-                <img
-                  src={image}
-                  alt={`${name} profile`}
-                  className='w-full mx-auto h-full object-cover object-center'
-                />
+                {image ? (
+                  <img
+                    src={image}
+                    alt={`${name} profile`}
+                    className='w-full mx-auto h-full object-cover object-center'
+                  />
+                ) : (
+                  <img
+                    src={placeholderText}
+                    alt={`${name} profile`}
+                    className='w-full mx-auto h-full object-cover object-center'
+                  />
+                )}
+
                 {/* info */}
                 <div className='p-4 md:p-6 text-center'>
                   <h3 className='font-semibold text-lg'>{name}</h3>
