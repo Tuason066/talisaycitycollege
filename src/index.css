@@ -14,16 +14,12 @@ html {
 
 body {
   background-color: #f6f9fc;
+  font-family: 'Poppins', sans-serif;
 }
 
 #root {
   @apply max-w-7xl mx-auto text-black text-base overflow-hidden;
 }
-
-/* p {
-  font-family: 'Lexend Deca', sans-serif;
-}
- */
 
 /* HomeFAQ - accordion */
 
@@ -91,7 +87,7 @@ details[open] > summary > .icon {
 
 /* image */
 .dev-cards img {
-  @apply transition-all;
+  @apply transition-all duration-700;
 }
 .dev-cards:hover img {
   @apply lg:scale-150;
@@ -99,7 +95,7 @@ details[open] > summary > .icon {
 
 /* social links */
 .dev-social-links {
-  @apply transition-all lg:translate-y-44;
+  @apply transition-all duration-300 lg:translate-y-44;
 }
 
 .dev-social-links a {
@@ -124,3 +120,5 @@ details[open] > summary > .icon {
 .dev-cards:hover .dev-social-links:nth-child(4) {
   transition-delay: 0.4s;
 }
+
+/* ################ LOG IN ################ */

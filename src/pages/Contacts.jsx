@@ -30,7 +30,7 @@ const Contacts = () => {
         className='my-masonry-grid max-w-3xl mx-auto lg:max-w-full'
         columnClassName='my-masonry-grid_column'
       >
-        {contacts.map(({ id, office, phone, email, facebookPath, icon }) => {
+        {contacts.map(({ id, office, tel, email, facebookPath, icon }) => {
           return (
             <article
               key={id}
@@ -50,33 +50,36 @@ const Contacts = () => {
                     {office} Office
                   </h4>
                 </a>
-                <p className='font-semibold'>
-                  Phone Number:{' '}
-                  <a
-                    href={`tel:${phone}`}
-                    className='hover:underline transition-all font-normal'
-                  >
-                    {phone}
-                  </a>
-                </p>
-                <p className='font-semibold'>
-                  Email:{' '}
-                  <a
-                    href={`mailto:${email}?subject = Inqueries&body = Message`}
-                    className='hover:underline transition-all font-normal'
-                  >
-                    {email}
-                  </a>
-                </p>
-                <p className='font-semibold'>
-                  Facebook:{' '}
-                  <a
-                    href={facebookPath}
-                    className='text-blue-700 hover:underline font-normal'
-                  >
-                    {office} Office
-                  </a>
-                </p>
+                <ul>
+                  <li className='font-semibold'>
+                    Tel Number:{' '}
+                    <a
+                      href={`tel:${tel}`}
+                      className='hover:underline transition-all font-normal'
+                    >
+                      {tel}
+                    </a>
+                  </li>
+                  <li className='font-semibold'>
+                    Email:{' '}
+                    <a
+                      href={`mailto:${email}?subject = Inqueries&body = Message`}
+                      className='hover:underline transition-all font-normal text-sm md:text-base'
+                    >
+                      {email}
+                    </a>
+                  </li>
+                  <li className='font-semibold'>
+                    Facebook:{' '}
+                    <a
+                      href={facebookPath}
+                      target='_blank'
+                      className='text-blue-700 hover:underline font-normal'
+                    >
+                      {office} Office
+                    </a>
+                  </li>
+                </ul>
               </div>
             </article>
           );

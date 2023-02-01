@@ -19,25 +19,33 @@ const Footer = () => {
         {/* logo */}
         <div className='flex justify-between items-center'>
           <Logo />
-          <div className='hidden md:flex items-center justify-center gap-x-4'>
+          {/* desktop - social links */}
+          <ul className='hidden md:flex items-center justify-center gap-x-4 z-10'>
             {socialLinks.map(({ id, path, title, icon }) => {
               return (
-                <a key={id} href={path} title={title} className='md:text-xl'>
-                  <Icon icon={icon} />
-                </a>
+                <li key={id}>
+                  <a
+                    href={path}
+                    title={title}
+                    className='md:text-xl'
+                    target='_blank'
+                  >
+                    <Icon icon={icon} />
+                  </a>
+                </li>
               );
             })}
-          </div>
+          </ul>
         </div>
         {/* contacts */}
         <div className='mt-2 tracking-wide'>
           <p className='font-semibold text-xs lg:text-sm'>
-            Mobile Number:{' '}
+            Tel Number:{' '}
             <a
-              href='tel:+639953687065'
+              href='tel:346-7503'
               className='hover:underline transition-all font-normal'
             >
-              +9953687065
+              346-7503
             </a>
           </p>
           <p className='font-semibold text-xs lg:text-sm'>
@@ -46,20 +54,22 @@ const Footer = () => {
               href='mailto:talisaycitycollege2004@gmail.com?subject = Inqueries&body = Message'
               className='hover:underline transition-all font-normal'
             >
-              info@tcc.edu
+              talisaycitycollege2004@gmail.com
             </a>
           </p>
         </div>
-        {/* social links */}
-        <div className='md:hidden flex items-center justify-center gap-x-4 mt-8 mb-2'>
+        {/* mobile - social links */}
+        <ul className='md:hidden flex items-center justify-center gap-x-4 mt-8 mb-2 translate-x-0'>
           {socialLinks.map(({ id, path, title, icon }) => {
             return (
-              <a key={id} href={path} title={title}>
-                <Icon icon={icon} />
-              </a>
+              <li key={id}>
+                <a href={path} title={title} target='_blank'>
+                  <Icon icon={icon} />
+                </a>
+              </li>
             );
           })}
-        </div>
+        </ul>
         {/* copyright */}
         <div className='text-xs tracking-wide lg:text-sm text-center md:mt-8 translate-x-0'>
           <p className='capitalize'>

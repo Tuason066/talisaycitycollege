@@ -23,10 +23,11 @@ const Developers = () => {
   return (
     <Section>
       <h2
-        className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-6 md:mb-8 lg:mb-16'
+        className='uppercase font-bold text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20 text-2xl md:text-4xl lg:text-5xl'
         data-aos='zoom-in'
       >
-        Our Developers and Researchers
+        our <span className='text-primaryBlue-100'>developers</span> and{' '}
+        <span className='text-primaryBlue-200'>researchers</span>
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
@@ -78,22 +79,22 @@ const Developers = () => {
                 {/* social links */}
                 <ul className='flex items-center justify-around pb-4 lg:gap-x-4 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 overflow-hidden'>
                   <li className='dev-social-links'>
-                    <a href={facebook} className='p-2 block'>
+                    <a href={facebook} target='_blank' className='p-2 block'>
                       <Icon icon='ri:facebook-box-fill' className='text-2xl' />
                     </a>
                   </li>
                   <li className='dev-social-links'>
-                    <a href={twitter} className='p-2 block'>
+                    <a href={twitter} target='_blank' className='p-2 block'>
                       <Icon icon='mdi:twitter' className='text-2xl' />
                     </a>
                   </li>
                   <li className='dev-social-links'>
-                    <a href={github} className='p-2 block'>
+                    <a href={github} target='_blank' className='p-2 block'>
                       <Icon icon='mdi:github' className='text-2xl' />
                     </a>
                   </li>
                   <li className='dev-social-links'>
-                    <a href={linkedin} className='p-2 block'>
+                    <a href={linkedin} target='_blank' className='p-2 block'>
                       <Icon icon='mdi:linkedin' className='text-2xl' />
                     </a>
                   </li>

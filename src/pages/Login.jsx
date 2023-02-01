@@ -1,7 +1,8 @@
-import React from 'react';
-
-function Login() {
-  return <div>Login</div>;
-}
-
+const Login = () => {
+  return (
+    <section>
+      <div className='min-h-screen'></div>
+    </section>
+  );
+};
 export default Login;

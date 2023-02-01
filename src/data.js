@@ -106,15 +106,15 @@ export const socialLinks = [
     title: 'YouTube',
     icon: 'ph:youtube-logo-fill',
   },
-  {
+  /*   {
     id: 2,
     path: 'https://www.youtube.com/@talisaycitycollege6427',
     title: 'Instagram',
     icon: 'ph:instagram-logo-fill',
-  },
+  }, */
   {
     id: 3,
-    path: 'mailto:tuasonjeffrey06@gmail.com?subject = Inqueries&body = Message',
+    path: 'mailto:talisaycitycollege2004@gmail.com?subject = Inqueries&body = Message',
     title: 'Email',
     icon: 'ic:round-email',
   },
@@ -150,7 +150,7 @@ export const newsAndUpdates = [
     id: 1,
     subject: 'enrollment',
     createdAt: 'Jan 20, 2023',
-    title: `📣ＩＭＰＯＲＴＡＮＴ ＡＮＮＯＵＮＣＥＭＥＮＴ`,
+    title: `Important Announcement`,
     details: [
       `Due to unforeseen circumstances, please be advised of the following schedule updates as of January 20, 2023:`,
       `📌***Processing of Student's Clearance for 1st Semester𝗿***, ***A.Y. 2022-2023*** is ***temporarily suspended*** from 𝙹𝚊𝚗𝚞𝚊𝚛𝚢 𝟸𝟹-𝟸𝟻, 𝟸𝟶𝟸𝟹. Clearance signing will resume on Thursday, January 26, 2023.`,
@@ -189,7 +189,7 @@ export const newsAndUpdates = [
     id: 2,
     subject: 'grade slip',
     createdAt: 'Jan 19, 2023',
-    title: `MIDTERM GRADE SLIP DISTRIBUTION SCHEDULE || January 19-21, 2023`,
+    title: `Midterm Grade Slip Distribution schedule || January 19-21, 2023`,
     details: [
       `Please be reminded of your respective schedules. ***Midterm Grade Slip*** will be one of the requirements (***1st year students to 3rd year students***) for your enrollment for the 2nd Semester of A.Y. 2022-2023.`,
       `Thank you!`,
@@ -214,7 +214,7 @@ export const newsAndUpdates = [
     id: 3,
     subject: 'examination',
     createdAt: 'Jan 17, 2023',
-    title: `FINAL EXAMS SCHEDULE || January 16 - 21, 2023`,
+    title: `Final Exams Schedul || January 16 - 21, 2023`,
     details: [
       `Please check your respective schedules (Teacher Education) for the `,
       `upcoming ***Final Exams of the 1st Semester, A.Y. 2022-2023***.`,
@@ -239,7 +239,7 @@ export const newsAndUpdates = [
     id: 4,
     subject: 'enrollment',
     createdAt: 'Jan 13, 2023',
-    title: 'Schedule of 𝐄𝐧𝐫𝐨𝐥𝐦𝐞𝐧𝐭 for Second 𝐒𝐞𝐦𝐞𝐬𝐭𝐞𝐫, A.Y. 2022-2023',
+    title: 'Schedule of Enrolment for Second Semester, A.Y. 2022-2023',
     details: [
       `(for Continuing Students and Returnees only)`,
       `📌𝙹𝚊𝚗𝚞𝚊𝚛𝚢 𝟸𝟹-𝟸𝟻, 𝟸𝟶𝟸𝟹 - ***𝟰𝘁𝗵 𝗬𝗲𝗮𝗿 𝗦𝘁𝘂𝗱𝗲𝗻𝘁𝘀***`,
@@ -266,7 +266,7 @@ export const newsAndUpdates = [
     id: 5,
     subject: 'evaluation',
     createdAt: 'Jan 11, 2023',
-    title: `INSTRUCTOR'S ONLINE EVALUATION || 1st Semester, A.Y. 2022-2023`,
+    title: `Instructor's Online Evaluation || 1st Semester, A.Y. 2022-2023`,
     details: [
       `Dear Talisalites,`,
       `As the 1st Semester of Academic Year 2022-2023 is about to end, you are required to accomplish an online evaluation of your instructors for instructional planning and development purposes.`,
@@ -806,7 +806,7 @@ export const contacts = [
   {
     id: 0,
     office: `Registrar's`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100064037861894',
     icon: 'quill:paper',
@@ -814,7 +814,7 @@ export const contacts = [
   {
     id: 1,
     office: `Scholarship Center`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100069043275667',
     icon: 'circum:money-check-1',
@@ -822,7 +822,7 @@ export const contacts = [
   {
     id: 2,
     office: `Clinic`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100063967033360',
     icon: 'fluent:doctor-16-regular',
@@ -830,7 +830,7 @@ export const contacts = [
   {
     id: 3,
     office: `Supreme Student Council`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'tcc_studentcouncil@yahoo.com',
     facebookPath: 'https://www.facebook.com/TCCStudentCouncil',
     icon: 'cil:balance-scale',
@@ -838,7 +838,7 @@ export const contacts = [
   {
     id: 4,
     office: `Guidance Center`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'tcc_studentcouncil@yahoo.com',
     facebookPath: 'https://www.facebook.com/TCCGuidanceCenter',
     icon: 'ep:guide',
@@ -846,7 +846,7 @@ export const contacts = [
   {
     id: 5,
     office: `Balud Dance Company`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'tccpa.baluddc@gmail.com',
     facebookPath: 'https://www.facebook.com/BaludDC/',
     icon: 'mdi:dance-ballroom',
@@ -854,7 +854,7 @@ export const contacts = [
   {
     id: 6,
     office: `Junior Computer Organization`,
-    phone: '+639953687065',
+    tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100087451633441',
     icon: 'mdi:code',

@@ -33,7 +33,7 @@ const ScrollToTop = () => {
     >
       <Icon
         icon='line-md:arrow-align-top'
-        className='text-primaryBlue-100 text-4xl'
+        className='text-primaryBlue-100 text-xl lg:text-4xl'
       />
     </button>
   );
