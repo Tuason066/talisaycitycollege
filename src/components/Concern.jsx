@@ -99,6 +99,7 @@ function Concern() {
           }}
           className='hidden lg:block rounded'
           data-aos='fade-right'
+          data-aos-duration='700'
           data-aos-delay='300'
           allowFullScreen
           // loading='lazy'
@@ -109,6 +110,8 @@ function Concern() {
           className='lg:max-w-lg relative'
           onSubmit={handleSubmit}
           data-aos='fade-left'
+          data-aos-duration='700'
+          data-aos-delay='200'
         >
           {/* ALERT BOX FOR SUCCESSFULLY SUBMITTED CONCERN */}
           <aside

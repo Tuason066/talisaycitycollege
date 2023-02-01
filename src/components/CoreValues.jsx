@@ -8,12 +8,14 @@ function CoreValues() {
       <h2
         className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-2 md:mb-8'
         data-aos='zoom-in'
+        data-aos-duration='700'
       >
         Core Values
       </h2>
       <ul
         className={'mx-auto max-w-md md:max-w-xl text-justify'}
         data-aos='zoom-in'
+        data-aos-duration='700'
       >
         <li className='mb-2'>
           <ConvertText

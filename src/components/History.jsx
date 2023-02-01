@@ -6,12 +6,14 @@ function History() {
       <h2
         className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-2 md:mb-8'
         data-aos='zoom-in'
+        data-aos-duration='700'
       >
         History
       </h2>
       <div
         className='text-justify md:max-w-2xl lg:max-w-5xl mx-auto'
         data-aos='zoom-in'
+        data-aos-duration='700'
       >
         <p className='indent-6 md:indent-12'>
           The creation of <strong>Talisay City College(TCC)</strong> was

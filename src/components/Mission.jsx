@@ -6,12 +6,14 @@ function Mission() {
       <h2
         className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-2 md:mb-8'
         data-aos='zoom-in'
+        data-aos-duration='700'
       >
         Mission
       </h2>
       <div
         className='max-w-md mx-auto md:max-w-xl text-justify'
         data-aos='zoom-in'
+        data-aos-duration='700'
       >
         <p>This Mission propelledby the institution's commitment to:</p>
         <br />

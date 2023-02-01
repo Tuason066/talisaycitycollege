@@ -20,6 +20,7 @@ const Contacts = () => {
         style={{ textShadow: '0.05em 0.05em 0 #222' }}
         className='text-xl md:text-2xl lg:text-4xl font-black text-primaryBlue-100 uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-6 sm:mb-8 lg:mb-12'
         data-aos='zoom-in'
+        data-aos-delay='200'
       >
         Contact Us
       </h2>
@@ -37,7 +38,7 @@ const Contacts = () => {
               className='px-6 py-8 md:px-8 md:py-10 rounded max-w-xs md:max-w-md mx-auto border-2 border-primaryBlue-100 bg-white hover:bg-gray-100 transition-all'
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
-              data-aos-delay='300'
+              data-aos-delay='400'
             >
               {/* icon */}
               <div className='flex justify-center'>

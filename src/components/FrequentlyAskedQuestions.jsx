@@ -17,7 +17,7 @@ function FrequentlyAskedQuestions() {
           allowFullScreen
           // loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
-          data-aos='zoom-out-up'
+          data-aos='zoom-out-right'
         ></iframe>
         {/* FREQUENTLY ASKED QUESTIONS */}
         <div className='lg:max-w-lg'>

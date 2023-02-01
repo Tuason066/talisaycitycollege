@@ -20,7 +20,7 @@ const Footer = () => {
         <div className='flex justify-between items-center'>
           <Logo />
           {/* desktop - social links */}
-          <ul className='hidden md:flex items-center justify-center gap-x-4 z-10'>
+          <ul className='hidden md:flex items-center justify-center gap-x-4'>
             {socialLinks.map(({ id, path, title, icon }) => {
               return (
                 <li key={id}>

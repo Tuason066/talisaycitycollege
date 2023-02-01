@@ -54,7 +54,7 @@ const Developers = () => {
                 className='dev-cards'
                 data-aos='fade-up'
                 data-aos-anchor-placement='top-bottom'
-                data-aos-delay='4000'
+                data-aos-delay='500'
               >
                 {/* image */}
                 {image ? (

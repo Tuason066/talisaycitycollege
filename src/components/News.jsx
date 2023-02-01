@@ -32,7 +32,8 @@ const News = ({ data }) => {
       className='max-w-sm bg-white border-2 border-gray-200 rounded-lg shadow mx-auto'
       data-aos='fade-up'
       data-aos-anchor-placement='top-bottom'
-      data-aos-delay='4000'
+      data-aos-duration='700'
+      data-aos-delay='300'
     >
       {/* images/videos */}
       <div

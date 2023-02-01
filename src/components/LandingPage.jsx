@@ -34,6 +34,7 @@ const LandingPage = () => {
         alt='Talisay City College Front View of School Building'
         className='hidden xl:block'
         data-aos='fade-left'
+        data-aos-duration='700'
       />
     </section>
   );
