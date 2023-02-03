@@ -1,7 +1,6 @@
-import React from 'react';
+import Section from '../components/Section';
 
-function Courses() {
-  return <div>Courses</div>;
-}
-
+const Courses = () => {
+  return <Section></Section>;
+};
 export default Courses;

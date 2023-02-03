@@ -46,7 +46,7 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
           <Link
             to='login'
             onClick={handleCloseSubmenu}
-            className='flex lg:hidden items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-primaryBlue-100 font-semibold rounded px-lg py-sm transition-all outline-none'
+            className='flex lg:hidden items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-primaryBlue-500 font-semibold rounded px-lg py-sm transition-all outline-none'
           >
             <Icon icon='carbon:user-avatar-filled' />
             Log In

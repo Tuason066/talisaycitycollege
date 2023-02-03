@@ -40,7 +40,7 @@ function Concern() {
       const validate = (val) => {
         if (val) {
           /* input field */
-          input.classList.add('border-primaryBlue-100');
+          input.classList.add('border-primaryBlue-500');
           input.classList.remove('border-red-500');
           input.classList.remove('border-neutral-300');
           /* hide error message */
@@ -49,7 +49,7 @@ function Concern() {
         } else {
           /* input field */
           input.classList.add('border-red-500');
-          input.classList.remove('border-primaryBlue-100');
+          input.classList.remove('border-primaryBlue-500');
           input.classList.remove('border-neutral-300');
           /* show error message */
           errorElement.classList.remove('hidden');
@@ -79,7 +79,7 @@ function Concern() {
       inputContainers.current.forEach((container) => {
         const inputElement = container.querySelector('[data-input]');
         inputElement.classList.remove('border-red-500');
-        inputElement.classList.remove('border-primaryBlue-100');
+        inputElement.classList.remove('border-primaryBlue-500');
         inputElement.classList.add('border-neutral-300');
       });
     }
@@ -131,16 +131,12 @@ function Concern() {
             </h5>
             <p className='max-w-xs'>
               Thank you for taking time to reach us with your concern.
-              {/* Thank you for taking the time to reach out to us with your
-              concern. We value your feedback and will do our best to address
-              the issue you have raised as soon as possible. Thank you again for
-              bringing this to our attention. */}
             </p>
             <button
               type='button'
               title='Close'
               onClick={() => setIsConcernSubmitted(false)}
-              className='block w-full max-w-xs mx-auto mt-4 py-base px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-100'
+              className='block w-full max-w-xs mx-auto mt-4 py-base px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-500'
             >
               Close
             </button>
@@ -208,7 +204,7 @@ function Concern() {
             <button
               title='Submit'
               type='submit'
-              className='block mx-auto lg:ml-0 px-lg py-sm md:py-base md:px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-100'
+              className='block mx-auto lg:ml-0 px-lg py-sm md:py-base md:px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-500'
             >
               Submit
             </button>

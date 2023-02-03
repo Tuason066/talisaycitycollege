@@ -49,7 +49,7 @@ const News = ({ data }) => {
       {/* TODO: Make a NewsArticle Compotent */}
       <div className='p-5 bg-slate-100'>
         <div className='mb-3 inline-flex items-center gap-x-2'>
-          <span className='p-sm px-lg rounded tracking-wider text-primaryBlue-100 bg-yellow-400 text-sm uppercase font-bold'>
+          <span className='p-sm px-lg rounded tracking-wider text-primaryBlue-500 bg-yellow-400 text-sm uppercase font-bold'>
             {subject}
           </span>
           <span className='text-sm'>{createdAt}</span>

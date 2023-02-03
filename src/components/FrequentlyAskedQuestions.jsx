@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 
 function FrequentlyAskedQuestions() {
   return (
-    <section className='bg-lightBlue-100'>
+    <section className='bg-lightBlue-500'>
       <div className='mx-auto w-11/12 py-8 md:py-12 lg:py-14 lg:flex lg:gap-x-20'>
         {/* GOOGLE MAP #1 */}
         <iframe
@@ -110,7 +110,7 @@ function FrequentlyAskedQuestions() {
                   Contact our{' '}
                   <a
                     href='https://www.facebook.com/profile.php?id=100069043275667'
-                    className='text-primaryBlue-100 hover:underline transition-all'
+                    className='text-primaryBlue-500 hover:underline transition-all'
                   >
                     Scholarship Office
                   </a>{' '}

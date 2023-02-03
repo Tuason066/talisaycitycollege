@@ -26,8 +26,8 @@ const Developers = () => {
         className='uppercase font-bold text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20 text-2xl md:text-4xl lg:text-5xl'
         data-aos='zoom-in'
       >
-        our <span className='text-primaryBlue-100'>developers</span> and{' '}
-        <span className='text-primaryBlue-200'>researchers</span>
+        our <span className='text-primaryBlue-500'>developers</span> and{' '}
+        <span className='text-lightBlue-500'>researchers</span>
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
@@ -54,7 +54,8 @@ const Developers = () => {
                 className='dev-cards'
                 data-aos='fade-up'
                 data-aos-anchor-placement='top-bottom'
-                data-aos-delay='500'
+                data-aos-delay='100'
+                data-aos-duration='700'
               >
                 {/* image */}
                 {image ? (

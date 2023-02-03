@@ -9,9 +9,9 @@ import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <footer className='relative text-white bg-primaryBlue-100 py-4 md:py-6 lg:bg-gradient-to-r lg:from-primaryBlue-100 lg:to-primaryBlue-200 overflow-hidden'>
+    <footer className='relative text-white bg-primaryBlue-500 py-4 md:py-6 lg:bg-gradient-to-r lg:from-primaryBlue-500 lg:to-lightBlue-500 overflow-hidden'>
       <img
-        src='./logo.png'
+        src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1675356562/talisay-city-college/logo_anup6r.png'
         alt='logo'
         className='w-40 md:w-56 absolute -bottom-1/2 sm:-bottom-1/4 lg:-bottom-1/2 left-1/2 -translate-x-1/2 opacity-25'
       />

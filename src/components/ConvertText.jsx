@@ -6,7 +6,7 @@
 const ConvertText = ({ value, textClassName }) => {
   let text = value;
   /* link regex */
-  const linkText = text.match(/(http || https):\/\/\S+/g);
+  const linkText = text.match(/https?:\/\/\S+/g);
   /* replace */
   linkText &&
     linkText.forEach((item) => {

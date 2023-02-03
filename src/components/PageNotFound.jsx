@@ -1,4 +1,8 @@
 const PageNotFound = () => {
-  return <div>PageNotFound</div>;
+  return (
+    <section>
+      <div className='min-h-screen'></div>
+    </section>
+  );
 };
 export default PageNotFound;

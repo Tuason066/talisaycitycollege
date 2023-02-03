@@ -7,7 +7,7 @@ import Section from './Section';
 
 const Achievers = () => {
   return (
-    <Section sectionClass={'bg-primaryBlue-100 text-white text-center'}>
+    <Section sectionClass={'bg-primaryBlue-500 text-white text-center'}>
       <h2 className='uppercase font-bold mb-6 md:mb-7 lg:mb-8 text-4xl md:text-6xl'>
         the land of
       </h2>

@@ -14,15 +14,11 @@ import Contacts from './pages/Contacts';
 import Developers from './pages/Developers';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Beed from './pages/Beed';
-import Bsed from './pages/Bsed';
-import Bshm from './pages/Bshm';
-import Bsit from './pages/Bsit';
-import SpecialProgram from './pages/SpecialProgram';
 import PreviewNews from './components/PreviewNews';
 import LatestNewsAndUpdates from './pages/LatestNewsAndUpdates';
 import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';
+import Courses from './pages/Courses';
 
 export function App() {
   const { isPreview } = useGlobalContext();
@@ -37,13 +33,7 @@ export function App() {
           {/* about */}
           <Route path='/about' element={<About />} />
           {/* courses */}
-          <Route path='courses'>
-            <Route path='beed' element={<Beed />} />
-            <Route path='bsed' element={<Bsed />} />
-            <Route path='bshm' element={<Bshm />} />
-            <Route path='bsit' element={<Bsit />} />
-            <Route path='dpe' element={<SpecialProgram />} />
-          </Route>
+          <Route path='courses' element={<Courses />} />
           {/* contacts */}
           <Route path='contacts' element={<Contacts />} />
           {/* login */}
