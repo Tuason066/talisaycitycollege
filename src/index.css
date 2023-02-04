@@ -133,7 +133,7 @@ details[open] > summary > .icon {
 }
 
 .loginForm-wrapper {
-  @apply w-full h-[208px] relative;
+  @apply w-full h-[280px] relative;
   transform-style: preserve-3d;
   transition-duration: 1s;
 }
@@ -149,11 +149,18 @@ details[open] > summary > .icon {
   transform: rotateY(0.5turn);
 }
 
+.loginForm-inputField-wrapper {
+  @apply grid gap-y-2;
+  transform: translateZ(5rem);
+}
 .loginForm-inputField {
-  @apply bg-white flex items-center p-2 rounded;
-  transform: translateZ(4rem);
+  @apply bg-white flex items-center p-2 rounded shadow-lg;
 }
 .loginForm-btn {
   @apply w-fit mx-auto mt-2 px-xl py-base rounded font-medium;
+  transform: translateZ(5rem);
+}
+.loginForm-errorMessage {
+  @apply text-xs text-white bg-red-700 p-base rounded w-fit;
   transform: translateZ(4rem);
 }
