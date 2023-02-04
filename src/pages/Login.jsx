@@ -31,6 +31,10 @@ const Login = () => {
   /* student/faculty switch buttons */
   const handleStudentButton = () => {
     setCurrentForm('student');
+    /* reset userAccount values */
+    setUserAccount((prev) => {
+      return { ...prev, facultyID: '', facultyPassword: '' };
+    });
     /* reset faculty form */
     facultyInputFields.current.forEach((input) => {
       /* input */
@@ -47,6 +51,10 @@ const Login = () => {
 
   const handleFacultyButton = () => {
     setCurrentForm('faculty');
+    /* reset userAccount values */
+    setUserAccount((prev) => {
+      return { ...prev, studentID: '', studentPassword: '' };
+    });
     /* reset student form */
     studentInputFields.current.forEach((input) => {
       /* input */
@@ -64,9 +72,34 @@ const Login = () => {
   /* handle input fields value */
   const handleOnchage = (e) => {
     const { name, value } = e.target;
+    /* set userAccount details */
     setUserAccount((prev) => {
       return { ...prev, [name]: value };
     });
+    /* hide error messages */
+    if (/student/g.test(name)) {
+      studentInputFields.current.forEach((input) => {
+        if (name === input.name) {
+          const inputField = input.parentElement.parentElement;
+          const errorElement = inputField.querySelector(
+            '[data-id="error-message"]'
+          );
+          errorElement.classList.add('hidden');
+          errorElement.classList.remove('block');
+        }
+      });
+    } else {
+      facultyInputFields.current.forEach((input) => {
+        if (name === input.name) {
+          const inputField = input.parentElement.parentElement;
+          const errorElement = inputField.querySelector(
+            '[data-id="error-message"]'
+          );
+          errorElement.classList.add('hidden');
+          errorElement.classList.remove('block');
+        }
+      });
+    }
   };
 
   /* handle submit form */
@@ -75,14 +108,9 @@ const Login = () => {
 
     /* reset input fields and error messages */
     const dataForm = e.target.dataset.id;
-    if (dataForm === 'studentForm') {
-      /* TODO: Handle error message */
-      handleResetInputFieldsAndErrorMessage(studentInputFields);
-    }
-    if (dataForm === 'facultyForm') {
-      /* TODO: Handle error message */
-      handleResetInputFieldsAndErrorMessage(facultyInputFields);
-    }
+    dataForm === 'studentForm'
+      ? handleResetInputFieldsAndErrorMessage(studentInputFields)
+      : handleResetInputFieldsAndErrorMessage(facultyInputFields);
   };
 
   const handleResetInputFieldsAndErrorMessage = (arr) => {
@@ -163,6 +191,7 @@ const Login = () => {
                     <input
                       ref={addToStudentInputFields}
                       type='text'
+                      value={userAccount.studentID}
                       placeholder='e.g. 2023-1234'
                       pattern='^[\d]{4}-[\d]{4}$'
                       title='Please enter valid Student ID e.g. 2023-1234'
@@ -191,6 +220,7 @@ const Login = () => {
                     <input
                       ref={addToStudentInputFields}
                       type='password'
+                      value={userAccount.studentPassword}
                       placeholder='******'
                       required
                       name='studentPassword'
@@ -230,6 +260,7 @@ const Login = () => {
                     <input
                       ref={addToFacultyInputFields}
                       type='text'
+                      value={userAccount.facultyID}
                       placeholder='e.g. 2020-1234'
                       pattern='^[\d]{4}-[\d]{4}$'
                       title='Please enter valid Student ID e.g. 2023-1234'
@@ -258,6 +289,7 @@ const Login = () => {
                     <input
                       ref={addToFacultyInputFields}
                       type='password'
+                      value={userAccount.facultyPassword}
                       placeholder='******'
                       required
                       name='facultyPassword'
