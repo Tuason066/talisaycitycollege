@@ -48,9 +48,10 @@ export const pageLinks = [
   },
   {
     id: 3,
+    path: '/courses',
     text: 'courses',
     title: 'Courses',
-    submenu: [
+    /* submenu: [
       {
         id: 1,
         path: '/courses/beed',
@@ -86,7 +87,7 @@ export const pageLinks = [
         title: 'Diploma in Professional Education',
         icon: 'material-symbols:school',
       },
-    ],
+    ], */
   },
   { id: 4, path: '/contacts', text: 'contact us', title: 'Contact Us' },
 ];
@@ -800,6 +801,103 @@ See you at the Talisay City College Library for the awarding of contest winners!
   },
 ];
 
+/* ########## COURSES ########## */
+
+export const courses = [
+  /* BEEd */
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520393/talisay-city-college/courses/beed_skxbcv.webp',
+    course: 'Bachelor of Elementary Education',
+    department: 'Education',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  /* BSEd */
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520394/talisay-city-college/courses/bsed-english_fvisn6.webp',
+    course: 'Bachelor of Secondary Education',
+    department: 'Education',
+    major: 'English',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520393/talisay-city-college/courses/bsed-filipino_tuwqoh.webp',
+    course: 'Bachelor of Secondary Education',
+    department: 'Education',
+    major: 'Filipino',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520392/talisay-city-college/courses/bsed-mathematics_vhafyf.webp',
+    course: 'Bachelor of Secondary Education',
+    department: 'Education',
+    major: 'Mathematics',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520393/talisay-city-college/courses/bsed-social-studies_kcl2ok.webp',
+    course: 'Bachelor of Secondary Education',
+    department: 'Education',
+    major: 'Social Studies',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  /* BSHM */
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520393/talisay-city-college/courses/bshm_nf4cwv.webp',
+    course: 'Bachelor of Science in Hospitality Management',
+    department: 'HM',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  /* BSIT */
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520393/talisay-city-college/courses/it-comptech_hjdl5x.webp',
+    course: 'Bachelor of Science in Industrial Technology',
+    department: 'IT',
+    major: 'Computer Technology',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520394/talisay-city-college/courses/it-electrotect_hybief.webp',
+    course: 'Bachelor of Science in Industrial Technology',
+    department: 'IT',
+    major: 'Electronics Technology',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+  /* Special Program */
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675520393/talisay-city-college/courses/special-program_xgkata.webp',
+    course: 'Diploma in Professional Education',
+    department: 'Special Program',
+    currentlyEnrolled: '2k+',
+    graduates: '8k+',
+    enrollmentLink: '#',
+  },
+];
+
 /* ########## CONTACTS ########## */
 
 export const contacts = [
@@ -871,7 +969,7 @@ export const developers = [
     facebook: 'https://www.facebook.com/richie.gumera.7',
     twitter: 'https://twitter.com/Bewareofdoggs',
     github: 'https://github.com/Mrching08',
-    linkedin: 'https://twitter.com/Bewareofdoggs',
+    linkedin: '#',
   },
   {
     image:
@@ -879,9 +977,9 @@ export const developers = [
     name: 'Ricky Andales Jr.',
     title: 'Researcher',
     facebook: 'https://www.facebook.com/profile.php?id=100006666975804',
-    twitter: 'https://www.facebook.com/profile.php?id=100006666975804',
-    github: 'https://www.facebook.com/profile.php?id=100006666975804',
-    linkedin: 'https://www.facebook.com/profile.php?id=100006666975804',
+    twitter: '#',
+    github: '#',
+    linkedin: '#',
   },
   {
     image:
@@ -899,9 +997,9 @@ export const developers = [
     name: 'Justin Bernardo',
     title: 'Java Developer',
     facebook: 'https://www.facebook.com/bjunich',
-    twitter: 'https://www.facebook.com/bjunich',
-    github: 'https://www.facebook.com/bjunich',
-    linkedin: 'https://www.facebook.com/bjunich',
+    twitter: '#',
+    github: '#',
+    linkedin: '#',
   },
   {
     image:
@@ -909,9 +1007,9 @@ export const developers = [
     name: 'Jane Marielle Parsacala',
     title: 'Researcher',
     facebook: 'https://www.facebook.com/parsacalajane',
-    twitter: 'https://www.facebook.com/parsacalajane',
-    github: 'https://www.facebook.com/parsacalajane',
-    linkedin: 'https://www.facebook.com/parsacalajane',
+    twitter: '#',
+    github: '#',
+    linkedin: '#',
   },
   {
     image:
@@ -919,9 +1017,9 @@ export const developers = [
     name: 'Jennifer Droña',
     title: 'Researcher',
     facebook: 'https://www.facebook.com/rojhane.montejar.9',
-    twitter: 'https://www.facebook.com/rojhane.montejar.9',
-    github: 'https://www.facebook.com/rojhane.montejar.9',
-    linkedin: 'https://www.facebook.com/rojhane.montejar.9',
+    twitter: '#',
+    github: '#',
+    linkedin: '#',
   },
   {
     image:
@@ -929,9 +1027,9 @@ export const developers = [
     name: 'Girrah Remollo',
     title: 'Researcher',
     facebook: 'https://www.facebook.com/girrah.remollo.3',
-    twitter: 'https://www.facebook.com/girrah.remollo.3',
-    github: 'https://www.facebook.com/girrah.remollo.3',
-    linkedin: 'https://www.facebook.com/girrah.remollo.3',
+    twitter: '#',
+    github: '#',
+    linkedin: '#',
   },
   {
     image:
@@ -939,8 +1037,8 @@ export const developers = [
     name: 'Resalyn Mae Parba',
     title: 'Researcher',
     facebook: 'https://www.facebook.com/resamae.parba',
-    twitter: 'https://www.facebook.com/resamae.parba',
-    github: 'https://www.facebook.com/resamae.parba',
-    linkedin: 'https://www.facebook.com/resamae.parba',
+    twitter: '#',
+    github: '#',
+    linkedin: '#',
   },
 ];

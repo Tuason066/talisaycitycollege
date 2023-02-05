@@ -164,3 +164,17 @@ details[open] > summary > .icon {
   @apply text-xs text-white bg-red-700 p-base rounded w-fit;
   transform: translateZ(4rem);
 }
+
+/* ################ COURSES ################ */
+
+.courses-card {
+  @apply max-w-sm mx-auto bg-blueViolet-700 rounded overflow-hidden relative shadow-lg border-2 border-blueViolet-700;
+}
+
+.courses-card:hover img {
+  @apply scale-150;
+}
+
+.courses-card img {
+  @apply transition-all duration-300;
+}

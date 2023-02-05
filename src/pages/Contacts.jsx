@@ -16,9 +16,17 @@ const Contacts = () => {
 
   return (
     <Section>
-      <h2
+      {/* <h2
         style={{ textShadow: '0.05em 0.05em 0 #222' }}
         className='text-xl md:text-2xl lg:text-4xl font-black text-primaryBlue-500 uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-6 sm:mb-8 lg:mb-12'
+        data-aos='zoom-in'
+        data-aos-delay='200'
+      >
+        Contact Us
+      </h2> */}
+      <h2
+        style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
+        className='text-primaryBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center  mb-6 sm:mb-8 lg:mb-12'
         data-aos='zoom-in'
         data-aos-delay='200'
       >

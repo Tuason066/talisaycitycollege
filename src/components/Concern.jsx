@@ -117,7 +117,7 @@ function Concern() {
           <aside
             className={`${
               isConcernSubmitted ? 'scale-100' : 'scale-0'
-            } absolute top-0 left-0 h-full w-full bg-white flex flex-col items-center justify-center gap-y-4 p-4 md:p-6 transition-all`}
+            } absolute top-0 left-0 h-full w-full bg-[#f6f9fc] flex flex-col items-center justify-center gap-y-4 p-4 md:p-6 transition-all`}
           >
             <Icon
               icon='mdi:tooltip-check'

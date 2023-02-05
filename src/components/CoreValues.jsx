@@ -6,7 +6,7 @@ function CoreValues() {
   return (
     <Section>
       <h2
-        className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-2 md:mb-8'
+        className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-2 md:mb-8 underline'
         data-aos='zoom-in'
         data-aos-duration='700'
       >

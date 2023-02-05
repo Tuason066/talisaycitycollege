@@ -33,13 +33,13 @@ export function App() {
           {/* about */}
           <Route path='/about' element={<About />} />
           {/* courses */}
-          <Route path='courses' element={<Courses />} />
+          <Route path='/courses' element={<Courses />} />
           {/* contacts */}
-          <Route path='contacts' element={<Contacts />} />
+          <Route path='/contacts' element={<Contacts />} />
           {/* login */}
-          <Route path='login' element={<Login />} />
+          <Route path='/login' element={<Login />} />
           {/* developers */}
-          <Route path='developers' element={<Developers />} />
+          <Route path='/developers' element={<Developers />} />
           {/* news */}
           <Route path='/news' element={<LatestNewsAndUpdates />} />
           {/* not found */}

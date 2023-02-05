@@ -9,23 +9,24 @@ const Login = () => {
     facultyID: '',
     facultyPassword: '',
   });
+
   /* input fields elements */
   const studentInputFields = useRef([]);
   studentInputFields.current = [];
 
-  const addToStudentInputFields = (el) => {
-    if (el && !studentInputFields.current.includes(el)) {
-      studentInputFields.current.push(el);
-    }
-  };
-
   const facultyInputFields = useRef([]);
   studentInputFields.current = [];
 
+  const addToStudentInputFields = (el) => {
+    el &&
+      !studentInputFields.current.includes(el) &&
+      studentInputFields.current.push(el);
+  };
+
   const addToFacultyInputFields = (el) => {
-    if (el && !facultyInputFields.current.includes(el)) {
+    el &&
+      !facultyInputFields.current.includes(el) &&
       facultyInputFields.current.push(el);
-    }
   };
 
   /* student/faculty switch buttons */
@@ -40,12 +41,7 @@ const Login = () => {
       /* input */
       input.value = '';
       /* error message */
-      const inputField = input.parentElement.parentElement;
-      const errorElement = inputField.querySelector(
-        '[data-id="error-message"]'
-      );
-      errorElement.classList.remove('block');
-      errorElement.classList.add('hidden');
+      handleErrorMessage(input, 'hide');
     });
   };
 
@@ -60,12 +56,7 @@ const Login = () => {
       /* input */
       input.value = '';
       /* error message */
-      const inputField = input.parentElement.parentElement;
-      const errorElement = inputField.querySelector(
-        '[data-id="error-message"]'
-      );
-      errorElement.classList.remove('block');
-      errorElement.classList.add('hidden');
+      handleErrorMessage(input, 'hide');
     });
   };
 
@@ -78,27 +69,13 @@ const Login = () => {
     });
     /* hide error messages */
     if (/student/g.test(name)) {
-      studentInputFields.current.forEach((input) => {
-        if (name === input.name) {
-          const inputField = input.parentElement.parentElement;
-          const errorElement = inputField.querySelector(
-            '[data-id="error-message"]'
-          );
-          errorElement.classList.add('hidden');
-          errorElement.classList.remove('block');
-        }
-      });
+      studentInputFields.current.forEach(
+        (input) => name === input.name && handleErrorMessage(input, 'hide')
+      );
     } else {
-      facultyInputFields.current.forEach((input) => {
-        if (name === input.name) {
-          const inputField = input.parentElement.parentElement;
-          const errorElement = inputField.querySelector(
-            '[data-id="error-message"]'
-          );
-          errorElement.classList.add('hidden');
-          errorElement.classList.remove('block');
-        }
-      });
+      facultyInputFields.current.forEach(
+        (input) => name === input.name && handleErrorMessage(input, 'hide')
+      );
     }
   };
 
@@ -114,25 +91,32 @@ const Login = () => {
   };
 
   const handleResetInputFieldsAndErrorMessage = (arr) => {
-    arr.current.forEach((input) => {
-      const inputField = input.parentElement.parentElement;
-      const errorElement = inputField.querySelector(
-        '[data-id="error-message"]'
-      );
-      errorElement.classList.remove('hidden');
-      errorElement.classList.add('block');
-    });
+    arr.current.forEach((input) => handleErrorMessage(input, 'show'));
+  };
+
+  /* handle error message */
+  const handleErrorMessage = (input, state) => {
+    const element = input.parentElement.parentElement.querySelector(
+      '[data-id="error-message"]'
+    );
+    if (state === 'hide') {
+      element.classList.add('hidden');
+      element.classList.remove('block');
+    } else {
+      element.classList.remove('hidden');
+      element.classList.add('block');
+    }
   };
 
   return (
     <section>
-      <div className='py-10 md:py-24 lg:py-28 min-h-screen grid place-items-center relative'>
+      <div className='py-20 md:py-32 min-h-screen grid place-items-center relative'>
         {/* form container */}
         <div
           style={{
             boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
           }}
-          className='rounded overflow-hidden w-11/12 max-w-sm translate-x-0 shadow-xl'
+          className='rounded overflow-hidden w-11/12 max-w-sm shadow-xl'
         >
           {/* background color of top section will be change down here */}
           <div className='px-4 pt-12 pb-2 md:px-8 bg-primaryBlue-500'>
@@ -206,7 +190,7 @@ const Login = () => {
                     data-id='error-message'
                     className='hidden loginForm-errorMessage'
                   >
-                    You entered a doesn't exist student ID
+                    Student ID doesn't exist
                   </p>
                 </div>
                 <div className='loginForm-inputField-wrapper'>
@@ -275,7 +259,7 @@ const Login = () => {
                     data-id='error-message'
                     className='hidden loginForm-errorMessage'
                   >
-                    You entered a doesn't exist faculty ID
+                    Faculty ID doesn't exist
                   </p>
                 </div>
                 <div className='loginForm-inputField-wrapper'>

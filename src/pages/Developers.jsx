@@ -8,6 +8,7 @@ import Masonry from 'react-masonry-css';
 import { Icon } from '@iconify/react';
 /* components */
 import Section from '../components/Section';
+import { Link } from 'react-router-dom';
 
 const Developers = () => {
   useEffect(() => {
@@ -23,12 +24,19 @@ const Developers = () => {
   return (
     <Section>
       <h2
+        style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
+        className='text-primaryBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20'
+      >
+        Our <span className='capitalize'>developers</span> and{' '}
+        <span className='capitalize'>researchers</span>
+      </h2>
+      {/* <h2
         className='uppercase font-bold text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20 text-2xl md:text-4xl lg:text-5xl'
         data-aos='zoom-in'
       >
-        our <span className='text-primaryBlue-500'>developers</span> and{' '}
-        <span className='text-lightBlue-500'>researchers</span>
-      </h2>
+        our <span className='text-primaryBlue-500 underline'>developers</span>{' '}
+        and <span className='text-lightBlue-500 underline'>researchers</span>
+      </h2> */}
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className='my-masonry-grid developers-masonry-grid max-w-3xl mx-auto lg:max-w-full'
@@ -80,24 +88,54 @@ const Developers = () => {
                 {/* social links */}
                 <ul className='flex items-center justify-around pb-4 lg:gap-x-4 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 overflow-hidden'>
                   <li className='dev-social-links'>
-                    <a href={facebook} target='_blank' className='p-2 block'>
-                      <Icon icon='ri:facebook-box-fill' className='text-2xl' />
-                    </a>
+                    {/#/g.test(facebook) ? (
+                      <Link to={facebook} className='p-2 block'>
+                        <Icon
+                          icon='ri:facebook-box-fill'
+                          className='text-2xl'
+                        />
+                      </Link>
+                    ) : (
+                      <a href={facebook} target='_blank' className='p-2 block'>
+                        <Icon
+                          icon='ri:facebook-box-fill'
+                          className='text-2xl'
+                        />
+                      </a>
+                    )}
                   </li>
                   <li className='dev-social-links'>
-                    <a href={twitter} target='_blank' className='p-2 block'>
-                      <Icon icon='mdi:twitter' className='text-2xl' />
-                    </a>
+                    {/#/g.test(twitter) ? (
+                      <Link to={twitter} className='p-2 block'>
+                        <Icon icon='mdi:twitter' className='text-2xl' />
+                      </Link>
+                    ) : (
+                      <a href={twitter} target='_blank' className='p-2 block'>
+                        <Icon icon='mdi:twitter' className='text-2xl' />
+                      </a>
+                    )}
                   </li>
                   <li className='dev-social-links'>
-                    <a href={github} target='_blank' className='p-2 block'>
-                      <Icon icon='mdi:github' className='text-2xl' />
-                    </a>
+                    {/#/g.test(github) ? (
+                      <Link to={github} className='p-2 block'>
+                        <Icon icon='mdi:github' className='text-2xl' />
+                      </Link>
+                    ) : (
+                      <a href={github} target='_blank' className='p-2 block'>
+                        <Icon icon='mdi:github' className='text-2xl' />
+                      </a>
+                    )}
                   </li>
                   <li className='dev-social-links'>
-                    <a href={linkedin} target='_blank' className='p-2 block'>
-                      <Icon icon='mdi:linkedin' className='text-2xl' />
-                    </a>
+                    {/#/g.test(linkedin) ? (
+                      <Link to={linkedin} className='p-2 block'>
+                        <Icon icon='mdi:linkedin' className='text-2xl' />
+                      </Link>
+                    ) : (
+                      <a href={linkedin} target='_blank' className='p-2 block'>
+                        <Icon icon='mdi:linkedin' className='text-2xl' />
+                      </a>
+                    )}
                   </li>
                 </ul>
               </article>

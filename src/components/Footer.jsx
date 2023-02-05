@@ -13,7 +13,7 @@ const Footer = () => {
       <img
         src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1675356562/talisay-city-college/logo_anup6r.png'
         alt='logo'
-        className='w-40 md:w-56 absolute -bottom-1/2 sm:-bottom-1/4 lg:-bottom-1/2 left-1/2 -translate-x-1/2 opacity-25'
+        className='w-40 lg:w-56 absolute -bottom-1/2 sm:-bottom-1/4 lg:-bottom-1/2 left-1/2 -translate-x-1/2 opacity-25'
       />
       <div className='w-11/12 mx-auto'>
         {/* logo */}
@@ -80,9 +80,12 @@ const Footer = () => {
           </p>
           <p>
             Website Designed and Developed by{' '}
-            <Link to={'/developers'} className='font-semibold hover:underline'>
-              Team Bangan
-            </Link>
+            <a
+              href='https://www.facebook.com/Tuason06'
+              className='font-semibold hover:underline'
+            >
+              Jeffrey Tuason
+            </a>
           </p>
         </div>
       </div>

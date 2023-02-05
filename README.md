@@ -1,6 +1,8 @@
 # I'm Open For Work/Internship
 
-- [Contacts](#author)
+Hi 👋, I'm Jeffrey Tuason a Reactjs Developer.
+
+- [Contact Me ](#developer)
 
 ## Talisay City College Website
 
@@ -11,7 +13,7 @@ This website was developed for our Talisay City College research proposal. Altho
 - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-- [Author](#author)
+- [Developer](#developer)
 
 ### Screenshot
 
@@ -31,7 +33,7 @@ This website was developed for our Talisay City College research proposal. Altho
 - [AOS](https://michalsnik.github.io/aos/) - CSS Library
 - [ReactCountup](https://github.com/glennreyes/react-countup) - JS Library
 
-## Author
+## Developer - Jeffrey Tuason
 
 - Gmail - [jepoyduque06@gmail.com](https://mail.google.com/mail/u/0/#inbox?compose=new)
 - Frontend Mentor - [@Tuason066](https://www.frontendmentor.io/profile/Tuason066)
