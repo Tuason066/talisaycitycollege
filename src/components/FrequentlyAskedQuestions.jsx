@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 
 function FrequentlyAskedQuestions() {
   return (
-    <section className='bg-lightBlue-500'>
+    <section className='bg-blueViolet-500'>
       <div className='mx-auto w-11/12 py-8 md:py-12 lg:py-14 lg:flex lg:gap-x-20'>
         {/* GOOGLE MAP #1 */}
         <iframe

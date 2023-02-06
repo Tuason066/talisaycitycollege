@@ -204,7 +204,7 @@ function Concern() {
             <button
               title='Submit'
               type='submit'
-              className='block mx-auto lg:ml-0 px-lg py-sm md:py-base md:px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-500'
+              className='block mx-auto lg:ml-0 px-lg py-sm md:py-base md:px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-500 hover:bg-primaryBlue-400 transition-all duration-200'
             >
               Submit
             </button>

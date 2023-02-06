@@ -73,10 +73,10 @@ details[open] > summary > .icon {
 
 @media (min-width: 768px) {
   .my-masonry-grid {
-    gap: 2.25rem; /* column gap */
+    gap: 1.15rem; /* column gap */
   }
   .my-masonry-grid_column > article {
-    margin-bottom: 2.25rem; /* row gap */
+    margin-bottom: 1.15rem; /* row gap */
   }
 }
 

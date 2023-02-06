@@ -23,6 +23,7 @@ const Developers = () => {
 
   return (
     <Section>
+      {/* title */}
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
         className='text-primaryBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20'
@@ -30,118 +31,73 @@ const Developers = () => {
         Our <span className='capitalize'>developers</span> and{' '}
         <span className='capitalize'>researchers</span>
       </h2>
-      {/* <h2
-        className='uppercase font-bold text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20 text-2xl md:text-4xl lg:text-5xl'
-        data-aos='zoom-in'
-      >
-        our <span className='text-primaryBlue-500 underline'>developers</span>{' '}
-        and <span className='text-lightBlue-500 underline'>researchers</span>
-      </h2> */}
+
+      {/* cards */}
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className='my-masonry-grid developers-masonry-grid max-w-3xl mx-auto lg:max-w-full'
         columnClassName='my-masonry-grid_column developers-masonry-grid_column'
       >
-        {developers.map(
-          (
-            { image, name, title, facebook, twitter, github, linkedin },
-            index
-          ) => {
-            const placeholderText = `https://via.placeholder.com/700x900.png?text=${name.replace(
-              /\s/g,
-              '+'
-            )}`;
+        {developers.map(({ image, name, title, socialLinks }, index) => {
+          const placeholderText = `https://via.placeholder.com/700x900.png?text=${name.replace(
+            /\s/g,
+            '+'
+          )}`;
 
-            return (
-              <article
-                key={index}
-                style={{
-                  boxShadow:
-                    'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
-                }}
-                className='dev-cards'
-                data-aos='fade-up'
-                data-aos-anchor-placement='top-bottom'
-                data-aos-delay='100'
-                data-aos-duration='700'
-              >
-                {/* image */}
-                {image ? (
-                  <img
-                    src={image}
-                    alt={`${name} profile`}
-                    className='w-full mx-auto h-full object-cover object-center'
-                  />
-                ) : (
-                  <img
-                    src={placeholderText}
-                    alt={`${name} profile`}
-                    className='w-full mx-auto h-full object-cover object-center'
-                  />
-                )}
+          return (
+            <article
+              key={index}
+              style={{
+                boxShadow:
+                  'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
+              }}
+              className='dev-cards'
+              data-aos='fade-up'
+              data-aos-anchor-placement='top-bottom'
+              data-aos-delay='100'
+              data-aos-duration='700'
+            >
+              {/* image */}
+              {image ? (
+                <img
+                  src={image}
+                  alt={`${name} profile`}
+                  className='w-full mx-auto h-full object-cover object-center'
+                />
+              ) : (
+                <img
+                  src={placeholderText}
+                  alt={`${name} profile`}
+                  className='w-full mx-auto h-full object-cover object-center'
+                />
+              )}
 
-                {/* info */}
-                <div className='p-4 md:p-6 text-center'>
-                  <h3 className='font-semibold text-lg'>{name}</h3>
-                  <p>{title}</p>
-                </div>
-                {/* social links */}
-                <ul className='flex items-center justify-around pb-4 lg:gap-x-4 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 overflow-hidden'>
-                  <li className='dev-social-links'>
-                    {/#/g.test(facebook) ? (
-                      <Link to={facebook} className='p-2 block'>
-                        <Icon
-                          icon='ri:facebook-box-fill'
-                          className='text-2xl'
-                        />
-                      </Link>
-                    ) : (
-                      <a href={facebook} target='_blank' className='p-2 block'>
-                        <Icon
-                          icon='ri:facebook-box-fill'
-                          className='text-2xl'
-                        />
-                      </a>
-                    )}
-                  </li>
-                  <li className='dev-social-links'>
-                    {/#/g.test(twitter) ? (
-                      <Link to={twitter} className='p-2 block'>
-                        <Icon icon='mdi:twitter' className='text-2xl' />
-                      </Link>
-                    ) : (
-                      <a href={twitter} target='_blank' className='p-2 block'>
-                        <Icon icon='mdi:twitter' className='text-2xl' />
-                      </a>
-                    )}
-                  </li>
-                  <li className='dev-social-links'>
-                    {/#/g.test(github) ? (
-                      <Link to={github} className='p-2 block'>
-                        <Icon icon='mdi:github' className='text-2xl' />
-                      </Link>
-                    ) : (
-                      <a href={github} target='_blank' className='p-2 block'>
-                        <Icon icon='mdi:github' className='text-2xl' />
-                      </a>
-                    )}
-                  </li>
-                  <li className='dev-social-links'>
-                    {/#/g.test(linkedin) ? (
-                      <Link to={linkedin} className='p-2 block'>
-                        <Icon icon='mdi:linkedin' className='text-2xl' />
-                      </Link>
-                    ) : (
-                      <a href={linkedin} target='_blank' className='p-2 block'>
-                        <Icon icon='mdi:linkedin' className='text-2xl' />
-                      </a>
-                    )}
-                  </li>
-                </ul>
-              </article>
-            );
-          }
-        )}
+              {/* info */}
+              <div className='p-4 md:p-6 text-center'>
+                <h3 className='font-semibold text-lg'>{name}</h3>
+                <p>{title}</p>
+              </div>
+              {/* social links */}
+              <ul className='flex items-center justify-around pb-4 lg:gap-x-4 lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 overflow-hidden'>
+                {socialLinks.map(({ url, icon }, index) => {
+                  return (
+                    <li key={index} className='dev-social-links'>
+                      {/#/g.test(url) ? (
+                        <Link to={url} className='p-2 block' disabled>
+                          <Icon icon={icon} className='text-2xl' />
+                        </Link>
+                      ) : (
+                        <a href={url} target='_blank' className='p-2 block'>
+                          <Icon icon={icon} className='text-2xl' />
+                        </a>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </article>
+          );
+        })}
       </Masonry>
     </Section>
   );

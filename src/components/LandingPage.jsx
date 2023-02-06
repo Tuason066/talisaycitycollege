@@ -22,7 +22,7 @@ const LandingPage = () => {
         <div className='text-center xl:text-left'>
           <Link
             to={'/about'}
-            className='inline-block bg-primaryYellow-450 hover:bg-primaryYellow-550 rounded px-lg py-sm transition-all outline-none tracking-wide lg:text-lg text-primaryBlue-500 font-medium'
+            className='inline-block bg-primaryYellow-450 hover:bg-primaryYellow-500 rounded px-xl py-base transition-all outline-none lg:text-lg text-primaryBlue-500 hover:text-primaryBlue-600 font-medium tracking-wide shadow-lg'
           >
             Learn more
           </Link>

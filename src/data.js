@@ -902,47 +902,41 @@ export const courses = [
 
 export const contacts = [
   {
-    id: 0,
     office: `Registrar's`,
     tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100064037861894',
-    icon: 'quill:paper',
+    icon: 'clarity:envelope-solid',
   },
   {
-    id: 1,
     office: `Scholarship Center`,
     tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100069043275667',
-    icon: 'circum:money-check-1',
+    icon: 'mingcute:medal-fill',
   },
   {
-    id: 2,
     office: `Clinic`,
     tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100063967033360',
-    icon: 'fluent:doctor-16-regular',
+    icon: 'icon-park-solid:medicine-chest',
   },
   {
-    id: 3,
     office: `Supreme Student Council`,
     tel: '346-7503',
     email: 'tcc_studentcouncil@yahoo.com',
     facebookPath: 'https://www.facebook.com/TCCStudentCouncil',
-    icon: 'cil:balance-scale',
+    icon: 'mdi:court-hammer',
   },
   {
-    id: 4,
     office: `Guidance Center`,
     tel: '346-7503',
     email: 'tcc_studentcouncil@yahoo.com',
     facebookPath: 'https://www.facebook.com/TCCGuidanceCenter',
-    icon: 'ep:guide',
+    icon: 'ep:avatar',
   },
   {
-    id: 5,
     office: `Balud Dance Company`,
     tel: '346-7503',
     email: 'tccpa.baluddc@gmail.com',
@@ -950,12 +944,11 @@ export const contacts = [
     icon: 'mdi:dance-ballroom',
   },
   {
-    id: 6,
     office: `Junior Computer Organization`,
     tel: '346-7503',
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100087451633441',
-    icon: 'mdi:code',
+    icon: 'icon-park-solid:folder-code',
   },
 ];
 
@@ -966,79 +959,191 @@ export const developers = [
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675001788/talisay-city-college/developers/ritchie_ftqrpm.webp',
     name: 'Ritchie John Gumera',
     title: 'Front-end Web Developer',
-    facebook: 'https://www.facebook.com/richie.gumera.7',
-    twitter: 'https://twitter.com/Bewareofdoggs',
-    github: 'https://github.com/Mrching08',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/richie.gumera.7`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `https://twitter.com/Bewareofdoggs`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `https://github.com/Mrching08`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `https://www.linkedin.com/in/ritchie-john-gumera-976057265/?fbclid=IwAR1sC1XrKiMtt3fGWHoa1oHs9BUw5RVF345UkR1fXKfwPXgzyZbJhaG3jYk`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_900,w_700/v1675006116/talisay-city-college/developers/andales_p1jrua.webp',
     name: 'Ricky Andales Jr.',
     title: 'Researcher',
-    facebook: 'https://www.facebook.com/profile.php?id=100006666975804',
-    twitter: '#',
-    github: '#',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/profile.php?id=100006666975804`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `https://www.tiktok.com/@glazeshora`,
+        icon: 'mingcute:tiktok-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675006359/talisay-city-college/developers/tuason_biitqc.webp',
     name: 'Jeffrey Tuason',
     title: 'Reactjs Developer',
-    facebook: 'https://www.facebook.com/Tuason06/',
-    twitter: 'https://twitter.com/jepoyduque06',
-    github: 'https://github.com/Tuason066',
-    linkedin: 'https://www.linkedin.com/in/jeffreytuason/',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/Tuason06/`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `https://twitter.com/jepoyduque06`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `https://github.com/Tuason066`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `https://www.linkedin.com/in/jeffreytuason/`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133761/talisay-city-college/developers/bernardo_h56tbh.webp',
     name: 'Justin Bernardo',
     title: 'Java Developer',
-    facebook: 'https://www.facebook.com/bjunich',
-    twitter: '#',
-    github: '#',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/bjunich`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/parsacala_zgyr7f.webp',
     name: 'Jane Marielle Parsacala',
     title: 'Researcher',
-    facebook: 'https://www.facebook.com/parsacalajane',
-    twitter: '#',
-    github: '#',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/parsacalajane`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/drona_bfhql7.webp',
     name: 'Jennifer Droña',
     title: 'Researcher',
-    facebook: 'https://www.facebook.com/rojhane.montejar.9',
-    twitter: '#',
-    github: '#',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/rojhane.montejar.9`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133763/talisay-city-college/developers/remollo_v8lagl.webp',
     name: 'Girrah Remollo',
     title: 'Researcher',
-    facebook: 'https://www.facebook.com/girrah.remollo.3',
-    twitter: '#',
-    github: '#',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/girrah.remollo.3`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
   {
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/parba_n9w97a.webp',
     name: 'Resalyn Mae Parba',
     title: 'Researcher',
-    facebook: 'https://www.facebook.com/resamae.parba',
-    twitter: '#',
-    github: '#',
-    linkedin: '#',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/resamae.parba`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
   },
 ];

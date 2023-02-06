@@ -29,7 +29,7 @@ const News = ({ data }) => {
   return (
     <article
       key={id}
-      className='max-w-sm bg-white border-2 border-gray-200 rounded-lg shadow mx-auto'
+      className='max-w-sm mx-auto bg-white border-2 border-blueViolet-200 rounded-lg shadow-lg'
       data-aos='fade-up'
       data-aos-anchor-placement='top-bottom'
       data-aos-duration='700'
@@ -37,7 +37,7 @@ const News = ({ data }) => {
     >
       {/* images/videos */}
       <div
-        className='rounded-t-lg cursor-pointer border-b overflow-hidden'
+        className='cursor-pointer rounded-t-lg overflow-hidden border-b'
         onClick={() => handleSeeMore(media)}
       >
         <NewsMedia
@@ -47,21 +47,21 @@ const News = ({ data }) => {
         />
       </div>
       {/* TODO: Make a NewsArticle Compotent */}
-      <div className='p-5 bg-slate-100'>
+      <div className='p-5'>
         <div className='mb-3 inline-flex items-center gap-x-2'>
-          <span className='p-sm px-lg rounded tracking-wider text-primaryBlue-500 bg-yellow-400 text-sm uppercase font-bold'>
+          <span className='p-base px-lg rounded tracking-wide text-primaryBlue-500 bg-yellow-400 text-sm uppercase font-semibold'>
             {subject}
           </span>
           <span className='text-sm'>{createdAt}</span>
         </div>
-        <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-          {title}
+        <h5 className='mb-2 text-2xl font-bold text-blueViolet-900'>
+          {limitDetails === 150 ? `${title.slice(0, 30)}...` : title}
         </h5>
         {/* details */}
-        <div className='mb-3'>
+        <div className='mb-3 text-gray-700 font-normal'>
           {limitDetails === 150 ? (
             <ConvertText
-              textClassName={'mb-3 font-normal text-gray-700'}
+              textClassName={'mb-3'}
               value={
                 details[0].length > limitDetails
                   ? `${details[0].slice(0, limitDetails)}...`
@@ -71,11 +71,7 @@ const News = ({ data }) => {
           ) : (
             details.map((item, index) => {
               return (
-                <ConvertText
-                  key={index}
-                  textClassName={'mb-3 font-normal text-gray-700'}
-                  value={item}
-                />
+                <ConvertText key={index} textClassName={'mb-3'} value={item} />
               );
             })
           )}

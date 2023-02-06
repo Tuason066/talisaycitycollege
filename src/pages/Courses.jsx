@@ -83,7 +83,7 @@ const Courses = () => {
                   currentFilter === department
                     ? 'bg-primaryYellow-500 text-primaryBlue-500'
                     : 'bg-primaryBlue-500 text-white'
-                } text-base px-lg py-base rounded inline-block m-1 md:m-2 shadow transition-all`}
+                } hover:bg-primaryYellow-500 hover:text-primaryBlue-500 text-base px-lg py-base rounded inline-block m-1 md:m-2 shadow transition-all duration-300`}
               >
                 {department}
               </button>
@@ -120,6 +120,11 @@ const Courses = () => {
                 data-aos-anchor-placement='top-bottom'
                 data-aos-delay='400'
               >
+                {major && (
+                  <span className='absolute top-0 left-0 bg-blueViolet-450 text-blueViolet-800 font-semibold tracking-wide p-base rounded-br z-10 shadow-lg text-sm'>
+                    Major in {major}
+                  </span>
+                )}
                 <div className='overflow-hidden'>
                   <img
                     src={image}
@@ -138,13 +143,6 @@ const Courses = () => {
                         <span className='font-normal'>{department}</span>
                       </p>
                     </li>
-                    {major && (
-                      <li>
-                        <p>
-                          Major in: <span className='font-normal'>{major}</span>
-                        </p>
-                      </li>
-                    )}
                     <li>
                       <p>
                         Currently Enrolled:{' '}
@@ -169,7 +167,7 @@ const Courses = () => {
                     <button
                       type='button'
                       onClick={() => handleOpenModal(course, major)}
-                      className='bg-white text-blueViolet-700 block w-full text-center py-base rounded mt-4 font-semibold tracking-wider'
+                      className='bg-white text-blueViolet-700 hover:opacity-80 block w-full text-center py-base rounded mt-4 font-semibold tracking-wider transition-all duration-300'
                     >
                       Enroll Now
                     </button>

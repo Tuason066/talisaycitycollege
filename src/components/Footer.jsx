@@ -9,7 +9,7 @@ import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <footer className='relative text-white bg-primaryBlue-500 py-4 md:py-6 lg:bg-gradient-to-r lg:from-primaryBlue-500 lg:to-lightBlue-500 overflow-hidden'>
+    <footer className='relative text-white bg-primaryBlue-500 py-4 md:py-6 overflow-hidden'>
       <img
         src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1675356562/talisay-city-college/logo_anup6r.png'
         alt='logo'
@@ -81,7 +81,9 @@ const Footer = () => {
           <p>
             Website Designed and Developed by{' '}
             <a
-              href='https://www.facebook.com/Tuason06'
+              href='https://www.facebook.com/Tuason06/'
+              target='_blank'
+              rel='noopener noreferrer'
               className='font-semibold hover:underline'
             >
               Jeffrey Tuason
