@@ -76,65 +76,13 @@ const Contacts = () => {
                   href={facebookPath}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='block w-full mt-4 text-center bg-primaryYellow-500 text-blueViolet-700 p-base font-semibold rounded shadow-lg'
+                  className='block w-full mt-4 text-center bg-primaryYellow-500 text-blueViolet-700 hover:bg-primaryYellow-350 p-base font-semibold rounded shadow-lg transition-all duration-300'
                 >
                   Contact Us
                 </a>
               </div>
             </article>
           );
-          /* return (
-            <article
-              key={index}
-              className='px-6 py-8 md:px-8 md:py-10 rounded max-w-xs md:max-w-md mx-auto border-2 border-primaryBlue-500 bg-white hover:bg-gray-100 transition-all'
-              data-aos='fade-up'
-              data-aos-anchor-placement='top-bottom'
-              data-aos-delay='400'
-            >
-              icon
-              <div className='flex justify-center'>
-                <Icon icon={icon} className='w-20 h-20' />
-              </div>
-              information
-              <div>
-                <a href={facebookPath}>
-                  <h4 className='font-bold text-lg text-center text-primaryBlue-500 my-4'>
-                    {office} Office
-                  </h4>
-                </a>
-                <ul>
-                  <li className='font-semibold'>
-                    Tel Number:{' '}
-                    <a
-                      href={`tel:${tel}`}
-                      className='hover:underline transition-all font-normal'
-                    >
-                      {tel}
-                    </a>
-                  </li>
-                  <li className='font-semibold'>
-                    Email:{' '}
-                    <a
-                      href={`mailto:${email}?subject = Inqueries&body = Message`}
-                      className='hover:underline transition-all font-normal text-sm md:text-base'
-                    >
-                      {email}
-                    </a>
-                  </li>
-                  <li className='font-semibold'>
-                    Facebook:{' '}
-                    <a
-                      href={facebookPath}
-                      target='_blank'
-                      className='text-blue-700 hover:underline font-normal'
-                    >
-                      {office} Office
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </article>
-          ); */
         })}
       </Masonry>
     </Section>
