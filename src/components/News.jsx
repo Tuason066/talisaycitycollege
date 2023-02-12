@@ -29,7 +29,7 @@ const News = ({ data }) => {
   return (
     <article
       key={id}
-      className='max-w-sm mx-auto bg-white border-2 border-blueViolet-200 rounded-lg shadow-lg'
+      className='max-w-sm mx-auto bg-blueViolet-700 text-white border-2 border-blueViolet-700 text-whote rounded-lg shadow-lg relative'
       data-aos='fade-up'
       data-aos-anchor-placement='top-bottom'
       data-aos-duration='700'
@@ -54,11 +54,11 @@ const News = ({ data }) => {
           </span>
           <span className='text-sm'>{createdAt}</span>
         </div>
-        <h5 className='mb-2 text-2xl font-bold text-blueViolet-900'>
+        <h5 className='mb-2 text-2xl font-bold tracking-wider'>
           {limitDetails === 150 ? `${title.slice(0, 30)}...` : title}
         </h5>
         {/* details */}
-        <div className='mb-3 text-gray-700 font-normal'>
+        <div className='mb-3 font-normal tracking-wide'>
           {limitDetails === 150 ? (
             <ConvertText
               textClassName={'mb-3'}
