@@ -1,6 +1,6 @@
-/* data */
+/* DATA */
 import { pageLinks } from '../data';
-/* components */
+/* COMPONENTS */
 import PageLink from './PageLink';
 
 const PageLinks = ({ containerClass, itemClass }) => {

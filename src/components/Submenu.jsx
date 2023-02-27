@@ -1,6 +1,6 @@
-/* router */
+/* REACT ROUTER */
 import { Link } from 'react-router-dom';
-/* icons */
+/* ICONS */
 import { Icon } from '@iconify/react';
 
 const Submenu = ({ submenu, isSubmenu, setIsSubmenu }) => {

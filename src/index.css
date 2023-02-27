@@ -7,7 +7,6 @@
 @tailwind utilities;
 
 /* global styles */
-
 html {
   scroll-behavior: smooth;
 }
@@ -20,6 +19,70 @@ body {
 #root {
   @apply max-w-7xl mx-auto text-black text-base overflow-hidden;
 }
+
+/* CUSTOM SCROLLBAR */
+body::-webkit-scrollbar,
+.singlePage-description::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar:vertical,
+.singlePage-description::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+body::-webkit-scrollbar:horizontal,
+.singlePage-description::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+body::-webkit-scrollbar-thumb,
+.singlePage-description::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.singlePage-description::-webkit-scrollbar-thumb {
+  @apply border-2 border-customBlueViolet-700;
+}
+.singlePage-description::-webkit-scrollbar-track {
+  /* background-color: #fff; */
+  @apply bg-customBlueViolet-700;
+}
+/* MASONRY TOO EARLY TO USE THIS VANILLA CSS */
+/* REACT MASONRY CAN BE REPLACE THIS STYLES */
+
+.masonry {
+  --gap: 1em;
+  --columns: 4;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: column;
+  columns: 384px 4;
+  gap: 1rem;
+}
+
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@supports (grid-template-rows: masonry) {
+  .masonry {
+    display: grid;
+    grid-template-columns: repeat(384px 4, 1fr);
+    grid-template-rows: masonry;
+    grid-auto-flow: dense;
+    /* align-tracks: stretch; */
+  }
+
+  .masonry > * {
+    margin-bottom: 0em;
+  }
+}
+
+/* END OF MASONRY STYLES */
 
 /* HomeFAQ - accordion */
 
@@ -139,7 +202,7 @@ details[open] > summary > .icon {
 }
 /* background color of student/faculty form will be change here */
 .loginForm {
-  @apply px-4 md:px-8 flex flex-col gap-y-2 pt-6 pb-8 absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-primaryBlue-500;
+  @apply px-4 md:px-8 flex flex-col gap-y-2 pt-6 pb-8 absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-customBlue-500;
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
@@ -168,7 +231,7 @@ details[open] > summary > .icon {
 /* ################ COURSES ################ */
 
 .courses-card {
-  @apply max-w-sm mx-auto bg-blueViolet-700 rounded overflow-hidden relative shadow-lg border-2 border-blueViolet-700;
+  @apply max-w-sm mx-auto bg-customBlueViolet-700 rounded overflow-hidden relative shadow-lg border-2 border-customBlueViolet-700;
 }
 
 .courses-card:hover img {
@@ -177,4 +240,28 @@ details[open] > summary > .icon {
 
 .courses-card img {
   @apply transition-all duration-300;
+}
+/* ################ POST DESCRIPTION ################ */
+.post-description {
+  @apply mb-3 font-normal tracking-wide;
+}
+
+.post-description strong,
+.singlePage-description strong {
+  @apply font-semibold;
+}
+
+.post-description ol,
+.singlePage-description ol {
+  @apply list-decimal pl-4;
+}
+
+.post-description ul,
+.singlePage-description ul {
+  @apply list-disc pl-4;
+}
+
+.post-description a,
+.singlePage-description a {
+  @apply underline;
 }

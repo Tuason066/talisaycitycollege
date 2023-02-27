@@ -1,8 +1,7 @@
-/* react router */
+/* REACT ROUTER */
 import { Link } from 'react-router-dom';
-/* icon */
+/* ICONS */
 import { Icon } from '@iconify/react';
-import { useRef } from 'react';
 
 const AsideSubmenu = ({ submenu, handleCloseSubmenu }) => {
   return (

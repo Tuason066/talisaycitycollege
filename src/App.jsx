@@ -1,58 +1,91 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-/* context */
-import { useGlobalContext } from './context';
-/* animations */
+/* REACT ROUTER */
+import {
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+  createBrowserRouter,
+} from 'react-router-dom';
+/* AOS ANIMATIONS */
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // ..
 AOS.init();
-/* components */
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import PageNotFound from './components/PageNotFound';
+/* DATA */
+/* DATA */
+import { posts } from './data';
+/* COMPONENTS */
 import Contacts from './pages/Contacts';
 import Developers from './pages/Developers';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import PreviewNews from './components/PreviewNews';
 import LatestNewsAndUpdates from './pages/LatestNewsAndUpdates';
-import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';
 import Courses from './pages/Courses';
+import SinglePost from './pages/SinglePost';
+import NavbarFooterLayout from './layout/NavbarFooterLayout';
+import FooterLayout from './layout/FooterLayout';
+import OrganizationChart from './pages/OrganizationChart';
+import ErrorMessage from './components/ErrorMessage';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route
+        path='/'
+        element={<NavbarFooterLayout />}
+        errorElement={<ErrorMessage />}
+      >
+        <Route index element={<Home />} errorElement={<ErrorMessage />} />
+        <Route
+          path='about'
+          element={<About />}
+          errorElement={<ErrorMessage />}
+        />
+        <Route
+          path='courses'
+          element={<Courses />}
+          errorElement={<ErrorMessage />}
+        />
+        <Route
+          path='contacts'
+          element={<Contacts />}
+          errorElement={<ErrorMessage />}
+        />
+        <Route
+          path='login'
+          element={<Login />}
+          errorElement={<ErrorMessage />}
+        />
+        <Route
+          path='developers'
+          element={<Developers />}
+          errorElement={<ErrorMessage />}
+        />
+        <Route
+          path='posts'
+          element={<LatestNewsAndUpdates posts={posts} />}
+          errorElement={<ErrorMessage />}
+        />
+        <Route
+          path='officials'
+          element={<OrganizationChart />}
+          errorElement={<ErrorMessage />}
+        />
+      </Route>
+      <Route path='post/:id' element={<FooterLayout />}>
+        <Route
+          index
+          element={<SinglePost posts={posts} />}
+          errorElement={<ErrorMessage />}
+        />
+      </Route>
+      <Route path='*' element={<ErrorMessage />} />
+    </>
+  )
+);
 
 export function App() {
-  const { isPreview } = useGlobalContext();
-
-  return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          {/* home */}
-          <Route path='/' element={<Home />} />
-          {/* about */}
-          <Route path='/about' element={<About />} />
-          {/* courses */}
-          <Route path='/courses' element={<Courses />} />
-          {/* contacts */}
-          <Route path='/contacts' element={<Contacts />} />
-          {/* login */}
-          <Route path='/login' element={<Login />} />
-          {/* developers */}
-          <Route path='/developers' element={<Developers />} />
-          {/* news */}
-          <Route path='/news' element={<LatestNewsAndUpdates />} />
-          {/* not found */}
-          <Route path='*' element={<PageNotFound />} />
-        </Routes>
-        {/* footer */}
-        <Footer />
-        {/* floating components */}
-        {isPreview.state && <PreviewNews {...isPreview} />}
-        <ScrollToTop />
-      </BrowserRouter>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

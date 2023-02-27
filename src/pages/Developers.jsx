@@ -1,20 +1,22 @@
-/* react */
+/* REACT */
 import { useEffect } from 'react';
-/* data */
-import { developers } from '../data';
-/* react masonry : https://www.npmjs.com/package/react-masonry-css */
-import Masonry from 'react-masonry-css';
-/* icons */
-import { Icon } from '@iconify/react';
-/* components */
-import Section from '../components/Section';
+/* REACT ROUTER */
 import { Link } from 'react-router-dom';
+/* DATA */
+import { developers } from '../data';
+/* REACT MASONRY : https://www.npmjs.com/package/react-masonry-css */
+import Masonry from 'react-masonry-css';
+/* ICONS */
+import { Icon } from '@iconify/react';
+/* COMPONENTS */
+import Section from '../components/Section';
 
 const Developers = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  /* react masonry media queries */
   const breakpointColumnsObj = {
     default: 3,
     1000: 2,
@@ -26,7 +28,7 @@ const Developers = () => {
       {/* title */}
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
-        className='text-primaryBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20'
+        className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mt-6 mb-12 md:mt-4 md:mb-14 lg:mt-8 lg:mb-20'
       >
         Our <span className='capitalize'>developers</span> and{' '}
         <span className='capitalize'>researchers</span>

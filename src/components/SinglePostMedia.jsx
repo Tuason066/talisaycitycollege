@@ -1,14 +1,10 @@
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import NewsMedia from './NewsMedia';
+import PostMedia from '../components/PostMedia';
 
-const MediaCarousel = ({
-  media,
-  currentCount,
-  setCurrentCount,
-  defaultValue,
-}) => {
+const SinglePostMedia = ({ title,media, currentCount, setCurrentCount }) => {
+   /* MEDIA DATA */
   const handlePreviousButton = () =>
     setCurrentCount((prev) => (prev === 0 ? media.length - 1 : prev - 1));
 
@@ -16,7 +12,7 @@ const MediaCarousel = ({
     setCurrentCount((prev) => (prev === media.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className='grid grid-cols-1 grid-rows-1 place-items-center relative overflow-hidden md:min-h-screen md:max-h-screen bg-black shadow'>
+    <div className='grid grid-cols-1 grid-rows-1 place-items-center relative overflow-hidden bg-black shadow'>
       {media.map((item, index) => {
         const mediaWidth = () => {
           const { image, video } = item;
@@ -36,22 +32,22 @@ const MediaCarousel = ({
         if (index === currentCount) {
           position = 'translate-x-0';
         }
+
         return (
-          <NewsMedia
+          <PostMedia
             key={index}
             {...item}
-            defaultTitle={defaultValue.title}
+            defaultTitle={title}
             mediaStyle={`${position} ${mediaWidth()} block w-full max-h-screen col-start-1 col-end-2 row-start-1 row-end-2 transition-all z-10`}
           />
         );
       })}
-      {/* buttons for next/previous */}
       {media.length > 1 && (
         <>
-          {/* previous */}
+          {/* PREVIOUS BTN */}
           <button
             type='button'
-            className='absolute top-1/2 left-[3%] -translate-y-1/2 p-1 md:p-2 bg-[rgba(0,0,0,.1)] hover:bg-[rgba(0,0,0,.15)] rounded-full transition-all hover:scale-110 z-10'
+            className='absolute top-1/2 left-[3%] -translate-y-1/2 p-1 md:p-2 bg-[rgba(0,0,0,.2)] hover:bg-[rgba(0,0,0,.25)] rounded-full transition-all hover:scale-110 z-10'
             onClick={handlePreviousButton}
           >
             <Icon
@@ -60,10 +56,10 @@ const MediaCarousel = ({
               color='white'
             />
           </button>
-          {/* next */}
+          {/* NEXT BTN */}
           <button
             type='button'
-            className='absolute top-1/2 right-[3%] -translate-y-1/2 p-1 md:p-2 bg-[rgba(0,0,0,.1)] hover:bg-[rgba(0,0,0,.15)] rounded-full transition-all hover:scale-110 z-10'
+            className='absolute top-1/2 right-[3%] -translate-y-1/2 p-1 md:p-2 bg-[rgba(0,0,0,.2)] hover:bg-[rgba(0,0,0,.25)] rounded-full transition-all hover:scale-110 z-10'
             onClick={handleNextButton}
           >
             <Icon
@@ -77,4 +73,4 @@ const MediaCarousel = ({
     </div>
   );
 };
-export default MediaCarousel;
+export default SinglePostMedia;

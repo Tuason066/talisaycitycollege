@@ -1,6 +1,6 @@
-/* react */
+/* REACT */
 import React, { useEffect } from 'react';
-/* components */
+/* COMPONENTS */
 import CoreValues from '../components/CoreValues';
 import Goals from '../components/Goals';
 import Mission from '../components/Mission';
@@ -19,11 +19,11 @@ function About() {
         alt='logo'
         className='w-[65%] md:w-[50%] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20'
       />
+      <History />
       <Vision />
       <Mission />
       <Goals />
       <CoreValues />
-      <History />
     </>
   );
 }

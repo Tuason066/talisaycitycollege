@@ -1,16 +1,18 @@
-/* react */
+/* REACT */
 import { useState } from 'react';
-/* data */
+/* DATA */
 import { courses } from '../data';
-/* react masonry : https://www.npmjs.com/package/react-masonry-css */
+/* REACT MASONRY : https://www.npmjs.com/package/react-masonry-css */
 import Masonry from 'react-masonry-css';
-/* icons */
+/* ICONS */
 import { Icon } from '@iconify/react';
-/* components */
+/* COMPONENTS */
 import Section from '../components/Section';
+import Course from '../components/Course';
+import CoursesFilter from '../components/CoursesFilter';
 
 const Courses = () => {
-  /* react masonry */
+  /* react masonry media queries */
   const breakpointColumnsObj = {
     default: 3,
     1000: 2,
@@ -64,7 +66,7 @@ const Courses = () => {
         {/* title */}
         <h2
           style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
-          className='text-primaryBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center lg:mb-1'
+          className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center lg:mb-1'
         >
           Our Offered Courses
         </h2>
@@ -73,22 +75,11 @@ const Courses = () => {
         </p>
         <div className='mt-8 mb-12 text-center'>
           {/* filter buttons */}
-          {departments.map((department, index) => {
-            return (
-              <button
-                key={index}
-                type='button'
-                onClick={handleFilterButtons}
-                className={`${
-                  currentFilter === department
-                    ? 'bg-primaryYellow-500 text-primaryBlue-500'
-                    : 'bg-primaryBlue-500 text-white'
-                } hover:bg-primaryYellow-500 hover:text-primaryBlue-500 text-base px-lg py-base rounded inline-block m-1 md:m-2 shadow transition-all duration-300`}
-              >
-                {department}
-              </button>
-            );
-          })}
+          <CoursesFilter
+            handleFilterButtons={handleFilterButtons}
+            currentFilter={currentFilter}
+            departments={departments}
+          />
         </div>
       </div>
 
@@ -98,85 +89,9 @@ const Courses = () => {
         className='my-masonry-grid developers-masonry-grid max-w-3xl mx-auto lg:max-w-full'
         columnClassName='my-masonry-grid_column developers-masonry-grid_column'
       >
-        {ourOfferedCourses.map(
-          (
-            {
-              image,
-              course,
-              department,
-              major,
-              currentlyEnrolled,
-              graduates,
-              enrollmentLink,
-            },
-            index
-          ) => {
-            console.log(course);
-            return (
-              <article
-                key={index}
-                className='courses-card'
-                data-aos='fade-up'
-                data-aos-anchor-placement='top-bottom'
-                data-aos-delay='400'
-              >
-                {major && (
-                  <span className='absolute top-0 left-0 bg-blueViolet-450 text-blueViolet-800 font-semibold tracking-wide p-base rounded-br z-10 shadow-lg text-sm'>
-                    Major in {major}
-                  </span>
-                )}
-                <div className='overflow-hidden'>
-                  <img
-                    src={image}
-                    alt={`${course} ${major && `major in ${major}`}`}
-                    className='shadow-lg rounded-t'
-                  />
-                </div>
-                <div className='p-4 md:p-6 text-white'>
-                  <h3 className='font-bold text-xl mb-3 mt-1 md:mb-5 md:mt-2 text-center tracking-wider'>
-                    {course}
-                  </h3>
-                  <ul className='font-semibold tracking-wide'>
-                    <li>
-                      <p>
-                        Department:{' '}
-                        <span className='font-normal'>{department}</span>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Currently Enrolled:{' '}
-                        <span className='font-normal'>{currentlyEnrolled}</span>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Graduates:{' '}
-                        <span className='font-normal'>{graduates}</span>
-                      </p>
-                    </li>
-                  </ul>
-                  {/https?.+/g.test(enrollmentLink) ? (
-                    <a
-                      href={enrollmentLink}
-                      className='bg-white text-blueViolet-700 block w-full text-center py-base rounded mt-4 font-semibold tracking-wider'
-                    >
-                      Enroll Now
-                    </a>
-                  ) : (
-                    <button
-                      type='button'
-                      onClick={() => handleOpenModal(course, major)}
-                      className='bg-white text-blueViolet-700 hover:opacity-80 block w-full text-center py-base rounded mt-4 font-semibold tracking-wider transition-all duration-300'
-                    >
-                      Enroll Now
-                    </button>
-                  )}
-                </div>
-              </article>
-            );
-          }
-        )}
+        {ourOfferedCourses.map((course, index) => (
+          <Course {...course} handleOpenModal={handleOpenModal} key={index} />
+        ))}
       </Masonry>
 
       {/* modal */}
@@ -212,7 +127,7 @@ const Courses = () => {
           <button
             type='button'
             onClick={handleCloseModal}
-            className='bg-blueViolet-700 hover:bg-blueViolet-600 py-base px-xl text-white text-center rounded inline-block mb-4 shadow-lg transition-all'
+            className='bg-customBlueViolet-700 hover:bg-blueViolet-600 py-base px-xl text-white text-center rounded inline-block mb-4 shadow-lg transition-all'
           >
             Close
           </button>

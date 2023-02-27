@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-
-/* router */
-import { Link } from 'react-router-dom';
-/* icons */
+/* REACT */
+import { useState } from 'react';
+/* REACT ROUTER */
+import { NavLink } from 'react-router-dom';
+/* ICONS */
 import { Icon } from '@iconify/react';
-/* components */
+/* COMPONENTS */
 import PageLinks from './PageLinks';
 import AsideMenu from './AsideMenu';
 import Logo from './Logo';
@@ -12,8 +12,13 @@ import Logo from './Logo';
 function Navbar() {
   const [isAsideMenu, setIsAsideMenu] = useState(false);
 
+  /* active navlink style */
+  let activeStyle = {
+    backgroundColor: '#ffffff',
+  };
+
   return (
-    <nav className='relative text-white bg-primaryBlue-500 py-4 md:py-6 z-40'>
+    <nav className='relative text-white bg-customBlue-500 py-4 md:py-6 z-40'>
       <div className='mx-auto w-11/12 lg:flex lg:items-center lg:justify-between'>
         {/* logo */}
         <div className='flex items-center justify-between'>
@@ -30,17 +35,18 @@ function Navbar() {
         {/* links */}
         <PageLinks
           containerClass={'hidden lg:flex'}
-          itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider hover:scale-110 transition-all'
+          itemClass='relative uppercase block text-base py-base px-lg ml-4 tracking-wider hover:text-customYellow-500 transition-all'
         />
 
         {/* login */}
-        <Link
-          to='login'
-          className='hidden lg:flex items-center gap-x-2 bg-primaryYellow-450 hover:bg-primaryYellow-550 text-primaryBlue-500 font-semibold rounded px-lg py-sm transition-all outline-none uppercase'
+        <NavLink
+          to='/login'
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          className='hidden lg:flex items-center gap-x-2 bg-customYellow-450 hover:bg-customYellow-550 text-customBlue-500 font-semibold rounded px-lg py-sm transition-all outline-none uppercase'
         >
           <Icon icon='carbon:user-avatar-filled' />
           log in
-        </Link>
+        </NavLink>
       </div>
       <AsideMenu isAsideMenu={isAsideMenu} setIsAsideMenu={setIsAsideMenu} />
     </nav>

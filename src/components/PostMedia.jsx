@@ -1,4 +1,4 @@
-const NewsMedia = ({ image, video, title, defaultTitle, mediaStyle }) => {
+const PostMedia = ({ image, video, title, defaultTitle, mediaStyle }) => {
   if (image) {
     return (
       <img
@@ -26,4 +26,4 @@ const NewsMedia = ({ image, video, title, defaultTitle, mediaStyle }) => {
   }
   return;
 };
-export default NewsMedia;
+export default PostMedia

@@ -1,4 +1,4 @@
-/* react router */
+/* REACT ROUTER */
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
@@ -7,8 +7,8 @@ const LandingPage = () => {
       {/* content */}
       <main className='mx-auto w-11/12 lg:w-full lg:px-[8.33%]'>
         <h2 className='uppercase font-bold text-center xl:text-left mb-6 md:mb-7 lg:mb-8 text-2xl md:text-4xl lg:text-5xl'>
-          we help <span className='text-lightBlue-500'>students</span> to reach
-          their <span className='text-primaryBlue-500'>dreams</span>
+          we help <span className='text-customLightBlue-500'>students</span> to
+          reach their <span className='text-customBlue-500'>dreams</span>
         </h2>
         <p className='mb-4 md:mb-5 lg:mb-6 md:text-lg'>
           <strong>Talisay City College (TCC)</strong> is a public higher
@@ -22,7 +22,7 @@ const LandingPage = () => {
         <div className='text-center xl:text-left'>
           <Link
             to={'/about'}
-            className='inline-block bg-primaryYellow-450 hover:bg-primaryYellow-500 rounded px-xl py-base transition-all outline-none lg:text-lg text-primaryBlue-500 hover:text-primaryBlue-600 font-medium tracking-wide shadow-lg'
+            className='inline-block bg-customYellow-450 hover:bg-customYellow-500 rounded px-xl py-base transition-all outline-none lg:text-lg text-customBlue-500 hover:text-customBlue-600 font-medium tracking-wide shadow-lg'
           >
             Learn more
           </Link>

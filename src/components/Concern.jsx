@@ -1,4 +1,6 @@
-import React, { useRef, useState } from 'react';
+/* REACT */
+import { useRef, useState } from 'react';
+/* ICONS */
 import { Icon } from '@iconify/react';
 
 function Concern() {
@@ -40,7 +42,7 @@ function Concern() {
       const validate = (val) => {
         if (val) {
           /* input field */
-          input.classList.add('border-primaryBlue-500');
+          input.classList.add('border-customBlue-500');
           input.classList.remove('border-red-500');
           input.classList.remove('border-neutral-300');
           /* hide error message */
@@ -49,7 +51,7 @@ function Concern() {
         } else {
           /* input field */
           input.classList.add('border-red-500');
-          input.classList.remove('border-primaryBlue-500');
+          input.classList.remove('border-customBlue-500');
           input.classList.remove('border-neutral-300');
           /* show error message */
           errorElement.classList.remove('hidden');
@@ -79,7 +81,7 @@ function Concern() {
       inputContainers.current.forEach((container) => {
         const inputElement = container.querySelector('[data-input]');
         inputElement.classList.remove('border-red-500');
-        inputElement.classList.remove('border-primaryBlue-500');
+        inputElement.classList.remove('border-customBlue-500');
         inputElement.classList.add('border-neutral-300');
       });
     }
@@ -102,7 +104,7 @@ function Concern() {
           data-aos-duration='700'
           data-aos-delay='300'
           allowFullScreen
-          // loading='lazy'
+          loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
         ></iframe>
         {/* FORM */}
@@ -136,7 +138,7 @@ function Concern() {
               type='button'
               title='Close'
               onClick={() => setIsConcernSubmitted(false)}
-              className='block w-full max-w-xs mx-auto mt-4 py-base px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-500'
+              className='block w-full max-w-xs mx-auto mt-4 py-base px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-customBlue-500'
             >
               Close
             </button>
@@ -204,7 +206,7 @@ function Concern() {
             <button
               title='Submit'
               type='submit'
-              className='block mx-auto lg:ml-0 px-lg py-sm md:py-base md:px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-primaryBlue-500 hover:bg-primaryBlue-400 transition-all duration-200'
+              className='block mx-auto lg:ml-0 px-lg py-sm md:py-base md:px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-customBlue-500 hover:bg-customBlue-400 transition-all duration-200'
             >
               Submit
             </button>

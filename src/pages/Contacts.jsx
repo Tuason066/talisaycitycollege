@@ -1,13 +1,14 @@
-/* react masonry : https://www.npmjs.com/package/react-masonry-css */
+/* REACT MASONRY : https://www.npmjs.com/package/react-masonry-css */
 import Masonry from 'react-masonry-css';
-/* data */
+/* DATA */
 import { contacts } from '../data';
-/* icons */
+/* ICONS */
 import { Icon } from '@iconify/react';
-/* components */
+/* COMPONENTS */
 import Section from '../components/Section';
 
 const Contacts = () => {
+  /* react masonry media queries */
   const breakpointColumnsObj = {
     default: 3,
     1024: 2,
@@ -18,7 +19,7 @@ const Contacts = () => {
     <Section>
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
-        className='text-primaryBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mb-8 sm:mb-12 lg:mb-16 underline'
+        className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mb-8 sm:mb-12 lg:mb-16 underline'
         data-aos='zoom-in'
         data-aos-delay='200'
       >
@@ -35,7 +36,7 @@ const Contacts = () => {
           return (
             <article
               key={index}
-              className='px-6 py-8 md:px-8 md:py-10 rounded max-w-xs md:max-w-md mx-auto bg-blueViolet-700 text-white shadow-lg transition-all'
+              className='px-6 py-8 md:px-8 md:py-10 rounded max-w-xs md:max-w-md mx-auto bg-customBlueViolet-700 text-white shadow-lg transition-all'
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
               data-aos-delay='400'
@@ -76,7 +77,7 @@ const Contacts = () => {
                   href={facebookPath}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='block w-full mt-4 text-center bg-primaryYellow-500 text-blueViolet-700 hover:bg-primaryYellow-350 p-base font-semibold rounded shadow-lg transition-all duration-300'
+                  className='block w-full mt-4 text-center bg-customYellow-500 text-customBlueViolet-700 hover:bg-customYellow-350 p-base font-semibold rounded shadow-lg transition-all duration-300'
                 >
                   Contact Us
                 </a>

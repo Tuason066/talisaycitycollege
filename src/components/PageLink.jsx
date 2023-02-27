@@ -1,11 +1,17 @@
+/* REACT */
 import { useState } from 'react';
-/* router */
-import { Link } from 'react-router-dom';
-/* components */
+/* REACT ROUTER */
+import { NavLink } from 'react-router-dom';
+/* COMPONENTS */
 import Submenu from './Submenu';
 
 const PageLink = ({ path, text, title, submenu, itemClass }) => {
   const [isSubmenu, setIsSubmenu] = useState(false);
+
+  /* active navlink style */
+  let activeStyle = {
+    color: '#ffcc00',
+  };
 
   return (
     <li>
@@ -30,9 +36,15 @@ const PageLink = ({ path, text, title, submenu, itemClass }) => {
           />
         </div>
       ) : (
-        <Link to={path} className={itemClass} title={title} type='button'>
+        <NavLink
+          to={path}
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          className={itemClass}
+          title={title}
+          type='button'
+        >
           {text}
-        </Link>
+        </NavLink>
       )}
     </li>
   );

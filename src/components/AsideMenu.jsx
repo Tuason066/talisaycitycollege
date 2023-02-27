@@ -1,11 +1,12 @@
-/* react */
+/* REACT */
 import { useState } from 'react';
-/* react router */
-import { Link } from 'react-router-dom';
-/* icon */
+/* REACT ROUTER */
+import { NavLink } from 'react-router-dom';
+/* ICONS */
 import { Icon } from '@iconify/react';
-/* data */
+/* DATA */
 import { pageLinks } from '../data';
+/* COMPONENTS */
 import AsideSubmenu from './AsideSubmenu';
 
 const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
@@ -18,6 +19,16 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
   const handleCloseSubmenu = () => {
     setIsSubmenu(-1);
     setIsAsideMenu(false);
+  };
+
+  /* active navlink style */
+  let activeStyle = {
+    color: '#0052d4',
+  };
+
+  let activeLogin = {
+    backgroundColor: '#ffffff',
+    border: '2px solid #ffffff',
   };
 
   return (
@@ -34,7 +45,7 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
       bg-white
       shadow-lg
       z-50
-      text-black`}
+      text-black lg:hidden`}
     >
       <div className='mx-auto w-11/12'>
         {/* close button */}
@@ -43,14 +54,15 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
             <Icon icon='humbleicons:times' width={'20'} />
           </button>
           {/* login */}
-          <Link
-            to='login'
+          <NavLink
+            to='/login'
             onClick={handleCloseSubmenu}
-            className='flex lg:hidden items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-primaryBlue-500 font-semibold rounded px-lg py-sm transition-all outline-none'
+            style={({ isActive }) => (isActive ? activeLogin : undefined)}
+            className='flex lg:hidden items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-customBlue-500 font-semibold rounded px-lg py-sm transition-all outline-none'
           >
             <Icon icon='carbon:user-avatar-filled' />
             Log In
-          </Link>
+          </NavLink>
         </div>
         {/* page links */}
         <ul>
@@ -89,14 +101,17 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
                     </div>
                   </div>
                 ) : (
-                  <Link
+                  <NavLink
                     to={path}
                     title={title}
                     onClick={handleCloseSubmenu}
+                    style={({ isActive }) =>
+                      isActive ? activeStyle : undefined
+                    }
                     className='capitalize py-1 block'
                   >
                     {text}
-                  </Link>
+                  </NavLink>
                 )}
               </li>
             );

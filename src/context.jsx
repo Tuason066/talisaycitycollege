@@ -3,14 +3,7 @@ import React, { createContext, useContext, useState } from 'react';
 const AppContext = createContext();
 
 function AppProvider({ children }) {
-  /* use to preview the news and updates */
-  const [isPreview, setIsPreview] = useState({ state: false, news: [] });
-
-  return (
-    <AppContext.Provider value={{ isPreview, setIsPreview }}>
-      {children}
-    </AppContext.Provider>
-  );
+  return <AppContext.Provider value={''}>{children}</AppContext.Provider>;
 }
 
 const useGlobalContext = () => useContext(AppContext);

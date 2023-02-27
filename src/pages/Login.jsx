@@ -1,3 +1,4 @@
+/* REACT */
 import { useRef, useState } from 'react';
 
 const Login = () => {
@@ -117,9 +118,11 @@ const Login = () => {
             boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
           }}
           className='rounded overflow-hidden w-11/12 max-w-sm shadow-xl'
+          data-aos='zoom-in'
+          data-aos-duration='700'
         >
           {/* background color of top section will be change down here */}
-          <div className='px-4 pt-12 pb-2 md:px-8 bg-primaryBlue-500'>
+          <div className='px-4 pt-12 pb-2 md:px-8 bg-customBlue-500'>
             <img
               src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1675356562/talisay-city-college/logo_anup6r.png'
               alt='logo'
@@ -222,7 +225,7 @@ const Login = () => {
                 </div>
                 <button
                   type='submit'
-                  className='loginForm-btn bg-primaryYellow-450 hover:primaryYellow-550 text-primaryBlue-500'
+                  className='loginForm-btn bg-customYellow-450 hover:customYellow-550 text-customBlue-500'
                 >
                   Sign In
                 </button>
@@ -291,7 +294,7 @@ const Login = () => {
                 </div>
                 <button
                   type='submit'
-                  className='loginForm-btn bg-primaryYellow-450 hover:primaryYellow-550 text-primaryBlue-500'
+                  className='loginForm-btn bg-customYellow-450 hover:customYellow-550 text-customBlue-500'
                 >
                   Sign In
                 </button>

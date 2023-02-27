@@ -3,20 +3,19 @@ import { useEffect } from 'react';
 /* react router */
 import { Link } from 'react-router-dom';
 /* data */
-import { newsAndUpdates } from '../data';
+import { posts } from '../data';
 /* components */
+import Section from '../components/Section';
 import Achievers from '../components/Achievers';
 import LandingPage from '../components/LandingPage';
-import NewsAndUpdates from '../components/NewsAndUpdates';
 import Concern from '../components/Concern';
 import FrequentlyAskedQuestions from '../components/FrequentlyAskedQuestions';
+import Posts from '../components/Posts';
 
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const newsData = newsAndUpdates.slice(0, 6);
 
   return (
     <>
@@ -39,20 +38,24 @@ function Home() {
       </picture>
       <LandingPage />
       <Achievers />
-      <NewsAndUpdates
-        data={newsData}
-        titleClass='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'
-        subTitleClass='text-xs lg:text-base mb-6 md:mb-8 lg:mb-10'
-      >
-        <div className='text-center mt-2 md:mt-3 lg:mt-4'>
-          <Link
-            to={'/news'}
-            className='hover:underline transition-all font-semibold'
-          >
+      <Section>
+        <h2
+          className={
+            'text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'
+          }
+        >
+          Latest news and updates
+        </h2>
+        <p className={'text-xs lg:text-base mb-6 md:mb-8 lg:mb-10'}>
+          Stay up to date
+        </p>
+        <Posts posts={posts.slice(0, 6)} />
+        <div className='text-center mt-4 md:mt-8'>
+          <Link to='posts' className='hover:underline'>
             See more updates
           </Link>
         </div>
-      </NewsAndUpdates>
+      </Section>
       <FrequentlyAskedQuestions />
       <Concern />
     </>

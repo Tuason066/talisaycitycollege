@@ -1,8 +1,9 @@
+/* ICONS */
 import { Icon } from '@iconify/react';
 
 function FrequentlyAskedQuestions() {
   return (
-    <section className='bg-blueViolet-500'>
+    <section className='bg-customBlueViolet-500'>
       <div className='mx-auto w-11/12 py-8 md:py-12 lg:py-14 lg:flex lg:gap-x-20'>
         {/* GOOGLE MAP #1 */}
         <iframe
@@ -15,7 +16,7 @@ function FrequentlyAskedQuestions() {
           }}
           className='hidden lg:block rounded'
           allowFullScreen
-          // loading='lazy'
+          loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
           data-aos='zoom-out-right'
         ></iframe>
@@ -44,9 +45,12 @@ function FrequentlyAskedQuestions() {
               </summary>
               <div className='p-4 pl-8 bg-slate-100 border-t transition-all'>
                 <p>
-                  <strong>Talisay City College (TCC)</strong> is a public higher
-                  educational institution in the province of Cebu it is totally
-                  free (₱0.00).
+                  <strong>
+                    Talisay City College (
+                    <abbr title='Talisay City College'>TCC</abbr>)
+                  </strong>{' '}
+                  is a public higher educational institution in the province of
+                  Cebu it is totally free (₱0.00).
                 </p>
               </div>
             </details>
@@ -102,7 +106,8 @@ function FrequentlyAskedQuestions() {
                       href='https://ched.gov.ph/'
                       className='hover:underline transition-all'
                     >
-                      Commission on Higher Education (CHED)
+                      Commission on Higher Education (
+                      <abbr title='Commission on Higher Education'>CHED</abbr>)
                     </a>
                   </li>
                 </ul>
@@ -110,7 +115,7 @@ function FrequentlyAskedQuestions() {
                   Contact our{' '}
                   <a
                     href='https://www.facebook.com/profile.php?id=100069043275667'
-                    className='text-primaryBlue-500 hover:underline transition-all'
+                    className='text-customBlue-500 hover:underline transition-all'
                   >
                     Scholarship Office
                   </a>{' '}

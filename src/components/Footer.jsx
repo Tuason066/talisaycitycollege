@@ -1,15 +1,15 @@
-/* react router */
+/* REACT ROUTER */
 import { Link } from 'react-router-dom';
-/* icons */
+/* ICONS */
 import { Icon } from '@iconify/react';
-/* data */
+/* DATA */
 import { socialLinks } from '../data';
-/* components */
+/* COMPONENTS */
 import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <footer className='relative text-white bg-primaryBlue-500 py-4 md:py-6 overflow-hidden'>
+    <footer className='relative text-white bg-customBlue-500 py-4 md:py-6 overflow-hidden'>
       <img
         src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1675356562/talisay-city-college/logo_anup6r.png'
         alt='logo'
