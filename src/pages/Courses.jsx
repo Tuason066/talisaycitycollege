@@ -7,9 +7,7 @@ import Masonry from 'react-masonry-css';
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import Section from '../components/Section';
-import Course from '../components/Course';
-import CoursesFilter from '../components/CoursesFilter';
+import { Section, Course, CoursesFilter } from '../components';
 
 const Courses = () => {
   /* react masonry media queries */
@@ -62,7 +60,7 @@ const Courses = () => {
   return (
     <Section>
       {/* title / subtitle */}
-      <div data-aos='zoom-in' data-aos-delay='200'>
+      <header data-aos='zoom-in' data-aos-delay='200' data-aos-duration='700'>
         {/* title */}
         <h2
           style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
@@ -81,7 +79,7 @@ const Courses = () => {
             departments={departments}
           />
         </div>
-      </div>
+      </header>
 
       {/* cards */}
       <Masonry

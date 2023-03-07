@@ -11,25 +11,43 @@ import 'aos/dist/aos.css';
 // ..
 AOS.init();
 /* DATA */
-/* DATA */
 import { posts } from './data';
 /* COMPONENTS */
-import Contacts from './pages/Contacts';
-import Developers from './pages/Developers';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import LatestNewsAndUpdates from './pages/LatestNewsAndUpdates';
-import About from './pages/About';
-import Courses from './pages/Courses';
-import SinglePost from './pages/SinglePost';
-import NavbarFooterLayout from './layout/NavbarFooterLayout';
-import FooterLayout from './layout/FooterLayout';
-import OrganizationChart from './pages/OrganizationChart';
-import ErrorMessage from './components/ErrorMessage';
+import { ErrorMessage } from './components';
+/* PAGES */
+import {
+  About,
+  Contacts,
+  Courses,
+  Developers,
+  FacultyLogin,
+  FacultyPortal,
+  StudentLogin,
+  StudentPortal,
+  Home,
+  LatestNewsAndUpdates,
+  OrganizationChart,
+  SinglePost,
+} from './pages';
+/* PORTAL COMPONENTS */
+import {
+  Messages,
+  Schedule,
+  Calendar,
+  Grades,
+  Password,
+} from './portalComponents';
+/* LAYOUTS */
+import {
+  NavbarFooterLayout,
+  FooterLayout,
+  StudentPortalNavigationLayout,
+} from './layouts';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+      {/* WRAPPED WITH NAVBAR AND FOOTER COMPONENT */}
       <Route
         path='/'
         element={<NavbarFooterLayout />}
@@ -52,11 +70,6 @@ const router = createBrowserRouter(
           errorElement={<ErrorMessage />}
         />
         <Route
-          path='login'
-          element={<Login />}
-          errorElement={<ErrorMessage />}
-        />
-        <Route
           path='developers'
           element={<Developers />}
           errorElement={<ErrorMessage />}
@@ -71,7 +84,24 @@ const router = createBrowserRouter(
           element={<OrganizationChart />}
           errorElement={<ErrorMessage />}
         />
+        <Route path='student-login' element={<StudentLogin />} />
+        <Route path='faculty-login' element={<FacultyLogin />} />
+        <Route
+          path='student-portal'
+          element={<StudentPortalNavigationLayout />}
+        >
+          <Route index element={<StudentPortal />} />
+          <Route path='schedule' element={<Schedule />} />
+          <Route path='calendar' element={<Calendar />} />
+          <Route path='grades' element={<Grades />} />
+          <Route path='messages' element={<Messages />} />
+          <Route path='password' element={<Password />} />
+        </Route>
+        {/*  <Route path='student-portal' element={<StudentPortal />} />
+        <Route path='faculty-portal' element={<FacultyPortal />} /> */}
       </Route>
+      {/* END OF - WRAPPED WITH  NAVBAR AND FOOTER COMPONENT */}
+      {/* ONLY HAS A FOOTER COMPONENT */}
       <Route path='post/:id' element={<FooterLayout />}>
         <Route
           index
@@ -79,6 +109,8 @@ const router = createBrowserRouter(
           errorElement={<ErrorMessage />}
         />
       </Route>
+      {/*END OF - ONLY HAS A FOOTER COMPONENT */}
+
       <Route path='*' element={<ErrorMessage />} />
     </>
   )

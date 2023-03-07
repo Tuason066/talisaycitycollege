@@ -13,6 +13,7 @@ const Course = ({
     data-aos='fade-up'
     data-aos-anchor-placement='top-bottom'
     data-aos-delay='400'
+    data-aos-duration='700'
   >
     {major && (
       <span className='absolute top-0 left-0 bg-customBlueViolet-550 text-white tracking-wide p-base px-lg rounded-br z-10 shadow-lg text-sm'>

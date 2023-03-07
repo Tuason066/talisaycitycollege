@@ -4,12 +4,13 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 /* ICONS */
 import { Icon } from '@iconify/react';
-
 /* COMPONENTS */
-import Posts from '../components/Posts';
-import Section from '../components/Section';
-import SinglePostMedia from '../components/SinglePostMedia';
-import SinglePostDescription from '../components/SinglePostDescription';
+import {
+  Section,
+  Posts,
+  SinglePostMedia,
+  SinglePostDescription,
+} from '../components';
 
 const SinglePost = ({ posts }) => {
   /* SINGLE POST ID */

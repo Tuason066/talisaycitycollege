@@ -5,7 +5,7 @@ import { contacts } from '../data';
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import Section from '../components/Section';
+import { Section } from '../components';
 
 const Contacts = () => {
   /* react masonry media queries */
@@ -22,6 +22,7 @@ const Contacts = () => {
         className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mb-8 sm:mb-12 lg:mb-16 underline'
         data-aos='zoom-in'
         data-aos-delay='200'
+        data-aos-duration='700'
       >
         Contact Us
       </h2>
@@ -40,6 +41,7 @@ const Contacts = () => {
               data-aos='fade-up'
               data-aos-anchor-placement='top-bottom'
               data-aos-delay='400'
+              data-aos-duration='700'
             >
               {/* icon */}
               <div className='flex justify-center'>

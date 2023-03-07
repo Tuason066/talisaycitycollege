@@ -184,50 +184,32 @@ details[open] > summary > .icon {
   transition-delay: 0.4s;
 }
 
-/* ################ LOG IN ################ */
-
-/* container flip */
-.loginForm-container {
-  @apply relative;
+/* ################ PORTAL ################ */
+/* .student-form {
+  background: rgba(0, 74, 172, 0.72);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
+  border: 1px solid rgba(0, 74, 172, 0.34);
+} */
+.student-form {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.rotateForm .loginForm-wrapper {
-  transform: rotateY(0.5turn);
+.student-form input {
+  background: rgba(255, 255, 255, 0.91);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-.loginForm-wrapper {
-  @apply w-full h-[280px] relative;
-  transform-style: preserve-3d;
-  transition-duration: 1s;
-}
-/* background color of student/faculty form will be change here */
-.loginForm {
-  @apply px-4 md:px-8 flex flex-col gap-y-2 pt-6 pb-8 absolute top-0 right-0 bottom-0 left-0 w-full h-full bg-customBlue-500;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-/* end - background color of student/faculty form will be change here */
-
-.facultyForm {
-  transform: rotateY(0.5turn);
-}
-
-.loginForm-inputField-wrapper {
-  @apply grid gap-y-2;
-  transform: translateZ(5rem);
-}
-.loginForm-inputField {
-  @apply bg-white flex items-center p-2 rounded shadow-lg;
-}
-.loginForm-btn {
-  @apply w-fit mx-auto mt-2 px-xl py-base rounded font-medium;
-  transform: translateZ(5rem);
-}
-.loginForm-errorMessage {
-  @apply text-xs text-white bg-red-700 p-base rounded w-fit;
-  transform: translateZ(4rem);
-}
-
 /* ################ COURSES ################ */
 
 .courses-card {

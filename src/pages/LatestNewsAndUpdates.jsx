@@ -1,10 +1,9 @@
 /* REACT */
 import { useState, useEffect } from 'react';
 /* COMPONENTS */
-import Posts from '../components/Posts';
-import Section from '../components/Section';
+import { Section, Posts } from '../components';
 
-const LatestNewsAndUpdates = ({posts}) => {
+const LatestNewsAndUpdates = ({ posts }) => {
   const [limitPosts, setLimitPosts] = useState(6);
 
   const handleLimitPosts = () =>

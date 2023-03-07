@@ -9,7 +9,7 @@ import Masonry from 'react-masonry-css';
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import Section from '../components/Section';
+import { Section } from '../components';
 
 const Developers = () => {
   useEffect(() => {

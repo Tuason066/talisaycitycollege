@@ -25,7 +25,9 @@ module.exports = {
           500: '#ffcc00',
           550: '#e5b700',
         },
-        
+        customGray: {
+          500: '#cccccc',
+        },
         black: '#121212',
       },
       spacing: {

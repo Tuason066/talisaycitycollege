@@ -3,7 +3,7 @@ import Masonry from 'react-masonry-css';
 /* DATA */
 import { officials } from '../data';
 /* COMPONENTS */
-import Section from '../components/Section';
+import { Section } from '../components';
 
 const OrganizationChart = () => {
   /* react masonry media queries */
@@ -16,62 +16,67 @@ const OrganizationChart = () => {
   return (
     <Section>
       {/* college president */}
-      {/* <h2 className='text-lg mb-4'>Our College President</h2> */}
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
         className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mb-4 md:mb-8 lg:mb-12'
         data-aos='zoom-in'
         data-aos-duration='700'
       >
-        Our College President
+        President
       </h2>
       {/* TODO: fixed the grid system make it responsive used react masonry */}
-      <div className='gap-4 grid'>
-        <article
-          className='bg-customGreen-600 border-2 border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto'
-          data-aos='zoom-in'
-          data-aos-duration='700'
-        >
-          <img
-            src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488307/talisay-city-college/officials/richel_bacaltos_oahmbq.webp'
-            alt={'Richel N. Bacaltos, ED.D.'}
-            className='rounded-full inline-block w-24 shadow border border-customGreen-500'
-          />
-          <div className=''>
-            <h3 className='font-bold text-base uppercase'>
-              Richel N. Bacaltos, ED.D.
-            </h3>
-            <p className='text-sm'>College President</p>
-          </div>
-        </article>
-        <article
-          className='bg-customGreen-600 border-2 border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto'
-          data-aos='zoom-in'
-          data-aos-duration='700'
-        >
-          <img
-            src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488303/talisay-city-college/officials/catherine_dejan_qyxotp.webp'
-            alt={'Catherine A. Dejan, LPT'}
-            className='rounded-full inline-block w-24 shadow border border-customGreen-500'
-          />
-          <div className=''>
-            <h3 className='font-bold text-base uppercase'>
-              Catherine A. Dejan, LPT
-            </h3>
-            <p className='text-sm'>Secretary/ HR Head</p>
-          </div>
-        </article>
-      </div>
-      {/* end of college president */}
-      {/* college dean */}
-      {/* <h2 className='text-lg mb-4'>Our College Dean</h2> */}
+      <article
+        className='bg-customGreen-600 border-4 border-transparent hover:border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto transition-all'
+        data-aos='zoom-in'
+        data-aos-duration='700'
+      >
+        <img
+          src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488307/talisay-city-college/officials/richel_bacaltos_oahmbq.webp'
+          alt={'Richel N. Bacaltos, ED.D.'}
+          className='rounded-full inline-block w-24 shadow border border-customGreen-500'
+        />
+        <div className=''>
+          <h3 className='font-bold text-base uppercase'>
+            Richel N. Bacaltos, ED.D.
+          </h3>
+          <p className='text-sm'>College President</p>
+        </div>
+      </article>
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
         className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center m-4 md:m-8 lg:m-12'
         data-aos='zoom-in'
         data-aos-duration='700'
       >
-        Our College Dean
+        Secretary
+      </h2>
+      <article
+        className='bg-customGreen-600 border-4 border-transparent hover:border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto transition-all'
+        data-aos='zoom-in'
+        data-aos-duration='700'
+      >
+        <img
+          src='https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488303/talisay-city-college/officials/catherine_dejan_qyxotp.webp'
+          alt={'Catherine A. Dejan, LPT'}
+          className='rounded-full inline-block w-24 shadow border border-customGreen-500'
+        />
+        <div className=''>
+          <h3 className='font-bold text-base uppercase'>
+            Catherine A. Dejan, LPT
+          </h3>
+          <p className='text-sm'>Secretary/ HR Head</p>
+        </div>
+      </article>
+      {/* end of college president */}
+      {/* college dean */}
+      {/* <h2 className='text-lg mb-4'>Dean</h2> */}
+      <h2
+        style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
+        className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center m-4 md:m-8 lg:m-12'
+        data-aos='zoom-in'
+        data-aos-duration='700'
+      >
+        Dean
       </h2>
       {/* <div className='masonry'> */}
       <Masonry
@@ -82,7 +87,7 @@ const OrganizationChart = () => {
         {officials.dean.map(({ name, position, image }, index) => (
           <article
             key={index}
-            className='bg-customGreen-600 border-2 border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto'
+            className='bg-customGreen-600 border-4 border-transparent hover:border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto transition-all'
             data-aos='zoom-in'
             data-aos-duration='700'
           >
@@ -93,6 +98,7 @@ const OrganizationChart = () => {
                   : 'https://via.placeholder.com/96?text=Image+Not+Found'
               }
               alt={name}
+              loading='lazy'
               className='rounded-full inline-block'
             />
             <div className=''>
@@ -105,14 +111,14 @@ const OrganizationChart = () => {
       {/* </div> */}
       {/* end of college dean */}
       {/* college program coordinators */}
-      {/* <h2 className='text-lg mb-4'>Our College Coordinators</h2> */}
+      {/* <h2 className='text-lg mb-4'>Coordinators</h2> */}
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
         className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center m-4 md:m-8 lg:m-12'
         data-aos='zoom-in'
         data-aos-duration='700'
       >
-        Our College Coordinators
+        Coordinators
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
@@ -122,7 +128,7 @@ const OrganizationChart = () => {
         {officials.coordinators.map(({ name, position, image }, index) => (
           <article
             key={index}
-            className='bg-customGreen-600 border-2 border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto'
+            className='bg-customGreen-600 border-4 border-transparent hover:border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto transition-all'
             data-aos='zoom-in'
             data-aos-duration='700'
           >
@@ -133,6 +139,7 @@ const OrganizationChart = () => {
                   : 'https://via.placeholder.com/96?text=Image+Not+Found'
               }
               alt={name}
+              loading='lazy'
               className='rounded-full inline-block'
             />
             <div className=''>
@@ -144,14 +151,14 @@ const OrganizationChart = () => {
       </Masonry>
       {/* end of college program coordinators */}
       {/* college course in-charge */}
-      {/* <h2 className='text-lg mb-4'>Our College Course In-Charge</h2> */}
+      {/* <h2 className='text-lg mb-4'>Course In-Charge</h2> */}
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
         className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center m-4 md:m-8 lg:m-12'
         data-aos='zoom-in'
         data-aos-duration='700'
       >
-        Our College Course In-Charge
+        Course In-Charge
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
@@ -161,7 +168,7 @@ const OrganizationChart = () => {
         {officials.courseInCharge.map(({ name, position, image }, index) => (
           <article
             key={index}
-            className='bg-customGreen-600 border-2 border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto'
+            className='bg-customGreen-600 border-4 border-transparent hover:border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto transition-all'
             data-aos='zoom-in'
             data-aos-duration='700'
           >
@@ -172,6 +179,7 @@ const OrganizationChart = () => {
                   : 'https://via.placeholder.com/96?text=Image+Not+Found'
               }
               alt={name}
+              loading='lazy'
               className='rounded-full inline-block'
             />
             <div className=''>
@@ -183,14 +191,14 @@ const OrganizationChart = () => {
       </Masonry>
       {/* end of college course in-charge */}
       {/* college services */}
-      {/* <h2 className='text-lg mb-4'>Our College Services</h2> */}
+      {/* <h2 className='text-lg mb-4'>Services</h2> */}
       <h2
         style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
         className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center m-4 md:m-8 lg:m-12'
         data-aos='zoom-in'
         data-aos-duration='700'
       >
-        Our College Course Services
+        Course Services
       </h2>
       <Masonry
         breakpointCols={breakpointColumnsObj}
@@ -200,7 +208,7 @@ const OrganizationChart = () => {
         {officials.services.map(({ name, position, image }, index) => (
           <article
             key={index}
-            className='bg-customGreen-600 border-2 border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto'
+            className='bg-customGreen-600 border-4 border-transparent hover:border-customGreen-500 rounded p-4 flex items-center gap-x-2 md:gap-x-4 w-full max-w-sm mx-auto transition-all'
             data-aos='zoom-in'
             data-aos-duration='700'
           >
@@ -211,6 +219,7 @@ const OrganizationChart = () => {
                   : 'https://via.placeholder.com/96?text=Image+Not+Found'
               }
               alt={name}
+              loading='lazy'
               className='rounded-full inline-block'
             />
             <div className=''>

@@ -8,6 +8,7 @@ import { Icon } from '@iconify/react';
 import { pageLinks } from '../data';
 /* COMPONENTS */
 import AsideSubmenu from './AsideSubmenu';
+import PortalsDropdown from './PortalsDropdown';
 
 const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
   const [isSubmenu, setIsSubmenu] = useState(-1);
@@ -22,13 +23,8 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
   };
 
   /* active navlink style */
-  let activeStyle = {
+  const activeStyle = {
     color: '#0052d4',
-  };
-
-  let activeLogin = {
-    backgroundColor: '#ffffff',
-    border: '2px solid #ffffff',
   };
 
   return (
@@ -53,16 +49,11 @@ const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
           <button type='button' onClick={handleCloseSubmenu}>
             <Icon icon='humbleicons:times' width={'20'} />
           </button>
-          {/* login */}
-          <NavLink
-            to='/login'
-            onClick={handleCloseSubmenu}
-            style={({ isActive }) => (isActive ? activeLogin : undefined)}
-            className='flex lg:hidden items-center gap-x-2 bg-yellow-400 hover:bg-yellow-500 text-customBlue-500 font-semibold rounded px-lg py-sm transition-all outline-none'
-          >
-            <Icon icon='carbon:user-avatar-filled' />
-            Log In
-          </NavLink>
+          {/*  portal */}
+          <PortalsDropdown
+            display='flex'
+            handleCloseSubmenu={handleCloseSubmenu}
+          />
         </div>
         {/* page links */}
         <ul>

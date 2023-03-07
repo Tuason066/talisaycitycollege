@@ -1,11 +1,7 @@
 /* REACT */
 import React, { useEffect } from 'react';
 /* COMPONENTS */
-import CoreValues from '../components/CoreValues';
-import Goals from '../components/Goals';
-import Mission from '../components/Mission';
-import Vision from '../components/Vision';
-import History from '../components/History';
+import { CoreValues, Goals, Mission, Vision, History } from '../components';
 
 function About() {
   useEffect(() => {

@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom';
 /* data */
 import { posts } from '../data';
 /* components */
-import Section from '../components/Section';
-import Achievers from '../components/Achievers';
-import LandingPage from '../components/LandingPage';
-import Concern from '../components/Concern';
-import FrequentlyAskedQuestions from '../components/FrequentlyAskedQuestions';
-import Posts from '../components/Posts';
+import {Section,Achievers,LandingPage,Concern,FrequentlyAskedQuestions,Posts} from '../components'
 
 function Home() {
   useEffect(() => {
