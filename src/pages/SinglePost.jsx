@@ -6,7 +6,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
 import {
-  Section,
   Posts,
   SinglePostMedia,
   SinglePostDescription,
