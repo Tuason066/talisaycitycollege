@@ -1,5 +1,8 @@
-import NavbarFooterLayout from './NavbarFooterLayout';
-import StudentPortalNavigationLayout from './StudentPortalNavigationLayout';
-import FooterLayout from './FooterLayout';
+import { lazy } from 'react';
+const NavbarFooterLayout = lazy(() => import('./NavbarFooterLayout'));
+const StudentPortalNavigationLayout = lazy(() =>
+  import('./StudentPortalNavigationLayout')
+);
+const FooterLayout = lazy(() => import('./FooterLayout'));
 
 export { NavbarFooterLayout, StudentPortalNavigationLayout, FooterLayout };

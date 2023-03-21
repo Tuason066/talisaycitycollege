@@ -3,10 +3,11 @@ import { useState } from 'react';
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import PageLinks from './PageLinks';
+/* import PageLinks from './PageLinks';
 import AsideMenu from './AsideMenu';
 import Logo from './Logo';
-import PortalsDropdown from './PortalsDropdown';
+import PortalsDropdown from './PortalsDropdown'; */
+import { PageLinks, AsideMenu, Logo, PortalsDropdown } from '.';
 
 const Navbar = () => {
   const [isAsideMenu, setIsAsideMenu] = useState(false);
@@ -19,7 +20,6 @@ const Navbar = () => {
   return (
     <nav className='relative text-white bg-customBlue-500 py-4 md:py-6 z-40'>
       <div className='mx-auto w-11/12 lg:flex lg:items-center lg:justify-between'>
-        
         {/* logo */}
         <div className='flex items-center justify-between'>
           <Logo />

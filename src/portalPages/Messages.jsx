@@ -1,6 +1,6 @@
 const Messages = () => {
   return (
-    <div>Messages</div>
+    <div className="min-h-screen">Messages</div>
   )
 }
 export default Messages

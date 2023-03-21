@@ -1,7 +1,12 @@
-import Calendar from './Calendar';
-import Grades from './Grades';
-import Messages from './Messages';
-import Password from './Password';
-import Schedule from './Schedule';
+import { lazy } from 'react';
+const PortalNavigation = lazy(() =>
+  import('../portalComponents/PortalNavigation')
+);
+const MobileScheduleTable = lazy(() =>
+  import('../portalComponents/MobileScheduleTable')
+);
+const DesktopScheduleTable = lazy(() =>
+  import('../portalComponents/DesktopScheduleTable')
+);
 
-export { Calendar, Grades, Messages, Password, Schedule };
+export { PortalNavigation, MobileScheduleTable, DesktopScheduleTable };

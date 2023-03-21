@@ -3,7 +3,8 @@ import { useState } from 'react';
 /* REACT ROUTER */
 import { NavLink } from 'react-router-dom';
 /* COMPONENTS */
-import Submenu from './Submenu';
+// import Submenu from './Submenu';
+import { Submenu } from '.';
 
 const PageLink = ({ path, text, title, submenu, itemClass }) => {
   const [isSubmenu, setIsSubmenu] = useState(false);

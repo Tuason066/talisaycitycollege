@@ -1,39 +1,40 @@
-import Achievers from './Achievers';
-import AsideMenu from './AsideMenu';
-import AsideSubmenu from './AsideSubmenu';
-import Concern from './Concern';
-import CoreValues from './CoreValues';
-import Course from './Course';
-import CoursesFilter from './CoursesFilter';
-import ErrorMessage from './ErrorMessage';
-import Footer from './Footer';
-import FrequentlyAskedQuestions from './FrequentlyAskedQuestions';
-import Goals from './Goals';
-import History from './History';
-import LandingPage from './LandingPage';
-import Logo from './Logo';
-import Mission from './Mission';
-import Navbar from './Navbar';
-import PageLink from './PageLink';
-import PageLinks from './PageLinks';
-import PortalsDropdown from './PortalsDropdown';
-import Post from './Post';
-import PostDescription from './PostDescription';
-import PostMedia from './PostMedia';
-import Posts from './Posts';
-import ScrollToTop from './ScrollToTop';
-import Section from './Section';
-import SinglePostDescription from './SinglePostDescription';
-import SinglePostMedia from './SinglePostMedia';
-import Submenu from './Submenu';
-import Vision from './Vision';
+import { lazy } from 'react';
+const Achievers = lazy(() => import('./Achievers'));
+const ErrorMessage = lazy(() => import('./ErrorMessage'));
+const CoursesFilter = lazy(() => import('./CoursesFilter'));
+const Course = lazy(() => import('./Course'));
+const CoreValues = lazy(() => import('./CoreValues'));
+const Concern = lazy(() => import('./Concern'));
+const AsideSubmenu = lazy(() => import('./AsideSubmenu'));
+const AsideMenu = lazy(() => import('./AsideMenu'));
+const Navbar = lazy(() => import('./Navbar'));
+const Mission = lazy(() => import('./Mission'));
+const Logo = lazy(() => import('./Logo'));
+const LandingPage = lazy(() => import('./LandingPage'));
+const History = lazy(() => import('./History'));
+const Goals = lazy(() => import('./Goals'));
+const FrequentlyAskedQuestions = lazy(() =>
+  import('./FrequentlyAskedQuestions')
+);
+const Footer = lazy(() => import('./Footer'));
+const Vision = lazy(() => import('./Vision'));
+const Submenu = lazy(() => import('./Submenu'));
+const SinglePostMedia = lazy(() => import('./SinglePostMedia'));
+const SinglePostDescription = lazy(() => import('./SinglePostDescription'));
+const ScrollToTop = lazy(() => import('./ScrollToTop'));
+const Posts = lazy(() => import('./Posts'));
+const Post = lazy(() => import('./Post'));
+const PostMedia = lazy(() => import('./PostMedia'));
+const PostDescription = lazy(() => import('./PostDescription'));
+const PortalsDropdown = lazy(() => import('./PortalsDropdown'));
+const PageLinks = lazy(() => import('./PageLinks'));
+const PageLink = lazy(() => import('./PageLink'));
 
 export {
   Vision,
   Submenu,
   SinglePostMedia,
   SinglePostDescription,
-  Section,
   ScrollToTop,
   Posts,
   PostMedia,

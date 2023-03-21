@@ -9,7 +9,7 @@ const PortalNavigation = () => {
   };
 
   return (
-    <nav className='py-4'>
+    <nav className='pt-4'>
       <div className='w-11/12 mx-auto tracking-wider'>
         <div className='text-center mb-6 mt-4'>
           <h2 className='font-bold text-xl uppercase'>Student Portal</h2>
@@ -22,7 +22,7 @@ const PortalNavigation = () => {
               style={({ isActive }) =>
                 isActive ? activeNavLinkStyle : undefined
               }
-              className='bg-customBlue-500 text-white hover:bg-customYellow-500 hover:text-customBlue-500 text-sm px-lg py-base rounded inline-block m-1 md:m-2 shadow-md transition-all duration-300'
+              className='blue-btn'
             >
               Schedule
             </NavLink>
@@ -33,7 +33,7 @@ const PortalNavigation = () => {
               style={({ isActive }) =>
                 isActive ? activeNavLinkStyle : undefined
               }
-              className='bg-customBlue-500 text-white hover:bg-customYellow-500 hover:text-customBlue-500 text-sm px-lg py-base rounded inline-block m-1 md:m-2 shadow-md transition-all duration-300'
+              className='blue-btn'
             >
               Calendar
             </NavLink>
@@ -44,7 +44,7 @@ const PortalNavigation = () => {
               style={({ isActive }) =>
                 isActive ? activeNavLinkStyle : undefined
               }
-              className='bg-customBlue-500 text-white hover:bg-customYellow-500 hover:text-customBlue-500 text-sm px-lg py-base rounded inline-block m-1 md:m-2 shadow-md transition-all duration-300'
+              className='blue-btn'
             >
               Grades
             </NavLink>
@@ -55,7 +55,7 @@ const PortalNavigation = () => {
               style={({ isActive }) =>
                 isActive ? activeNavLinkStyle : undefined
               }
-              className='bg-customBlue-500 text-white hover:bg-customYellow-500 hover:text-customBlue-500 text-sm px-lg py-base rounded inline-block m-1 md:m-2 shadow-md transition-all duration-300'
+              className='blue-btn'
             >
               Messages
             </NavLink>
@@ -66,7 +66,7 @@ const PortalNavigation = () => {
               style={({ isActive }) =>
                 isActive ? activeNavLinkStyle : undefined
               }
-              className='bg-customBlue-500 text-white hover:bg-customYellow-500 hover:text-customBlue-500 text-sm px-lg py-base rounded inline-block m-1 md:m-2 shadow-md transition-all duration-300'
+              className='blue-btn'
             >
               Password
             </NavLink>

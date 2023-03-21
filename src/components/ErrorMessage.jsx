@@ -1,5 +1,6 @@
 /* REACT ROUTER */
 import { Link } from 'react-router-dom';
+
 const ErrorMessage = () => {
   return (
     <section className='min-h-screen grid place-items-center text-center'>

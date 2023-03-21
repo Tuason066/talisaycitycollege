@@ -1,10 +1,11 @@
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import PostMedia from '../components/PostMedia';
+// import PostMedia from '../components/PostMedia';
+import { PostMedia } from '.';
 
-const SinglePostMedia = ({ title,media, currentCount, setCurrentCount }) => {
-   /* MEDIA DATA */
+const SinglePostMedia = ({ title, media, currentCount, setCurrentCount }) => {
+  /* MEDIA DATA */
   const handlePreviousButton = () =>
     setCurrentCount((prev) => (prev === 0 ? media.length - 1 : prev - 1));
 

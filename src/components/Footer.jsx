@@ -5,7 +5,8 @@ import { Icon } from '@iconify/react';
 /* DATA */
 import { socialLinks } from '../data';
 /* COMPONENTS */
-import Logo from './Logo';
+// import Logo from './Logo';
+import { Logo } from '.';
 
 const Footer = () => {
   return (

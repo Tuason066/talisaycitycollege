@@ -1,8 +1,9 @@
 /* REACT ROUTER */
 import { Link } from 'react-router-dom';
 /* COMPONENTS */
-import PostMedia from './PostMedia';
-import PostDescription from './PostDescription';
+/* import PostMedia from './PostMedia';
+import PostDescription from './PostDescription'; */
+import {PostMedia,PostDescription} from '.'
 
 const Post = ({ post }) => {
   return (

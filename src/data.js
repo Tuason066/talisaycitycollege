@@ -1310,7 +1310,7 @@ export const developers = [
     image:
       'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133761/talisay-city-college/developers/bernardo_h56tbh.webp',
     name: 'Justin Bernardo',
-    title: 'Java Developer',
+    title: 'Researcher',
     socialLinks: [
       {
         url: `https://www.facebook.com/bjunich`,

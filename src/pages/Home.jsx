@@ -5,7 +5,13 @@ import { Link } from 'react-router-dom';
 /* data */
 import { posts } from '../data';
 /* components */
-import {Section,Achievers,LandingPage,Concern,FrequentlyAskedQuestions,Posts} from '../components'
+import {
+  Achievers,
+  LandingPage,
+  Concern,
+  FrequentlyAskedQuestions,
+  Posts,
+} from '../components';
 
 function Home() {
   useEffect(() => {
@@ -33,24 +39,27 @@ function Home() {
       </picture>
       <LandingPage />
       <Achievers />
-      <Section>
-        <h2
-          className={
-            'text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'
-          }
-        >
-          Latest news and updates
-        </h2>
-        <p className={'text-xs lg:text-base mb-6 md:mb-8 lg:mb-10'}>
-          Stay up to date
-        </p>
-        <Posts posts={posts.slice(0, 6)} />
-        <div className='text-center mt-4 md:mt-8'>
-          <Link to='posts' className='hover:underline'>
-            See more updates
-          </Link>
+      <section className='section'>
+        <div className='section-center'>
+          {' '}
+          <h2
+            className={
+              'text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'
+            }
+          >
+            Latest news and updates
+          </h2>
+          <p className={'text-xs lg:text-base mb-6 md:mb-8 lg:mb-10'}>
+            Stay up to date
+          </p>
+          <Posts posts={posts.slice(0, 6)} />
+          <div className='text-center mt-4 md:mt-8'>
+            <Link to='posts' className='hover:underline'>
+              See more updates
+            </Link>
+          </div>
         </div>
-      </Section>
+      </section>
       <FrequentlyAskedQuestions />
       <Concern />
     </>

@@ -1,3 +1,5 @@
+/* REACT */
+import { Suspense } from 'react';
 /* REACT ROUTER */
 import {
   RouterProvider,
@@ -30,13 +32,7 @@ import {
   SinglePost,
 } from './pages';
 /* PORTAL COMPONENTS */
-import {
-  Messages,
-  Schedule,
-  Calendar,
-  Grades,
-  Password,
-} from './portalComponents';
+import { Messages, Schedule, Calendar, Grades, Password } from './portalPages';
 /* LAYOUTS */
 import {
   NavbarFooterLayout,
@@ -50,68 +46,392 @@ const router = createBrowserRouter(
       {/* WRAPPED WITH NAVBAR AND FOOTER COMPONENT */}
       <Route
         path='/'
-        element={<NavbarFooterLayout />}
-        errorElement={<ErrorMessage />}
+        element={
+          <Suspense
+            fallback={
+              <div className='min-h-screen grid place-items-center'>
+                <div className='spinner'></div>
+              </div>
+            }
+          >
+            <NavbarFooterLayout />
+          </Suspense>
+        }
+        errorElement={
+          <Suspense
+            fallback={
+              <div className='min-h-screen grid place-items-center'>
+                <div className='spinner'></div>
+              </div>
+            }
+          >
+            <ErrorMessage />
+          </Suspense>
+        }
       >
-        <Route index element={<Home />} errorElement={<ErrorMessage />} />
+        <Route
+          index
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <Home />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
+        />
         <Route
           path='about'
-          element={<About />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <About />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
         <Route
           path='courses'
-          element={<Courses />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <Courses />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
         <Route
           path='contacts'
-          element={<Contacts />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <Contacts />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
         <Route
           path='developers'
-          element={<Developers />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <Developers />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
         <Route
           path='posts'
-          element={<LatestNewsAndUpdates posts={posts} />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <LatestNewsAndUpdates posts={posts} />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
         <Route
           path='officials'
-          element={<OrganizationChart />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <OrganizationChart />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
-        <Route path='student-login' element={<StudentLogin />} />
-        <Route path='faculty-login' element={<FacultyLogin />} />
+        <Route
+          path='student-login'
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <StudentLogin />
+            </Suspense>
+          }
+        />
+        <Route
+          path='faculty-login'
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <FacultyLogin />
+            </Suspense>
+          }
+        />
         <Route
           path='student-portal'
-          element={<StudentPortalNavigationLayout />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <StudentPortalNavigationLayout />
+            </Suspense>
+          }
         >
-          <Route index element={<StudentPortal />} />
-          <Route path='schedule' element={<Schedule />} />
-          <Route path='calendar' element={<Calendar />} />
-          <Route path='grades' element={<Grades />} />
-          <Route path='messages' element={<Messages />} />
-          <Route path='password' element={<Password />} />
+          <Route
+            index
+            element={
+              <Suspense
+                fallback={
+                  <div className='min-h-screen grid place-items-center'>
+                    <div className='spinner'></div>
+                  </div>
+                }
+              >
+                <StudentPortal />
+              </Suspense>
+            }
+          />
+          <Route
+            path='schedule'
+            element={
+              <Suspense
+                fallback={
+                  <div className='min-h-screen grid place-items-center'>
+                    <div className='spinner'></div>
+                  </div>
+                }
+              >
+                <Schedule />
+              </Suspense>
+            }
+          />
+          <Route
+            path='calendar'
+            element={
+              <Suspense
+                fallback={
+                  <div className='min-h-screen grid place-items-center'>
+                    <div className='spinner'></div>
+                  </div>
+                }
+              >
+                <Calendar />
+              </Suspense>
+            }
+          />
+          <Route
+            path='grades'
+            element={
+              <Suspense
+                fallback={
+                  <div className='min-h-screen grid place-items-center'>
+                    <div className='spinner'></div>
+                  </div>
+                }
+              >
+                <Grades />
+              </Suspense>
+            }
+          />
+          <Route
+            path='messages'
+            element={
+              <Suspense
+                fallback={
+                  <div className='min-h-screen grid place-items-center'>
+                    <div className='spinner'></div>
+                  </div>
+                }
+              >
+                <Messages />
+              </Suspense>
+            }
+          />
+          <Route
+            path='password'
+            element={
+              <Suspense
+                fallback={
+                  <div className='min-h-screen grid place-items-center'>
+                    <div className='spinner'></div>
+                  </div>
+                }
+              >
+                <Password />
+              </Suspense>
+            }
+          />
         </Route>
         {/*  <Route path='student-portal' element={<StudentPortal />} />
         <Route path='faculty-portal' element={<FacultyPortal />} /> */}
       </Route>
       {/* END OF - WRAPPED WITH  NAVBAR AND FOOTER COMPONENT */}
       {/* ONLY HAS A FOOTER COMPONENT */}
-      <Route path='post/:id' element={<FooterLayout />}>
+      <Route
+        path='post/:id'
+        element={
+          <Suspense
+            fallback={
+              <div className='min-h-screen grid place-items-center'>
+                <div className='spinner'></div>
+              </div>
+            }
+          >
+            <FooterLayout />
+          </Suspense>
+        }
+      >
         <Route
           index
-          element={<SinglePost posts={posts} />}
-          errorElement={<ErrorMessage />}
+          element={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <SinglePost posts={posts} />
+            </Suspense>
+          }
+          errorElement={
+            <Suspense
+              fallback={
+                <div className='min-h-screen grid place-items-center'>
+                  <div className='spinner'></div>
+                </div>
+              }
+            >
+              <ErrorMessage />
+            </Suspense>
+          }
         />
       </Route>
       {/*END OF - ONLY HAS A FOOTER COMPONENT */}
 
-      <Route path='*' element={<ErrorMessage />} />
+      <Route
+        path='*'
+        element={
+          <Suspense
+            fallback={
+              <div className='min-h-screen grid place-items-center'>
+                <div className='spinner'></div>
+              </div>
+            }
+          >
+            <ErrorMessage />
+          </Suspense>
+        }
+      />
     </>
   )
 );

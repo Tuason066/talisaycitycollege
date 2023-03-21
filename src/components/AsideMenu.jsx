@@ -7,8 +7,9 @@ import { Icon } from '@iconify/react';
 /* DATA */
 import { pageLinks } from '../data';
 /* COMPONENTS */
-import AsideSubmenu from './AsideSubmenu';
-import PortalsDropdown from './PortalsDropdown';
+/* import AsideSubmenu from './AsideSubmenu';
+import PortalsDropdown from './PortalsDropdown'; */
+import { AsideSubmenu, PortalsDropdown } from '.';
 
 const AsideMenu = ({ isAsideMenu, setIsAsideMenu }) => {
   const [isSubmenu, setIsSubmenu] = useState(-1);

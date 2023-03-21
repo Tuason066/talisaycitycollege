@@ -1,7 +1,8 @@
 /* REACT MASONRY */
 import Masonry from 'react-masonry-css';
 /* COMPONENTS */
-import Post from './Post';
+import { Post } from '.';
+// import Post from './Post';
 
 const Posts = ({ posts }) => {
   const breakpointColumnsObj = {
