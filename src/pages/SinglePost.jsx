@@ -5,11 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import {
-  Posts,
-  SinglePostMedia,
-  SinglePostDescription,
-} from '../components';
+import { Posts, SinglePostMedia, SinglePostDescription } from '../components';
 
 const SinglePost = ({ posts }) => {
   /* SINGLE POST ID */
@@ -61,15 +57,17 @@ const SinglePost = ({ posts }) => {
       </section>
       {/* END OF SINGLE POST */}
       {/* OTHER NEWS AND UPDATES */}
-      <Section>
-        <header className=' mt-2 md:mt-4 mb-10 md:mb-14'>
-          <h2 className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'>
-            Other latest news and updates
-          </h2>
-          <p className='text-xs lg:text-base'>Stay up to date</p>
-        </header>
-        <Posts posts={featuredPosts} />
-      </Section>
+      <section className='section'>
+        <div className='section-center'>
+          <header className=' mt-2 md:mt-4 mb-10 md:mb-14'>
+            <h2 className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'>
+              Other latest news and updates
+            </h2>
+            <p className='text-xs lg:text-base'>Stay up to date</p>
+          </header>
+          <Posts posts={featuredPosts} />
+        </div>
+      </section>
     </>
   );
 };
