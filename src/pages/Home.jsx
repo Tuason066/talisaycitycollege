@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 /* react router */
 import { Link } from 'react-router-dom';
 /* data */
-import { posts } from '../data';
+// import { posts } from '../data';
+import { usePostContext } from '../context/post_context';
 /* components */
 import {
   Achievers,
@@ -14,8 +15,12 @@ import {
 } from '../components';
 
 function Home() {
+  const { posts, getPosts } = usePostContext();
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    /* fetch posts */
+    getPosts();
   }, []);
 
   return (
@@ -40,7 +45,7 @@ function Home() {
       <LandingPage />
       <Achievers />
       <section className='section'>
-        <div className='section-center'>
+        <div className='center-element'>
           {' '}
           <h2
             className={
@@ -52,7 +57,7 @@ function Home() {
           <p className={'text-xs lg:text-base mb-6 md:mb-8 lg:mb-10'}>
             Stay up to date
           </p>
-          <Posts posts={posts.slice(0, 6)} />
+          <Posts posts={posts.slice(0, 3)} />
           <div className='text-center mt-4 md:mt-8'>
             <Link to='posts' className='hover:underline'>
               See more updates

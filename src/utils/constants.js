@@ -2,7 +2,7 @@
 const schoolYearStart = 2022;
 const schoolYearEnd = 2023;
 
-export const schoolCalaendar = {
+export const schoolCalendar = {
   schoolYear: `${schoolYearStart} - ${schoolYearEnd}`,
   firstSemester: {
     startOfClasses: `august 22, ${schoolYearStart}`,
@@ -159,3 +159,259 @@ export const schoolCalaendar = {
     },
   ],
 };
+
+/* 
+type: {
+  student: {
+    course: 'BS-IndTech',
+    yearLevel: 3,
+    section: 'Faithful',
+    status: 'Regular', // or Irregular
+  },
+  teacher: {
+    position: '',
+    status: 'Regular', // or Part-time
+  },
+},
+*/
+
+export const messages = [
+  {
+    id: 1,
+    name: 'Ritchie John Gumera',
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675001788/talisay-city-college/developers/ritchie_ftqrpm.webp',
+    type: {
+      student: {
+        course: 'BS-IndTech',
+        yearLevel: 3,
+        section: 'Faithful',
+        status: 'Regular', // or Irregular
+      },
+    },
+    messages: '',
+  },
+  {
+    id: 2,
+    name: 'Ricky Jr. Andales',
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_900,w_700/v1675006116/talisay-city-college/developers/andales_p1jrua.webp',
+    type: {
+      student: {
+        course: 'BS-IndTech',
+        yearLevel: 3,
+        section: 'Faithful',
+        status: 'Regular', // or Irregular
+      },
+    },
+    messages: '',
+  },
+  {
+    id: 3,
+    name: 'Elmer Montejo',
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488304/talisay-city-college/officials/helmer_montejo_fnxvl4.webp',
+    type: {
+      teacher: {
+        position: 'Associate Dean',
+        status: 'Regular', // or Part-time
+      },
+    },
+    messages: '',
+  },
+];
+
+export const developers = [
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675001788/talisay-city-college/developers/ritchie_ftqrpm.webp',
+    name: 'Ritchie John Gumera',
+    title: 'Front-end Web Developer',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/richie.gumera.7`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `https://twitter.com/Bewareofdoggs`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `https://github.com/Mrching08`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `https://www.linkedin.com/in/ritchie-john-gumera-976057265/?fbclid=IwAR1sC1XrKiMtt3fGWHoa1oHs9BUw5RVF345UkR1fXKfwPXgzyZbJhaG3jYk`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675006116/talisay-city-college/developers/andales_p1jrua.webp',
+    name: 'Ricky Andales Jr.',
+    title: 'Researcher',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/profile.php?id=100006666975804`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `https://www.tiktok.com/@glazeshora`,
+        icon: 'mingcute:tiktok-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675006359/talisay-city-college/developers/tuason_biitqc.webp',
+    name: 'Jeffrey Tuason',
+    title: 'Reactjs Developer',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/Tuason06/`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `https://twitter.com/jepoyduque06`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `https://github.com/Tuason066`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `https://www.linkedin.com/in/jeffreytuason/`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675133761/talisay-city-college/developers/bernardo_h56tbh.webp',
+    name: 'Justin Bernardo',
+    title: 'Researcher',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/bjunich`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675133762/talisay-city-college/developers/parsacala_zgyr7f.webp',
+    name: 'Jane Marielle Parsacala',
+    title: 'Researcher',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/parsacalajane`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675133762/talisay-city-college/developers/drona_bfhql7.webp',
+    name: 'Jennifer Droña',
+    title: 'Researcher',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/rojhane.montejar.9`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675133763/talisay-city-college/developers/remollo_v8lagl.webp',
+    name: 'Girrah Remollo',
+    title: 'Researcher',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/girrah.remollo.3`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+  {
+    image:
+      'https://res.cloudinary.com/dwiivmg3b/image/upload/v1675133762/talisay-city-college/developers/parba_n9w97a.webp',
+    name: 'Resalyn Mae Parba',
+    title: 'Researcher',
+    socialLinks: [
+      {
+        url: `https://www.facebook.com/resamae.parba`,
+        icon: 'ri:facebook-box-fill',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:twitter',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:github',
+      },
+      {
+        url: `#`,
+        icon: 'mdi:linkedin',
+      },
+    ],
+  },
+];

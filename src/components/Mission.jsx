@@ -1,7 +1,7 @@
 function Mission() {
   return (
     <section className='section'>
-      <div className='section-center'>
+      <div className='center-element'>
         <h2
           className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest text-center mb-4 md:mb-8 underline'
           data-aos='zoom-in'

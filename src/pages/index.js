@@ -8,7 +8,7 @@ const FacultyPortal = lazy(() => import('./FacultyPortal'));
 const StudentLogin = lazy(() => import('./StudentLogin'));
 const StudentPortal = lazy(() => import('./StudentPortal'));
 const Home = lazy(() => import('./Home'));
-const LatestNewsAndUpdates = lazy(() => import('../../LatestNewsAndUpdates'));
+const LatestNewsAndUpdates = lazy(() => import('./LatestNewsAndUpdates'));
 const OrganizationChart = lazy(() => import('./OrganizationChart'));
 const SinglePost = lazy(() => import('./SinglePost'));
 

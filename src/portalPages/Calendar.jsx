@@ -1,27 +1,27 @@
-import { schoolCalaendar } from '../utils/constants';
+import { schoolCalendar } from '../utils/constants';
 
 import DescriptiveCalendar from '../portalComponents/DescriptiveCalendar';
 import FirstSemCalendars from '../portalComponents/FirstSemCalendars';
 import SecondSemCalendars from '../portalComponents/SecondSemCalendars';
 
 const Calendar = () => {
-  const { schoolYear } = schoolCalaendar;
+  const { schoolYear } = schoolCalendar;
 
   return (
-    <main className='py-8 md:py-12 lg:py-14 min-h-screen'>
-      <div className='section-center text-center capitalize'>
+    <main className='py-8 md:py-12 lg:py-14 min-h-[76dvh]'>
+      <div className='center-element text-center capitalize'>
         {/* TITLE COMPONENT */}
-        <header className='uppercase mb-6 md:mb-8'>
-          <h4 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-widest underline'>
+        <header className='mb-6 md:mb-8'>
+          <h4 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-widest text-customBlue-750 border-b-4 border-double border-customBlue-750 w-fit mx-auto uppercase'>
             School Calendar
           </h4>
-          <p className='text-base md:text-lg lg:text-xl font-semibold tracking-wider'>
+          <p className='text-base md:text-lg lg:text-xl font-semibold tracking-wider text-customBlue-750'>
             Academic Year {schoolYear}
           </p>
         </header>
         <div className='lg:grid lg:grid-cols-3 lg:gap-x-8'>
           <FirstSemCalendars />
-          <DescriptiveCalendar {...schoolCalaendar} />
+          <DescriptiveCalendar {...schoolCalendar} />
           <SecondSemCalendars />
         </div>
         <div className='text-left mt-4 md:mt-8 lg:mt-10'>

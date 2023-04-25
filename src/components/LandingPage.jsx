@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <section className='py-8 md:py-12 lg:py-14 xl:p-0 xl:grid xl:grid-cols-2 xl:items-center'>
+    <section className='py-8 md:py-12 lg:py-14 xl:p-0 xl:grid xl:grid-cols-2 xl:items-center overflow-x-hidden'>
       {/* content */}
       <main className='mx-auto w-11/12 lg:w-full lg:px-[8.33%]'>
         <h2 className='uppercase font-bold text-center xl:text-left mb-6 md:mb-7 lg:mb-8 text-2xl md:text-4xl lg:text-5xl'>

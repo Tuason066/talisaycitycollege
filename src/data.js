@@ -1,6 +1,4 @@
 /* ########## PAGE LINKS ########## */
-
-/* pageLinks - submenu is dropdown component */
 export const pageLinks = [
   { id: 1, path: '/', text: 'home', title: 'Home' },
   {
@@ -100,7 +98,6 @@ export const pageLinks = [
 ];
 
 /* ########## SOCIAL LINKS ########## */
-
 export const socialLinks = [
   {
     id: 0,
@@ -129,7 +126,6 @@ export const socialLinks = [
 ];
 
 /* ########## ACHIEVEMENTS ########## */
-
 export const achievers = [
   { id: 1, count: 1004, category: 'Government Scholars' },
   { id: 2, count: 234, category: 'LPT Passers' },
@@ -903,7 +899,6 @@ End of polling date and time: December 09, 2022 at 5PM`,
 ];
 
 /* ########## COURSES ########## */
-
 export const courses = [
   /* BEEd */
   {
@@ -1000,7 +995,6 @@ export const courses = [
 ];
 
 /* ########## OFFICIALS ########## */
-
 export const officials = {
   dean: [
     {
@@ -1018,19 +1012,19 @@ export const officials = {
       name: 'Deletah DG. Polinar, ED.D.',
       position: 'Dean, Teacher Education Program',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_96,w_96/v1677488304/talisay-city-college/officials/deletah_polinar_jrmhgu.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/deletah_polinar_jrmhgu.webp',
     },
     {
       name: 'Hermenegilda O. Rosinto, MAED',
       position: 'Dean, Teacher Education Program',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_96,w_96/v1677488305/talisay-city-college/officials/hermenegilda_rosinto_lejjch.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488305/talisay-city-college/officials/hermenegilda_rosinto_lejjch.webp',
     },
     {
       name: 'Helen S. Bacalso, MST-MATH',
       position: 'Associate Dean, Industrial Technology Program',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488304/talisay-city-college/officials/helen_bacalso_cjmqwa.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/helen_bacalso_cjmqwa.webp',
     },
   ],
   coordinators: [
@@ -1044,26 +1038,26 @@ export const officials = {
       name: 'Isabelita T. Abellanosa, D.M',
       position: 'Math/ Science Coordinator',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488305/talisay-city-college/officials/isabelita_abellanosa_x5wlo5.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488305/talisay-city-college/officials/isabelita_abellanosa_x5wlo5.webp',
     },
     {
       name: 'Carmelo N. Torino, MAED',
       position: 'Social/ Behavioral Sciences Coordinator',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488304/talisay-city-college/officials/carmelo_torino_krt6kc.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/carmelo_torino_krt6kc.webp',
     },
     {
       name: 'Evelyn D. Mancao, ED-PE',
       position:
         'Physical Education Coordinator, Prefect of Discipline for Women',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488304/talisay-city-college/officials/evelyn_mancao_qz3dvo.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/evelyn_mancao_qz3dvo.webp',
     },
     {
       name: 'Riza S. Archival, MAED-AS',
       position: 'ReEd/ ValEd Coordinator/ Campus Ministry In-Charge',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488305/talisay-city-college/officials/riza_archival_d5mxft.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488305/talisay-city-college/officials/riza_archival_d5mxft.webp',
     },
   ],
   courseInCharge: [
@@ -1075,13 +1069,13 @@ export const officials = {
       name: 'Lira L. Dela Torre',
       position: 'BSED/ DPE Course In-Charge',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,w_96/v1677488305/talisay-city-college/officials/lira_delatorre_vmxzsy.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488305/talisay-city-college/officials/lira_delatorre_vmxzsy.webp',
     },
     {
       name: 'Ruel B. Dejan',
       position: 'BSIT Course In-Charge',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488307/talisay-city-college/officials/ruel_dejan_zwmrcg.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488307/talisay-city-college/officials/ruel_dejan_zwmrcg.webp',
     },
   ],
   services: [
@@ -1089,13 +1083,13 @@ export const officials = {
       name: 'Wendelyn O. Labajo, LPT',
       position: 'College Registrar',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488306/talisay-city-college/officials/wendelyn_labajo_fzjv7p.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488306/talisay-city-college/officials/wendelyn_labajo_fzjv7p.webp',
     },
     {
       name: 'Teresa B. Bordalba, MPA',
       position: 'Treasury In-Charge/ UNIFAST Focal Person',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488306/talisay-city-college/officials/teresa_bordalba_pc9mwt.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488306/talisay-city-college/officials/teresa_bordalba_pc9mwt.webp',
     },
     {
       name: 'Ma. Lourdes F. Mediano, RL',
@@ -1105,7 +1099,7 @@ export const officials = {
       name: 'Flordelis A. Piala, RL, MLIS',
       position: 'College Librian',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488304/talisay-city-college/officials/flordelis_piala_ao7hsv.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/flordelis_piala_ao7hsv.webp',
     },
     {
       name: 'Fe O. Cuenco, ED.D.',
@@ -1116,7 +1110,7 @@ export const officials = {
       position:
         'Administrative Assistant-Student Affairs Services and Discipline',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488304/talisay-city-college/officials/joselito_bacolcol_debn6q.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/joselito_bacolcol_debn6q.webp',
     },
     {
       name: 'Nhikie M. Del Socorro, LPT',
@@ -1126,19 +1120,19 @@ export const officials = {
       name: 'Mae R. Abellana, LPT',
       position: 'Student Affairs Assistant',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488305/talisay-city-college/officials/mae_abellana_b5hbus.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488305/talisay-city-college/officials/mae_abellana_b5hbus.webp',
     },
     {
       name: 'Adelaida C. Coyoca, MAED-AS',
       position: 'Community Extension Services Coordinator',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,w_96/v1677488303/talisay-city-college/officials/adelaida_coyoca_uvahme.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488303/talisay-city-college/officials/adelaida_coyoca_uvahme.webp',
     },
     {
       name: 'Benjie A. Cabigas',
       position: 'NSTP Director/ Scholarship Coordinator',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488303/talisay-city-college/officials/benjie_cabigas_yl0ey6.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488303/talisay-city-college/officials/benjie_cabigas_yl0ey6.webp',
     },
     {
       name: 'Rhogeem Shane A. Rubio, RN',
@@ -1148,25 +1142,25 @@ export const officials = {
       name: 'Brenda B. Tabera, RGC',
       position: 'Guidance Counselor',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488303/talisay-city-college/officials/brenda_tabera_at2hn7.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488303/talisay-city-college/officials/brenda_tabera_at2hn7.webp',
     },
     {
       name: 'Keren Rile Javier, RPM, LPT',
       position: 'Guidance Counselor',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,w_96/v1677488305/talisay-city-college/officials/kerenrile_javier_jbp1pc.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488305/talisay-city-college/officials/kerenrile_javier_jbp1pc.webp',
     },
     {
       name: 'Corazon De Jesus T. Uy, ED.D.',
       position: 'Guidance Counselor',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_96,w_96/v1677488304/talisay-city-college/officials/corazondejesus_uy_plglwn.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488304/talisay-city-college/officials/corazondejesus_uy_plglwn.webp',
     },
     {
       name: 'Dionic B. Rosales',
       position: 'Head Maintenance Dept./ Property Custodian',
       image:
-        'https://res.cloudinary.com/dwiivmg3b/image/upload/c_fill,h_96,w_96/v1677488303/talisay-city-college/officials/dionic_rosales_lzn3ed.webp',
+        'https://res.cloudinary.com/dwiivmg3b/image/upload/v1677488303/talisay-city-college/officials/dionic_rosales_lzn3ed.webp',
     },
     {
       name: 'Joevenor F. Carin',
@@ -1178,8 +1172,8 @@ export const officials = {
     },
   ],
 };
-/* ########## CONTACTS ########## */
 
+/* ########## CONTACTS ########## */
 export const contacts = [
   {
     office: `Registrar's`,
@@ -1229,201 +1223,5 @@ export const contacts = [
     email: 'talisaycitycollege2004@gmail.com',
     facebookPath: 'https://www.facebook.com/profile.php?id=100087451633441',
     icon: 'icon-park-solid:folder-code',
-  },
-];
-
-/* ########## DEVELOPERS ########## */
-export const developers = [
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675001788/talisay-city-college/developers/ritchie_ftqrpm.webp',
-    name: 'Ritchie John Gumera',
-    title: 'Front-end Web Developer',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/richie.gumera.7`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `https://twitter.com/Bewareofdoggs`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `https://github.com/Mrching08`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `https://www.linkedin.com/in/ritchie-john-gumera-976057265/?fbclid=IwAR1sC1XrKiMtt3fGWHoa1oHs9BUw5RVF345UkR1fXKfwPXgzyZbJhaG3jYk`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_scale,h_900,w_700/v1675006116/talisay-city-college/developers/andales_p1jrua.webp',
-    name: 'Ricky Andales Jr.',
-    title: 'Researcher',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/profile.php?id=100006666975804`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `https://www.tiktok.com/@glazeshora`,
-        icon: 'mingcute:tiktok-fill',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675006359/talisay-city-college/developers/tuason_biitqc.webp',
-    name: 'Jeffrey Tuason',
-    title: 'Reactjs Developer',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/Tuason06/`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `https://twitter.com/jepoyduque06`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `https://github.com/Tuason066`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `https://www.linkedin.com/in/jeffreytuason/`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133761/talisay-city-college/developers/bernardo_h56tbh.webp',
-    name: 'Justin Bernardo',
-    title: 'Researcher',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/bjunich`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/parsacala_zgyr7f.webp',
-    name: 'Jane Marielle Parsacala',
-    title: 'Researcher',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/parsacalajane`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/drona_bfhql7.webp',
-    name: 'Jennifer Droña',
-    title: 'Researcher',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/rojhane.montejar.9`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133763/talisay-city-college/developers/remollo_v8lagl.webp',
-    name: 'Girrah Remollo',
-    title: 'Researcher',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/girrah.remollo.3`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:linkedin',
-      },
-    ],
-  },
-  {
-    image:
-      'https://res.cloudinary.com/dwiivmg3b/image/upload/c_crop,h_900,w_700/v1675133762/talisay-city-college/developers/parba_n9w97a.webp',
-    name: 'Resalyn Mae Parba',
-    title: 'Researcher',
-    socialLinks: [
-      {
-        url: `https://www.facebook.com/resamae.parba`,
-        icon: 'ri:facebook-box-fill',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:twitter',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:github',
-      },
-      {
-        url: `#`,
-        icon: 'mdi:linkedin',
-      },
-    ],
   },
 ];

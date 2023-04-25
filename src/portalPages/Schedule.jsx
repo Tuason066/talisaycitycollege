@@ -5,26 +5,27 @@ import { MobileScheduleTable, DesktopScheduleTable } from '../portalComponents';
 /* TODO: IMPLEMENT THE LAZY LOADING AND SUSPENSE */
 
 const Schedule = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const handleSetWidth = () => {
-    setWidth(window.innerWidth);
-  };
+  const handleWindowWidth = () => setWindowWidth(window.innerWidth);
 
   useEffect(() => {
-    window.addEventListener('resize', handleSetWidth);
-    return () => {
-      window.removeEventListener('resize', handleSetWidth);
-    };
+    window.addEventListener('resize', handleWindowWidth);
+
+    return () => window.removeEventListener('resize', handleWindowWidth);
   }, []);
 
   return (
-    <main className='py-8 md:py-12 lg:py-14 min-h-screen'>
-      <div className='section-center text-center capitalize'>
-        <h4 className='uppercase mb-6 md:mb-8 text-centertext-xl md:text-3xl lg:text-4xl font-bold tracking-widest'>
+    <main className='py-8 md:py-12 lg:py-14 min-h-[76dvh]'>
+      <div className='center-element text-center capitalize'>
+        <h3 className='uppercase mb-6 md:mb-8 text-center text-xl md:text-3xl lg:text-4xl font-bold tracking-widest text-customBlue-750 border-b-4 border-double border-customBlue-750 w-fit mx-auto'>
           My Class Schedule
-        </h4>
-        {width <= 768 ? <MobileScheduleTable /> : <DesktopScheduleTable />}
+        </h3>
+        {windowWidth <= 768 ? (
+          <MobileScheduleTable />
+        ) : (
+          <DesktopScheduleTable />
+        )}
       </div>
     </main>
   );

@@ -15,7 +15,7 @@ const Contacts = () => {
 
   return (
     <section className='section'>
-      <div className='section-center'>
+      <div className='center-element'>
         <h2
           style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
           className='text-customBlue-750 font-extrabold text-2xl md:text-4xl lg:text-5xl tracking-wider text-center mb-8 sm:mb-12 lg:mb-16 underline'

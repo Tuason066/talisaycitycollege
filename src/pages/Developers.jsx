@@ -2,8 +2,8 @@
 import { useEffect } from 'react';
 /* REACT ROUTER */
 import { Link } from 'react-router-dom';
-/* DATA */
-import { developers } from '../data';
+/* CONSTANTS */
+import { developers } from '../utils/constants';
 /* REACT MASONRY : https://www.npmjs.com/package/react-masonry-css */
 import Masonry from 'react-masonry-css';
 /* ICONS */
@@ -23,7 +23,7 @@ const Developers = () => {
 
   return (
     <section className='section'>
-      <div className='section-center'>
+      <div className='center-element'>
         {/* title */}
         <h2
           style={{ textShadow: '0.025em 0.025em 0 #ffcc00' }}
@@ -63,13 +63,13 @@ const Developers = () => {
                   <img
                     src={image}
                     alt={`${name} profile`}
-                    className='w-full mx-auto h-full object-cover object-center'
+                    className='dev-profile'
                   />
                 ) : (
                   <img
                     src={placeholderText}
                     alt={`${name} profile`}
-                    className='w-full mx-auto h-full object-cover object-center'
+                    className='dev-profile'
                   />
                 )}
 

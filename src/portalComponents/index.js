@@ -1,12 +1,12 @@
 import { lazy } from 'react';
-const PortalNavigation = lazy(() =>
-  import('../portalComponents/PortalNavigation')
-);
-const MobileScheduleTable = lazy(() =>
-  import('../portalComponents/MobileScheduleTable')
-);
-const DesktopScheduleTable = lazy(() =>
-  import('../portalComponents/DesktopScheduleTable')
-);
+const PortalNavigation = lazy(() => import('./PortalNavigation'));
+const MobileScheduleTable = lazy(() => import('./MobileScheduleTable'));
+const DesktopScheduleTable = lazy(() => import('./DesktopScheduleTable'));
+const MobileMessages = lazy(() => import('./MobileMessages'));
 
-export { PortalNavigation, MobileScheduleTable, DesktopScheduleTable };
+export {
+  PortalNavigation,
+  MobileScheduleTable,
+  DesktopScheduleTable,
+  MobileMessages,
+};

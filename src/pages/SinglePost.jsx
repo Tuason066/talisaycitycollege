@@ -35,7 +35,7 @@ const SinglePost = ({ posts }) => {
       <section className='bg-white lg:overflow-hidden'>
         <button
           type='button'
-          onClick={() => navigate('/posts')}
+          onClick={() => navigate(-1)}
           className='absolute top-2 left-2 md:top-3 md:left-3 lg:top-4 lg:left-4 bg-[rgba(0,0,0,.1)] p-2 rounded-full transition-all z-20'
         >
           <Icon
@@ -58,7 +58,7 @@ const SinglePost = ({ posts }) => {
       {/* END OF SINGLE POST */}
       {/* OTHER NEWS AND UPDATES */}
       <section className='section'>
-        <div className='section-center'>
+        <div className='center-element'>
           <header className=' mt-2 md:mt-4 mb-10 md:mb-14'>
             <h2 className='text-xl md:text-2xl lg:text-4xl font-black uppercase tracking-wide md:tracking-wider lg:tracking-widest'>
               Other latest news and updates

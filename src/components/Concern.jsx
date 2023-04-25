@@ -1,7 +1,7 @@
 /* REACT */
-import { useRef, useState } from 'react';
-/* ICONS */
-import { Icon } from '@iconify/react';
+import { useRef, useState, lazy } from 'react';
+/* COMPONENTS */
+const ConcernSuccessModal = lazy(() => import('./ConcernSuccessModal'));
 
 function Concern() {
   /* submit */
@@ -88,7 +88,7 @@ function Concern() {
   };
 
   return (
-    <section>
+    <section className='overflow-hidden'>
       <div className='mx-auto w-11/12 py-8 md:py-12 lg:py-14 lg:flex lg:gap-x-20'>
         {/* GOOGLE MAP #2 */}
         <iframe
@@ -116,33 +116,10 @@ function Concern() {
           data-aos-delay='200'
         >
           {/* ALERT BOX FOR SUCCESSFULLY SUBMITTED CONCERN */}
-          <aside
-            className={`${
-              isConcernSubmitted ? 'scale-100' : 'scale-0'
-            } absolute top-0 left-0 h-full w-full bg-[#f6f9fc] flex flex-col items-center justify-center gap-y-4 p-4 md:p-6 transition-all`}
-          >
-            <Icon
-              icon='mdi:tooltip-check'
-              color='#8083ff'
-              width='100'
-              height='100'
-              className='mx-auto'
-            />
-            <h5 className='uppercase font-bold text-center text-lg md:text-xl tracking-wider md:tracking-widest'>
-              Successfully sent
-            </h5>
-            <p className='max-w-xs'>
-              Thank you for taking time to reach us with your concern.
-            </p>
-            <button
-              type='button'
-              title='Close'
-              onClick={() => setIsConcernSubmitted(false)}
-              className='block w-full max-w-xs mx-auto mt-4 py-base px-xl rounded text-white font-semibold tracking-wide md:tracking-wider uppercase bg-customBlue-500'
-            >
-              Close
-            </button>
-          </aside>
+          <ConcernSuccessModal
+            isConcernSubmitted={isConcernSubmitted}
+            setIsConcernSubmitted={setIsConcernSubmitted}
+          />
 
           {/* CONCERN FORM */}
           <h2 className='text-center lg:text-left text-xl md:text-2xl lg:text-4xl font-black uppercase mb-6 md:mb-8 lg:mb-10 tracking-wide md:tracking-wider lg:tracking-widest'>
@@ -172,7 +149,7 @@ function Concern() {
                 data-input
                 id='email'
                 name='email'
-                type='text'
+                type='email'
                 placeholder='Email'
                 onChange={handleOnChange}
                 value={dataInputs.email}

@@ -6,7 +6,7 @@ import CountUp from 'react-countup';
 const Achievers = () => {
   return (
     <section className='section bg-customBlue-500 text-white text-center'>
-      <div className='section-center'>
+      <div className='center-element'>
         <h2 className='uppercase font-bold mb-6 md:mb-7 lg:mb-8 text-4xl md:text-6xl'>
           the land of
         </h2>

@@ -7,7 +7,7 @@ import Masonry from 'react-masonry-css';
 /* ICONS */
 import { Icon } from '@iconify/react';
 /* COMPONENTS */
-import {  Course, CoursesFilter } from '../components';
+import { Course, CoursesFilter } from '../components';
 
 const Courses = () => {
   /* react masonry media queries */
@@ -61,7 +61,7 @@ const Courses = () => {
 
   return (
     <section className='section'>
-      <div className='section-center'>
+      <div className='center-element'>
         {/* title / subtitle */}
         <header data-aos='zoom-in' data-aos-delay='200' data-aos-duration='700'>
           {/* title */}
